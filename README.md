@@ -1,5 +1,7 @@
 # Trivia
 
+Publicare pe Netlify: vezi [instrucțiunile de configurare](docs/NETLIFY.md). Folosește buildul `npm run build:netlify` pentru a include backendul și întrebările. Pe Netlify, datele sunt temporare și dispar la restartul instanței.
+
 Joc privat de trivia biblică în română, cu React/TypeScript, server Node.js, WebSocket și SQLite local. Necesită Node.js 24.12 sau mai nou. Designul urmează PNG-urile din `design/approved`.
 
 ## Pornire

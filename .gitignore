@@ -8,3 +8,5 @@ data/
 test-results/
 .agents
 playwright-report/
+netlify/server/data/
+.netlify/

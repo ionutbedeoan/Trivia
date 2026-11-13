@@ -13,7 +13,7 @@ export interface Session {
 export const hash = (value: string) => createHash('sha256').update(value).digest('hex');
 export class Storage {
   db: DatabaseSync;
-  constructor(path: string) {
+  constructor(path: string, initialQuestions?: EditorialQuestion[]) {
     if (path !== ':memory:') mkdirSync(dirname(path), { recursive: true });
     this.db = new DatabaseSync(path);
     this.db.exec(`PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON;
@@ -25,8 +25,13 @@ export class Storage {
       CREATE TABLE IF NOT EXISTS results(matchId TEXT NOT NULL REFERENCES matches(id), participantId TEXT NOT NULL, sessionId TEXT NOT NULL, accountId TEXT, name TEXT NOT NULL, score INTEGER NOT NULL, correct INTEGER NOT NULL, won INTEGER NOT NULL, PRIMARY KEY(matchId, participantId));
       INSERT OR IGNORE INTO migrations VALUES(1);`);
     this.db.exec('INSERT OR IGNORE INTO migrations VALUES(2)');
-    this.seedPilot();
-    this.seedExpansion();
+    if (initialQuestions) {
+      const insert = this.db.prepare('INSERT OR IGNORE INTO questions VALUES(?,?)');
+      for (const question of initialQuestions) insert.run(question.id, JSON.stringify(question));
+    } else {
+      this.seedPilot();
+      this.seedExpansion();
+    }
     this.cleanup();
   }
   cleanup(now = Date.now()) {

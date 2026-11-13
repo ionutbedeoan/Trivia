@@ -1,5 +1,13 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": { "types": ["node"], "allowImportingTsExtensions": true },
-  "include": ["server", "shared", "tests", "vite.config.ts", "playwright.config.ts"]
+  "include": [
+    "server",
+    "shared",
+    "tests",
+    "netlify/server",
+    "scripts/build-netlify-content.ts",
+    "vite.config.ts",
+    "playwright.config.ts"
+  ]
 }

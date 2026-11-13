@@ -9,9 +9,20 @@ import { GameService } from './game';
 import { Storage } from './storage';
 import type { Session } from './storage';
 import { invitationOrigin } from './network';
+import type { EditorialQuestion } from '../shared/contracts';
 
-export function createApplication(options: { dbPath?: string; countdownMs?: number } = {}) {
-  const storage: Storage = new Storage(options.dbPath ?? process.env.DB_PATH ?? 'data/game.sqlite');
+export function createApplication(
+  options: {
+    dbPath?: string;
+    countdownMs?: number;
+    initialQuestions?: EditorialQuestion[];
+    staticRoot?: string;
+  } = {},
+) {
+  const storage: Storage = new Storage(
+    options.dbPath ?? process.env.DB_PATH ?? 'data/game.sqlite',
+    options.initialQuestions,
+  );
   storage.db.prepare("UPDATE matches SET status='cancelled' WHERE status='active'").run();
   const game = new GameService(storage, () => Date.now(), options.countdownMs ?? 3000);
   const connections = new Map<string, { ws: WebSocket; token: string; session: Session }>();
@@ -86,7 +97,7 @@ export function createApplication(options: { dbPath?: string; countdownMs?: numb
     try {
       const path = new URL(req.url ?? '/', 'http://localhost').pathname;
       if (!path.startsWith('/api/')) {
-        const root = resolve('dist');
+        const root = resolve(options.staticRoot ?? 'dist');
         let target = resolve(root, `.${decodeURIComponent(path)}`);
         requireValue(target === root || target.startsWith(root + sep), 'Adresă invalidă.', 400);
         if (!extname(target)) target = resolve(root, 'index.html');

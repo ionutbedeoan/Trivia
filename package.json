@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build:netlify": "npm run build && tsx scripts/build-netlify-content.ts",
     "dev": "vite",
     "start": "tsx server/index.ts",
     "server": "tsx watch server/index.ts",
