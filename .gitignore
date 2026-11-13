@@ -6,4 +6,5 @@ dist/
 artifacts/
 data/
 test-results/
+.agents
 playwright-report/

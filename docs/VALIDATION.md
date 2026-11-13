@@ -1,5 +1,15 @@
 # Verificare — 13 noiembrie 2026
 
+## Actualizare: mod normal singur, 200 de întrebări noi, timp și punctaj fixe
+
+Această actualizare înlocuiește regulile istorice despre solo de test, miză și timp configurabil. Au trecut **21 de teste automate**, verificarea TypeScript, buildul de producție și verificarea Prettier. Au trecut **toate cele 6 teste Chrome**, inclusiv partide normale complete cu 1, 2 și 4 participanți, rezultat și revanșă, conturi, editor și verificări responsive.
+
+Testele verifică 40.000 ms per întrebare, expirare exactă, refuzul prelungirii, cronometru care continuă la deconectare, lectură fără cronometru, +100 la corect, −50 la greșit cu scor minim 0, absența unui bonus din payloaduri vechi de miză și salvarea progresului solo. Testul mobil verifică geometria cardului de scor: deasupra întrebării și maximum 290 px lățime. Captura `artifacts/question-mobile.png` a fost inspectată vizual.
+
+Verificarea suplimentară pe serverul real `http://127.0.0.1:5174` a trecut: partidă solo completă cu 12 întrebări, rezultat și revanșă, 16,1 secunde pentru scenariu. Endpointul `/api/health` răspunde corect.
+
+Banca și exportul au **224 de întrebări**: 8 Ușor, 108 Mediu și 108 Dificil. Cele 200 noi au ID-uri Q025–Q224, câte 100 Mediu și Dificil, patru variante distincte, răspuns corect și referință fiecare. Importul este idempotent. Se verifică selecția de 12 grupuri distincte și opt categorii la ambele dificultăți eligibile, în 40 de extrageri pentru fiecare nivel.
+
 ## Flux simplificat: overview unic și rezultat sub răspuns
 
 Conform modificării cerute de utilizator, există un singur overview la început, cu numărătoarea integrată în același card. Nu mai există introduceri la întrebările 5 și 9. Rezultatul corect/greșit, punctajul, explicația și referința se afișează sub variante, păstrând întrebarea și cele patru opțiuni în același card. „Am citit” confirmă lectura înainte de următoarea întrebare; într-un joc de grup se așteaptă toate confirmările. Corectitudinea rămâne ascunsă până la închiderea întrebării.
