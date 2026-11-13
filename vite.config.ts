@@ -23,6 +23,7 @@ function applicationBackend(): Plugin {
 
 export default defineConfig({
   plugins: [applicationBackend()],
-  server: { host: '127.0.0.1' },
-  preview: { host: '127.0.0.1' },
+  // Never silently start an isolated room service on the next available port.
+  server: { host: '0.0.0.0', port: 5174, strictPort: true },
+  preview: { host: '0.0.0.0', port: 4173, strictPort: true },
 });

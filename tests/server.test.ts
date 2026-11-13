@@ -5,6 +5,89 @@ import { createServer } from 'node:http';
 import { WebSocket } from 'ws';
 import { createApplication } from '../server/index';
 import type { EditorialQuestion, SessionInfo, Snapshot } from '../shared/contracts';
+import { invitationOrigin } from '../server/network';
+import type { IncomingMessage } from 'node:http';
+
+test('camera creată local poate fi accesată de o sesiune separată prin IP-ul LAN', async (t) => {
+  const hostAddress = new URL(
+    invitationOrigin({
+      headers: { host: '127.0.0.1' },
+      socket: {},
+    } as IncomingMessage),
+  ).hostname;
+  if (hostAddress === '127.0.0.1') return t.skip('Nu există adaptor LAN IPv4.');
+  const app = createApplication({ dbPath: ':memory:' });
+  const sockets: WebSocket[] = [];
+  try {
+    app.server.listen(0, '0.0.0.0');
+    await once(app.server, 'listening');
+    const port = (app.server.address() as { port: number }).port;
+    const client = async (hostname: string) => {
+      const origin = `http://${hostname}:${port}`;
+      const response = await fetch(origin + '/api/session');
+      const session = (await response.json()) as SessionInfo;
+      const cookie = response.headers.get('set-cookie')!.split(';')[0];
+      return {
+        origin,
+        session,
+        cookie,
+        post: async (path: string, body: unknown) => {
+          const response = await fetch(origin + '/api' + path, {
+            method: 'POST',
+            headers: {
+              Origin: origin,
+              Cookie: cookie,
+              'X-CSRF-Token': session.csrf,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body),
+          });
+          assert.equal(response.status, 200, await response.clone().text());
+          return (await response.json()) as Snapshot;
+        },
+      };
+    };
+    const host = await client('127.0.0.1');
+    const guest = await client(hostAddress);
+    assert.equal(host.session.invitationOrigin, guest.origin);
+    assert.notEqual(host.cookie, guest.cookie);
+    const room = await host.post('/rooms/create', {
+      name: 'Andrei',
+      settings: {
+        capacity: 2,
+        difficulty: 'Mediu',
+        seconds: '40',
+        practice: false,
+      },
+    });
+    const ws = new WebSocket(host.origin.replace('http', 'ws') + '/api/live', {
+      headers: { Cookie: host.cookie, Origin: host.origin },
+    });
+    sockets.push(ws);
+    await once(ws, 'open');
+    const updates: Snapshot[] = [];
+    ws.on('message', (message) => updates.push(JSON.parse(String(message)).snapshot));
+    const joined = await guest.post('/rooms/join', {
+      code: ` ${room.code.toLowerCase()} `,
+      name: 'Elena',
+    });
+    assert.equal(joined.roomId, room.roomId);
+    assert.equal(joined.players.length, 2);
+    for (let i = 0; i < 20 && !updates.some((s) => s?.players.length === 2); i++)
+      await new Promise((resolve) => setTimeout(resolve, 25));
+    assert(updates.some((s) => s?.roomId === room.roomId && s.players.length === 2));
+    await guest.post('/rooms/command', {
+      roomId: room.roomId,
+      action: 'ready',
+      ready: true,
+      operationId: crypto.randomUUID(),
+    });
+    assert.equal(app.game.rooms.get(room.roomId)!.players[1].ready, true);
+  } finally {
+    sockets.forEach((ws) => ws.terminate());
+    await app.close();
+  }
+});
 
 test('serverul integrat se poate opri cu WebSocket activ fără acces la baza deja închisă', async () => {
   const app = createApplication({ dbPath: ':memory:' });

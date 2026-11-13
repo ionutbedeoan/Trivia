@@ -1,5 +1,13 @@
 # Handoff aplicație funcțională
 
+## Actualizare: camere pe dispozitive diferite în LAN
+
+Vite pornește implicit pe `0.0.0.0:5174`, cu port strict, iar preview pe `0.0.0.0:4173`. Serverul de producție pornește pe `0.0.0.0:3001`, configurabil prin `HOST` și `PORT`. Fiecare proces păstrează propriile camere; toate dispozitivele trebuie să folosească aceeași instanță. Au fost identificate procese distincte pe adrese loopback și LAN, inclusiv pe același port 5174. Pentru o partidă locală, deschide adresa IP Wi-Fi pe ambele dispozitive și creează camera din acea adresă.
+
+`server/network.ts` furnizează `SessionInfo.invitationOrigin`: păstrează adresa și portul cererii, iar pentru localhost alege un IP LAN, preferând Wi-Fi și deprioritizând adaptoarele virtuale. Cu mai multe rețele active, deschiderea prin IP-ul accesibil invitaților elimină ambiguitatea. `Copiază linkul` folosește această origine. Comenzile frontend folosesc `crypto.getRandomValues` pentru a funcționa și prin HTTP LAN. Nu s-a introdus sincronizare între procese sau un serviciu nou.
+
+Verificare: 23 de teste automate și toate cele 7 scenarii Chrome au trecut, inclusiv invitație LAN și pregătire pe HTTP. TypeScript, build și Prettier au trecut. Detalii și limite: `VALIDATION.md`; pași de pornire: `../README.md`.
+
 ## Actualizare: mod normal singur, 224 de întrebări și reguli fixe
 
 Această secțiune înlocuiește descrierile istorice despre modul solo de test, timpul configurabil și miză. Interfața permite partide normale cu 1, 2 sau 4 participanți. Progresul partidelor normale se salvează pentru conturi. Cele 200 de întrebări noi sunt Q025–Q224 (100 Mediu și 100 Dificil); importul este idempotent și nu suprascrie editările existente. Documentul complet este `TOATE_INTREBARILE.md`.

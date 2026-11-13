@@ -147,7 +147,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
       matchId: snapshot.matchId,
       index: snapshot.index,
       action,
-      operationId: crypto.randomUUID(),
+      // randomUUID is unavailable on plain HTTP LAN addresses in mobile browsers.
+      operationId: crypto.getRandomValues(new Uint32Array(4)).join('-'),
     });
     setSnapshot((previous) =>
       previous?.roomId === next.roomId && previous.version > next.version ? previous : next,

@@ -218,7 +218,7 @@ export function CreateRoom() {
 export function JoinRoom() {
   const { search, navigate } = useNavigation(),
     { setPreferences, setSnapshot } = useApp();
-  const [code, setCode] = useState(search.get('cod') ?? ''),
+  const [code, setCode] = useState((search.get('cod') ?? '').trim().toUpperCase()),
     [name, setName] = useState(''),
     [error, setError] = useState(''),
     [busy, setBusy] = useState(false);
@@ -252,7 +252,7 @@ export function JoinRoom() {
             minLength={6}
             maxLength={6}
             autoCapitalize="characters"
-            onChange={(e) => setCode(e.target.value.toUpperCase())}
+            onChange={(e) => setCode(e.target.value.trim().toUpperCase())}
           />
           <Field
             label="Pseudonim"
@@ -277,7 +277,7 @@ export function JoinRoom() {
   );
 }
 export function Lobby() {
-  const { snapshot, command, leave, connected } = useApp(),
+  const { session, snapshot, command, leave, connected } = useApp(),
     { navigate, path } = useNavigation();
   const [leaving, setLeaving] = useState(false),
     [error, setError] = useState(''),
@@ -341,7 +341,11 @@ export function Lobby() {
                 <Button
                   variant="secondary"
                   icon="link"
-                  onClick={() => void copy(`${location.origin}/intra?cod=${snapshot.code}`)}
+                  onClick={() =>
+                    void copy(
+                      `${session?.invitationOrigin ?? location.origin}/intra?cod=${snapshot.code}`,
+                    )
+                  }
                 >
                   Copiază linkul
                 </Button>

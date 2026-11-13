@@ -164,7 +164,7 @@ test('răspunsurile sunt private și idempotente; un payload vechi de miză nu s
   assert.doesNotThrow(() => f.command(f.sessions[0], 'answer', { option: 0 }));
   f.storage.db.close();
 });
-test('expirarea dă zero; o greșeală la scor zero nu produce scor negativ', () => {
+test('expirarea dă zero; o greșeală la scor zero produce -50', () => {
   const f = setup();
   f.start();
   f.openRound();
@@ -172,7 +172,7 @@ test('expirarea dă zero; o greșeală la scor zero nu produce scor negativ', ()
   f.command(f.sessions[0], 'answer', { option: wrong, wager: true });
   f.advance(60001);
   assert.equal(f.room.phase, 'explanation');
-  assert.equal(f.room.players[0].score, 0);
+  assert.equal(f.room.players[0].score, -50);
   assert.equal(f.room.players[1].score, 0);
   assert.equal(f.room.players[1].wagerUsed, false);
   assert.throws(() => f.command(f.sessions[1], 'answer', { option: 0, wager: false }), /deschisă/);
@@ -217,15 +217,15 @@ test('40 secunde fixe, fără prelungire, expirare exactă și lectură fără c
   f.storage.db.close();
 });
 
-test('corect +100, greșit -50, scor minim zero și expirare chiar la deconectare', () => {
+test('corect +100, greșit -50 sub zero și expirare chiar la deconectare', () => {
   const f = setup(1);
   f.start();
   f.openRound();
-  for (const [index, expected] of [100, 50, 0, 0].entries()) {
+  for (const [index, expected] of [100, 50, 0, -50].entries()) {
     const q = f.room.questions[index];
     f.command(f.sessions[0], 'answer', { option: index === 0 ? q.correct : (q.correct + 1) % 4 });
     assert.equal(f.room.players[0].score, expected);
-    assert.equal(f.room.history[index].answers[0].delta, index === 0 ? 100 : index === 3 ? 0 : -50);
+    assert.equal(f.room.history[index].answers[0].delta, index === 0 ? 100 : -50);
     f.command(f.sessions[0], 'read');
   }
   const deadline = f.room.deadline;
@@ -233,8 +233,57 @@ test('corect +100, greșit -50, scor minim zero și expirare chiar la deconectar
   f.advance(40000, false);
   assert.equal(f.room.phase, 'explanation');
   assert.equal(f.room.history[4].answers[0].option, null);
-  assert.equal(f.room.players[0].score, 0);
+  assert.equal(f.room.players[0].score, -50);
   assert(deadline !== null);
+  f.storage.db.close();
+});
+
+test('12 greșeli dau -600: feedback, idempotență, clasament negativ și progres salvat', () => {
+  const f = setup();
+  const accounts = ['negative-host', 'negative-guest'].map((name, i) => {
+    const account = f.storage.createAccount(
+      name,
+      ['Andrei', 'Elena'][i],
+      'parola pentru scor negativ',
+    );
+    f.storage.rotate(f.sessions[i], account.id);
+    return account;
+  });
+  f.start();
+  f.openRound();
+  for (let index = 0; index < 12; index++) {
+    const wrong = (f.room.questions[index].correct + 1) % 4;
+    const operation = f.command(f.sessions[0], 'answer', { option: wrong });
+    if (index === 0) f.advance(40000);
+    else f.command(f.sessions[1], 'answer', { option: wrong });
+    f.game.command(f.room, f.sessions[0], operation);
+    const snapshot = f.game.snapshot(f.room, f.sessions[0]);
+    assert.equal(snapshot.players[0].score, -50 * (index + 1));
+    assert.equal(snapshot.reveal!.answers[0].delta, -50);
+    assert.equal(snapshot.reveal!.answers[0].total, -50 * (index + 1));
+    f.sessions.forEach((session) => f.command(session, 'read'));
+  }
+  assert.equal(f.room.phase, 'finished');
+  assert.deepEqual(
+    f.room.players.map((p) => p.score),
+    [-600, -550],
+  );
+  const stored = f.game.storedMatch(f.room.matchId!, f.sessions[0]);
+  assert.equal(stored.players[0].score, -600);
+  assert.deepEqual(f.storage.profile(accounts[0].id), {
+    completed: 1,
+    wins: 0,
+    accuracy: 0,
+    best: -600,
+  });
+  assert.deepEqual(f.storage.profile(accounts[1].id), {
+    completed: 1,
+    wins: 1,
+    accuracy: 0,
+    best: -550,
+  });
+  f.sessions.forEach((session) => f.command(session, 'rematch'));
+  assert(f.room.players.every((p) => p.score === 0));
   f.storage.db.close();
 });
 

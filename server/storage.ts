@@ -90,9 +90,12 @@ export class Storage {
     }
   }
   seedExpansion() {
-    const questions = JSON.parse(
-      readFileSync(new URL('./content/expansion-200.json', import.meta.url), 'utf8'),
-    ) as EditorialQuestion[];
+    const questions = ['expansion-200', 'expansion-200-2'].flatMap(
+      (name) =>
+        JSON.parse(
+          readFileSync(new URL(`./content/${name}.json`, import.meta.url), 'utf8'),
+        ) as EditorialQuestion[],
+    );
     this.db.exec('BEGIN');
     try {
       const insert = this.db.prepare('INSERT OR IGNORE INTO questions VALUES(?,?)');

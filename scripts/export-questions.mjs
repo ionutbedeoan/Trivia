@@ -17,7 +17,7 @@ const lines = [
     .map(([level, count]) => `**${level}: ${count}**`)
     .join(' · '),
   '',
-  'Cele 200 de întrebări noi sunt Q025–Q224: 100 Mediu și 100 Dificil. Starea editorială este afișată individual. Conținutul „În verificare” poate fi folosit în jocul privat, fără a pretinde că a fost aprobat editorial.',
+  'Cele două extinderi sunt Q025–Q224 și Q225–Q424, fiecare cu 100 Mediu și 100 Dificil. Starea editorială este afișată individual. Conținutul „În verificare” poate fi folosit în jocul privat, fără a pretinde că a fost aprobat editorial.',
   '',
 ];
 for (const q of questions) {

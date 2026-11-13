@@ -10,6 +10,7 @@ import { AppError, displayName, requireValue } from './errors';
 import { GameService } from './game';
 import { hash, passwordHash, Storage } from './storage';
 import type { Session } from './storage';
+import { invitationOrigin } from './network';
 
 export function createApplication(options: { dbPath?: string; countdownMs?: number } = {}) {
   const storage: Storage = new Storage(options.dbPath ?? process.env.DB_PATH ?? 'data/game.sqlite');
@@ -133,6 +134,7 @@ export function createApplication(options: { dbPath?: string; countdownMs?: numb
           csrf: session.csrf,
           user: storage.user(session),
           roomId: game.active(session)?.id ?? null,
+          invitationOrigin: invitationOrigin(req),
         });
         return;
       }
@@ -441,8 +443,10 @@ function validateQuestion(
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const app = createApplication();
   const port = Number(process.env.PORT ?? 3001);
-  app.server.listen(port, process.env.HOST ?? '127.0.0.1', () =>
-    console.log(`Joc disponibil: http://${process.env.HOST ?? '127.0.0.1'}:${port}`),
+  app.server.listen(port, process.env.HOST ?? '0.0.0.0', () =>
+    console.log(
+      `Joc disponibil pe portul ${port}. Folosește aceeași adresă IP și același port pe toate dispozitivele.`,
+    ),
   );
   process.on('SIGTERM', () => void app.close());
   process.on('SIGINT', () => void app.close());

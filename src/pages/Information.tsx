@@ -34,7 +34,7 @@ export function Rules() {
           </section>
           <Card>
             <h2 id="scor">Scorul</h2>
-            <p>Fiecare întrebare valorează 100 de puncte. Scorul nu scade sub 0.</p>
+            <p>Un răspuns corect aduce 100 de puncte. Scorul poate scădea sub 0.</p>
             <div className="rules-grid">
               <table>
                 <thead>
@@ -46,7 +46,7 @@ export function Rules() {
                 <tbody>
                   {[
                     ['Corect', '+100'],
-                    ['Greșit', '−50 (minimum 0 total)'],
+                    ['Greșit', '−50'],
                     ['Fără răspuns', '0'],
                   ].map(([label, points]) => (
                     <tr key={label}>
@@ -60,7 +60,8 @@ export function Rules() {
                 <strong>Exemplu</strong>
                 <p>
                   După un răspuns corect ai 100 de puncte. Un răspuns greșit scade scorul la 50, iar
-                  următorul răspuns greșit îl scade la 0.
+                  următorul răspuns greșit îl scade la 0. Încă unul îl duce la −50. Cu 12 răspunsuri
+                  greșite termini cu −600 de puncte.
                 </p>
               </Notice>
             </div>

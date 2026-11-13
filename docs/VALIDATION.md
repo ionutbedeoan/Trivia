@@ -1,5 +1,17 @@
 # Verificare — 13 noiembrie 2026
 
+## Reparație: acces la camere din rețeaua locală
+
+Problema a fost reprodusă pe instanțele active: camera creată prin `127.0.0.1:5173` nu era găsită prin IP-ul Wi-Fi pe portul 5174. La verificarea ulterioară, camera creată prin `192.168.1.9:5174` putea fi accesată prin `192.168.56.1:5174`, dar nu prin `127.0.0.1:5174`: adresele loopback și LAN ajungeau la procese diferite. Camerele de diagnostic au fost părăsite după verificare.
+
+Pornirea Vite folosește acum portul 5174, ascultare LAN și `strictPort`; preview folosește portul fix 4173. Linkul de invitație dintr-o pagină localhost folosește IP-ul LAN, preferând Wi-Fi. Identificatorii operațiilor folosesc `crypto.getRandomValues`, disponibil și pe HTTP LAN. Codurile sunt normalizate la intrare, iar eroarea indică posibilitatea unui server diferit.
+
+Au trecut 23 de teste automate, fără teste omise, TypeScript, buildul de producție și verificarea Prettier. Buildul a necesitat rulare în afara sandboxului, deoarece esbuild nu putea citi directoarele părinte. Pornirea cu baza în memorie și portul 5174 deja ocupat a fost refuzată explicit, fără alegerea unui alt port.
+
+Au trecut toate cele 7 teste Chrome, folosind serverul izolat cu baza în memorie și `E2E_BASE_URL=http://127.0.0.1:3100`. Scenariul nou deschide invitația într-o sesiune separată la IP-ul LAN, verifică intrarea și sincronizarea pregătirii într-un context HTTP nesecurizat. Prima rulare a identificat un selector ambiguu în test; după corectare, scenariul a trecut separat și în suita completă. Testarea folosește browsere pe calculator și viewport de telefon; nu reprezintă o verificare pe telefonul fizic al utilizatorului.
+
+Instanțele utilizatorului nu au fost oprite. Pentru folosire imediată, ambele dispozitive trebuie să deschidă aceeași adresă Wi-Fi și același port, apoi să creeze o cameră nouă. Oprirea instanțelor vechi și repornirea uneia singure activează configurația stabilă; camerele existente în memorie nu migrează între procese.
+
 ## Actualizare: mod normal singur, 200 de întrebări noi, timp și punctaj fixe
 
 Această actualizare înlocuiește regulile istorice despre solo de test, miză și timp configurabil. Au trecut **21 de teste automate**, verificarea TypeScript, buildul de producție și verificarea Prettier. Au trecut **toate cele 6 teste Chrome**, inclusiv partide normale complete cu 1, 2 și 4 participanți, rezultat și revanșă, conturi, editor și verificări responsive.

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 127.0.0.1",
+    "dev": "vite",
     "start": "tsx server/index.ts",
     "server": "tsx watch server/index.ts",
     "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.server.json",
@@ -17,7 +17,7 @@
     "format": "prettier --write src server shared tests scripts vite.config.ts playwright.config.ts tsconfig*.json package.json",
     "format:check": "prettier --check src server shared tests scripts vite.config.ts playwright.config.ts tsconfig*.json package.json",
     "build": "npm run typecheck && vite build",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.2.0",

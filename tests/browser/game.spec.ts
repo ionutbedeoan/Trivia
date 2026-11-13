@@ -4,6 +4,53 @@ const root = process.env.E2E_BASE_URL ?? 'http://127.0.0.1:3100';
 async function waitForConnection(page: Page) {
   await expect(page.getByText('Se conectează la server…')).toHaveCount(0);
 }
+test('invitație de pe calculator: telefon prin IP LAN, intrare și pregătire pe HTTP', async ({
+  browser,
+}) => {
+  const hostContext = await browser.newContext();
+  const guestContext = await browser.newContext({ viewport: { width: 390, height: 844 } });
+  try {
+    const host = await hostContext.newPage();
+    await host.goto(root + '/creeaza');
+    await waitForConnection(host);
+    const session = await host.evaluate(async () => (await fetch('/api/session')).json());
+    test.skip(session.invitationOrigin === new URL(root).origin, 'Nu există adresă LAN distinctă.');
+    await host.getByLabel('Pseudonim', { exact: true }).fill('Andrei');
+    await host.getByRole('button', { name: 'Creează camera', exact: true }).click();
+    const code = await host.getByTestId('room-code').textContent();
+    // Capture the same URL used by the copy button, without touching the OS clipboard.
+    await host.evaluate(() => {
+      Object.defineProperty(navigator, 'clipboard', {
+        configurable: true,
+        value: {
+          writeText: async (value: string) => {
+            document.documentElement.dataset.invitation = value;
+          },
+        },
+      });
+    });
+    await host.getByRole('button', { name: 'Copiază linkul' }).click();
+    const invitation = await host.locator('html').getAttribute('data-invitation');
+    expect(invitation).toBe(`${session.invitationOrigin}/intra?cod=${code}`);
+    const guest = await guestContext.newPage();
+    const errors: string[] = [];
+    guest.on('pageerror', (error) => errors.push(error.message));
+    await guest.goto(invitation!);
+    await waitForConnection(guest);
+    expect(await guest.evaluate(() => window.isSecureContext)).toBe(false);
+    await guest.getByLabel('Pseudonim', { exact: true }).fill('Elena');
+    await guest.getByRole('button', { name: 'Intră', exact: true }).click();
+    await expect(guest.getByTestId('room-code')).toHaveText(code!);
+    await guest.getByLabel('Sunt pregătit', { exact: true }).check();
+    await expect(host.getByRole('status').filter({ hasText: 'sunt pregătiți.' })).toHaveText(
+      '1 din 2 sunt pregătiți.',
+    );
+    expect(errors).toEqual([]);
+  } finally {
+    await hostContext.close();
+    await guestContext.close();
+  }
+});
 for (const capacity of [1, 2, 4])
   test(`${capacity} browsere: lobby → 12 întrebări → rezultat → revanșă`, async ({ browser }) => {
     const contexts: BrowserContext[] = [],
@@ -199,7 +246,7 @@ test('editor: acces, filtrare, editare, salvare și persistență', async ({ pag
   await page.getByRole('button', { name: 'Conectează-te', exact: true }).click();
   await expect(page).toHaveURL(/\/profil/);
   await page.goto(`${root}/admin/intrebari`);
-  await expect(page.locator('.editor-list-row')).toHaveCount(224);
+  await expect(page.locator('.editor-list-row')).toHaveCount(424);
   await page.getByLabel('Stare', { exact: true }).selectOption('Publicat');
   await expect(page.getByRole('heading', { name: 'Niciun rezultat' })).toBeVisible();
   await page.getByRole('button', { name: 'Resetează filtrele' }).click();

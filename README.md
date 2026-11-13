@@ -12,7 +12,7 @@ npm start
 
 Deschide **http://127.0.0.1:3001**. Serverul livrează aplicația și API-ul la aceeași adresă. Baza locală `data/game.sqlite` se creează automat. Nu există cont sau parolă implicită.
 
-Pentru dezvoltare, `npm run dev` pornește Vite cu API-ul și WebSocket integrate la aceeași adresă, implicit **http://127.0.0.1:5173**. Nu este necesar un al doilea proces pentru backend. Pentru adresa folosită în VS Code: `npm run dev -- --port 5174 --strictPort`, apoi **http://127.0.0.1:5174**. Și `npm run preview` include API-ul.
+Pentru dezvoltare, `npm run dev` pornește Vite cu API-ul și WebSocket integrate la aceeași adresă, implicit **http://127.0.0.1:5174**, accesibil și prin IP-ul calculatorului în rețeaua locală. Dacă portul este ocupat, pornirea eșuează în loc să creeze un server separat pe alt port. Nu este necesar un al doilea proces pentru backend. Și `npm run preview` include API-ul, pe portul fix 4173.
 
 ## O partidă completă
 
@@ -72,6 +72,10 @@ Copiile mai vechi pot conține date șterse ulterior; cererile de ștergere treb
 
 ## Acces din rețeaua locală
 
-Pentru testarea ca invitat pe alte dispozitive, rulează buildul, setează `$env:HOST = '0.0.0.0'`, apoi `npm start`; folosește adresa IP a calculatorului și portul 3001 pe toate dispozitivele. Firewall-ul trebuie să permită accesul. `localhost` pe telefon desemnează telefonul. Folosirea conturilor reale pe o rețea partajată necesită HTTPS la aceeași origine și `COOKIE_SECURE=1`. Publicarea pe internet nu este configurată prin această implementare.
+Pornește **un singur server**: `npm run dev` pe portul 5174 sau buildul cu `npm start` pe portul 3001. Ambele ascultă implicit pe `0.0.0.0`; `HOST` poate restrânge serverul de producție. Folosește aceeași adresă IP și același port pe toate dispozitivele. De exemplu, dacă IP-ul Wi-Fi este `192.168.1.9`, deschide `http://192.168.1.9:5174` și pe calculator, și pe telefon. Fiecare proces are camere separate; nu combina porturile 5173/5174/3001.
+
+După această actualizare, oprește instanțele vechi cu Ctrl+C în terminalele lor, pornește o singură instanță și creează o cameră nouă. **Copiază linkul** păstrează serverul și portul; pentru o pagină deschisă prin localhost, folosește automat IP-ul LAN, preferând adaptorul Wi-Fi. Cu mai multe rețele active, deschide aplicația prin IP-ul accesibil telefonului înainte de a copia invitația.
+
+Firewall-ul trebuie să permită accesul. `localhost` pe telefon desemnează telefonul. Folosirea conturilor reale pe o rețea partajată necesită HTTPS la aceeași origine și `COOKIE_SECURE=1`. Publicarea pe internet nu este configurată prin această implementare.
 
 Detalii: [handoff tehnic](docs/FULLSTACK_HANDOFF.md).

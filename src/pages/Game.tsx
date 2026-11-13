@@ -116,7 +116,7 @@ export function Game() {
             pe întrebare
           </p>
           <Notice>
-            <strong>Corect +100 · Greșit −50 · Scor minim 0</strong>
+            <strong>Corect +100 · Greșit −50 · Scorul poate fi negativ</strong>
           </Notice>
           <div className="narrow stack">
             {s.phase === 'countdown' ? (
@@ -264,7 +264,7 @@ function QuestionPanel({ snapshot: s }: { snapshot: Snapshot }) {
         {!reveal && (
           <>
             <div className="answer-actions">
-              <small>Corect +100 · Greșit −50 · Minimum 0</small>
+              <small>Corect +100 · Greșit −50 · Scorul poate fi negativ</small>
               <Button
                 disabled={blocked || answer === null}
                 onClick={() => void run('answer', { option: answer })}

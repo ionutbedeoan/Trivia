@@ -1,0 +1,222 @@
+# Q225–Q424. Format identic cu expansion-200.txt; 100 Mediu și 100 Dificil.
+# Întrebări și explicații originale; referințele indică pasajul pentru revizuirea editorială.
+@Geneza|geneza|28|iacob-vis-betel
+M|Personaje|1,2|La care rudă l-a trimis Isaac pe Iacob să-și caute o soție?|Laban|Lot|Ismael|Esau|Laban era fratele mamei lui Iacob.
+M|Geografie|10|Spre ce oraș călătorea Iacob când a avut visul cu scara?|Haran|Memfis|Ierihon|Ninive|Iacob plecase din Beer-Șeba spre Haran.
+M|Detalii și obiecte|11|Ce a folosit Iacob pentru a-și sprijini capul în acea noapte?|O piatră|Un scut|Un sac cu grâu|O pernă de lână|Piatra i-a servit drept sprijin în timpul somnului.
+M|Evenimente|12|Cine urca și cobora pe scara văzută de Iacob?|Îngerii lui Dumnezeu|Frații lui Iacob|Regii Canaanului|Păstorii lui Laban|Visul arăta îngeri deplasându-se între pământ și cer.
+M|Învățături|15|Ce asigurare despre călătorie a primit Iacob de la Iehova?|Că îl va ocroti|Că nu va mai călători|Că va deveni faraon|Că nu va întâlni rude|Promisiunea includea ocrotirea și întoarcerea în țară.
+D|Istorie|19|Cum se numea anterior cetatea numită de Iacob Betel?|Luz|Ai|Dan|Sihem|Betel a înlocuit numele anterior, Luz.
+D|Detalii și obiecte|18|Ce a turnat Iacob peste piatra ridicată ca stâlp?|Ulei|Vin|Lapte|Apă sărată|Dimineața, Iacob a turnat ulei pe piatră.
+D|Cronologie|18|Când a ridicat Iacob piatra ca stâlp după vis?|Dimineața devreme|După șapte zile|În seara următoare|La întoarcerea din Egipt|El a acționat devreme, după noaptea visului.
+D|Învățături|22|Ce parte din bunurile primite a promis Iacob să-i dea lui Dumnezeu?|O zecime|O jumătate|O treime|Două treimi|Legământul său personal includea oferirea unei zecimi.
+D|Personaje|9|Cu a cui fiică s-a căsătorit Esau în Geneza 28?|Ismael|Laban|Betuel|Abimelec|Mahalata, noua lui soție, era fiica lui Ismael.
+@Geneza|geneza|37|iosif-vandut-frati
+M|Detalii și obiecte|3|Ce veșmânt deosebit a primit Iosif de la tatăl său?|O tunică|O mantie regală|O armură|Un veșmânt preoțesc|Darul tatălui său era o tunică deosebită.
+M|Evenimente|7|Ce făceau snopii fraților în primul vis povestit de Iosif?|Se plecau înaintea snopului lui|Ardeau pe câmp|Pluteau pe apă|Erau mâncați de vite|Visul prezenta snopii fraților plecându-se înaintea celui al lui Iosif.
+M|Personaje|21,22|Care frate a încercat să-l salveze pe Iosif pentru a-l duce acasă?|Ruben|Simeon|Levi|Beniamin|Ruben urmărea să-l întoarcă în siguranță la tatăl său.
+M|Geografie|28|În ce țară l-au dus negustorii pe Iosif?|Egipt|Asiria|Moab|Persia|Vânzarea l-a dus pe Iosif departe, în Egipt.
+M|Viața cotidiană|2|Cu ce activitate se ocupa Iosif alături de frații săi?|Păstoritul oilor|Construcția de corăbii|Prelucrarea fierului|Pescuitul pe mare|La începutul relatării, Iosif păzea oile.
+D|Cronologie|2|Ce vârstă avea Iosif la începutul relatării din Geneza 37?|17 ani|20 de ani|30 de ani|12 ani|Capitolul precizează că Iosif avea șaptesprezece ani.
+D|Detalii și obiecte|9|Câte stele apăreau în al doilea vis al lui Iosif?|11|12|7|10|Soarele și luna erau însoțite de unsprezece stele.
+D|Geografie|17|Unde și-a găsit Iosif frații după ce plecaseră de lângă Sihem?|Dotan|Betel|Hebron|Beer-Șeba|Un om l-a îndrumat pe Iosif spre Dotan.
+D|Istorie|28|Pentru câți arginți a fost vândut Iosif negustorilor?|20|30|50|100|Relatarea consemnează prețul de douăzeci de arginți.
+D|Personaje|36|Cine l-a cumpărat pe Iosif în Egipt?|Potifar|Nebucadnețar|Haman|Abner|Potifar era un demnitar al faraonului.
+@Exodul|exodul|2|moise-copilarie-madian
+M|Personaje|5,6|Cine a găsit coșul în care era pruncul Moise?|Fiica faraonului|Soția faraonului|Soția lui Aaron|Fiica lui Ietro|Fiica faraonului a observat coșul între trestii.
+M|Geografie|3|Pe malul cărui fluviu a fost așezat coșul lui Moise?|Nil|Eufrat|Tigru|Iordan|Mama a așezat coșul în vegetația de lângă Nil.
+M|Personaje|7,8|Pe cine a adus sora lui Moise ca doică pentru copil?|Pe mama copilului|Pe o slujitoare canaanită|Pe fiica unui preot|Pe o femeie din Moab|Astfel, mama lui Moise a putut să-l îngrijească.
+M|Geografie|15|În ce țară s-a refugiat Moise când faraonul voia să-l ucidă?|Madian|Babilon|Filistia|Edom|Moise a fugit din Egipt în Madian.
+M|Evenimente|17|Cum le-a ajutat Moise pe fiicele preotului din Madian?|Le-a apărat și le-a adăpat turma|Le-a construit o cetate|Le-a cumpărat pământ|Le-a oferit o corabie|Moise a intervenit împotriva păstorilor care le alungau.
+D|Cronologie|2|Cât timp și-a ascuns mama lui Moise copilul după naștere?|Trei luni|Șapte zile|Un an|Patruzeci de zile|Copilul a fost ascuns în primele trei luni.
+D|Detalii și obiecte|3|Din ce material vegetal era făcut coșul lui Moise?|Papirus|Cedru|Viță-de-vie|Palmier|Coșul de papirus a fost impermeabilizat înainte de folosire.
+D|Istorie|1|Din ce trib proveneau părinții lui Moise?|Levi|Iuda|Efraim|Beniamin|Ambii părinți sunt identificați ca leviți.
+D|Viața cotidiană|16|Câte fiice avea preotul din Madian întâlnit de Moise?|Șapte|Trei|Cinci|Douăsprezece|Cele șapte fiice veniseră să adape turma.
+D|Personaje|22|Cum și-a numit Moise fiul născut în Madian?|Gherșom|Eleazar|Fineas|Nadab|Numele amintea de viața lui într-o țară străină.
+@Exodul|exodul|3|moise-rug-aprins
+M|Evenimente|2|Ce era neobișnuit la tufa văzută de Moise?|Ardea fără să fie mistuită|Se deplasa pe nisip|Era acoperită cu zăpadă|Plutea deasupra muntelui|Focul nu consuma tufa, atrăgând atenția lui Moise.
+M|Detalii și obiecte|5|Ce trebuia Moise să-și scoată înainte de a se apropia?|Sandalele|Mantia|Brâul|Turbanul|Locul era sfânt, de aceea trebuia să-și scoată sandalele.
+M|Personaje|10|La ce conducător urma să fie trimis Moise?|Faraon|Cirus|Saul|Irod|Misiunea privea eliberarea israeliților aflați în Egipt.
+M|Învățături|7|Ce arăta Iehova că observase despre israeliți?|Suferința lor|Bogăția lor|Flota lor|Palatele lor|Mesajul sublinia că Dumnezeu cunoștea necazul poporului.
+M|Geografie|1|La ce munte a ajuns Moise cu turma când a văzut tufa?|Horeb|Tabor|Carmel|Ghilboa|Întâlnirea este localizată la muntele Horeb.
+D|Viața cotidiană|1|A cui turmă o păzea Moise înaintea chemării sale?|A socrului său Ietro|A fratelui său Aaron|A faraonului|A lui Caleb|Moise lucra ca păstor pentru socrul său.
+D|Învățături|12|Ce promisiune i-a dat Dumnezeu lui Moise când acesta s-a îndoit de sine?|Că va fi cu el|Că faraonul îl va adopta|Că nu va vorbi niciodată|Că va rămâne în Madian|Sprijinul divin răspundea îngrijorării lui Moise.
+D|Cronologie|18|Câte zile trebuia să dureze călătoria în pustiu cerută faraonului?|Trei|Șapte|Zece|Patruzeci|Cererea transmisă faraonului menționa o călătorie de trei zile.
+D|Personaje|16|Pe cine trebuia Moise să-i adune mai întâi dintre israeliți?|Bătrânii|Numai copiii|Doar soldații|Negustorii egipteni|Bătrânii urmau să primească mesajul despre eliberare.
+D|Detalii și obiecte|22|Ce metale prețioase sunt menționate în lucrurile cerute egiptenilor?|Argint și aur|Aramă și fier|Plumb și cositor|Fier și argint|Pe lângă haine, sunt amintite obiecte de argint și aur.
+@Exodul|exodul|18|ietro-sfat-judecatori
+M|Personaje|1|Ce legătură de familie avea Ietro cu Moise?|Era socrul lui|Era fratele lui|Era nepotul lui|Era unchiul lui|Ietro era tatăl soției lui Moise.
+M|Istorie|13,14|Ce făcea Moise pentru popor când Ietro i-a observat munca?|Judeca neînțelegerile|Număra vitele|Construia o corabie|Instruia muzicieni|Oamenii veneau la Moise cu problemele lor.
+M|Învățături|17,18|Ce pericol vedea Ietro în felul în care lucra Moise?|Epuizarea lui și a poporului|Lipsa lemnelor|O invazie navală|Pierderea unei coroane|Povara era prea mare pentru un singur om.
+M|Învățături|21,22|Ce soluție i-a recomandat Ietro lui Moise?|Să împartă responsabilitatea cu oameni capabili|Să nu mai asculte pe nimeni|Să desființeze toate legile|Să trimită poporul în Egipt|Delegarea permitea rezolvarea multor cazuri fără suprasolicitare.
+M|Evenimente|24|Cum a reacționat Moise la sfatul socrului său?|L-a pus în practică|L-a respins cu mânie|L-a ignorat|L-a ascuns de popor|Moise a ascultat și a aplicat sfatul primit.
+D|Personaje|2|Cum se numea soția lui Moise adusă de Ietro?|Sefora|Rebeca|Mical|Lea|Ietro a venit împreună cu Sefora și copiii.
+D|Personaje|4|Care fiu al lui Moise avea un nume legat de ajutorul lui Dumnezeu?|Eliezer|Gherșom|Manase|Absalom|Numele Eliezer amintea de ajutorul primit de Moise.
+D|Cronologie|13|Cât timp stătea poporul înaintea lui Moise pentru judecată?|De dimineață până seara|Doar o oră noaptea|Numai la amiază|Doar în timpul sabatului|Durata arăta cât de apăsătoare devenise sarcina.
+D|Istorie|21|Peste ce grupuri urmau să fie numiți conducătorii recomandați de Ietro?|Mii, sute, cincizeci și zeci|Sute, douăzeci și cinci|Doar mii și cinci|Doar șapte și doisprezece|Organizarea prevedea patru mărimi diferite de grupuri.
+D|Învățături|22,26|Ce fel de cazuri trebuiau aduse în continuare lui Moise?|Cele dificile|Doar cele despre hrană|Toate cele minore|Doar cele ale păstorilor|Cazurile simple puteau fi rezolvate de ceilalți judecători.
+@Iosua|iosua|6|ierihon-ziduri-cadere
+M|Cronologie|3|Câte zile trebuiau israeliții să înconjoare Ierihonul o singură dată pe zi?|Șase|Trei|Zece|Douăsprezece|Primele șase zile aveau același program de marș.
+M|Evenimente|20|Ce s-a întâmplat cu zidul Ierihonului după strigătul poporului?|S-a prăbușit|A fost înălțat|S-a acoperit cu apă|A rămas intact|Căderea zidului a permis intrarea israeliților în cetate.
+M|Detalii și obiecte|4|Ce obiect sacru era purtat în procesiunea din jurul Ierihonului?|Arca legământului|Masa pâinilor|Altarul de tămâie|Bazinul de aramă|Arca era însoțită de preoți și de trupe.
+M|Învățături|10|Ce trebuia poporul să evite până la semnalul lui Iosua?|Să strige|Să meargă|Să se întoarcă în tabără|Să-i urmeze pe preoți|Poporul trebuia să păstreze tăcerea până la poruncă.
+M|Evenimente|24|Ce au făcut israeliții cetății după cucerire?|Au ars-o|Au mutat-o în pustiu|Au inundat-o|Au transformat-o în port|Cetatea a fost distrusă prin foc.
+D|Personaje|4,6|Câți preoți trebuiau să poarte coarne înaintea arcei?|Șapte|Doi|Zece|Doisprezece|Fiecărui preot îi revenea câte un corn.
+D|Cronologie|15|De câte ori a fost înconjurată cetatea în ziua a șaptea?|De șapte ori|De șase ori|O singură dată|De trei ori|Programul ultimei zile era diferit de cel precedent.
+D|Detalii și obiecte|4|Din ce proveneau coarnele purtate de cei șapte preoți?|Din berbeci|Din fildeș|Din argint|Din lemn de cedru|Instrucțiunea menționează coarne de berbec.
+D|Istorie|19|Unde trebuiau duse metalele prețioase și obiectele metalice rezervate din Ierihon?|În tezaurul lui Iehova|În palatul faraonului|În casa fiecărui soldat|Într-o corabie feniciană|Obiectele rezervate nu erau pradă pentru folosire personală.
+D|Personaje|22|Cui i-a încredințat Iosua scoaterea lui Rahab și a familiei ei?|Celor doi cercetași|Lui Aaron și Moise|Lui Saul și Ionatan|Preoților din Egipt|Cercetașii trebuiau să respecte promisiunea făcută lui Rahab.
+@Judecătorii|judecatorii|4|debora-barac-sisera
+M|Personaje|4|Ce femeie era profetesă și judecătoare în Israel pe vremea lui Barac?|Debora|Estera|Rut|Abigail|Debora îi îndruma pe israeliții care veneau la judecată.
+M|Personaje|2|Cum se numea comandantul armatei regelui Iabin?|Sisera|Abner|Ioab|Naaman|Sisera conducea armata puterii care asuprea Israelul.
+M|Geografie|6|Pe ce munte trebuia Barac să-și adune oamenii?|Tabor|Horeb|Nebo|Carmel|Porunca îl îndrepta pe Barac spre muntele Tabor.
+M|Evenimente|15|Cum a fugit Sisera după ce a coborât din car?|Pe jos|Cu o corabie|Pe un elefant|Într-o litieră|Comandantul și-a abandonat carul și a fugit pe jos.
+M|Învățături|8|Ce condiție a pus Barac pentru a merge la luptă?|Să meargă Debora cu el|Să primească o coroană|Să fie ales rege|Să fie înlocuiți toți soldații|Barac a cerut prezența Deborei alături de el.
+D|Istorie|3|Câte care de război cu coase de fier avea Iabin?|900|300|600|1200|Puterea militară includea nouă sute de care.
+D|Cronologie|3|Câți ani îi asuprise Iabin pe israeliți?|20|7|40|12|Apăsarea durase douăzeci de ani înaintea eliberării.
+D|Geografie|5|Între ce două localități se afla palmierul Deborei?|Rama și Betel|Dan și Beer-Șeba|Ierihon și Ai|Hebron și Gaza|Acolo veneau israeliții pentru judecată.
+D|Viața cotidiană|19|Ce băutură i-a oferit Iael lui Sisera când el a cerut apă?|Lapte|Vin|Suc de rodii|Bere|Iael a deschis un burduf cu lapte.
+D|Detalii și obiecte|21|Ce obiect de cort a folosit Iael împotriva lui Sisera?|Un țăruș|O funie|O perdea|Un vas|Relatarea menționează un țăruș și un ciocan.
+@1 Samuel|1-samuel|3|samuel-chemat-noapte
+M|Personaje|4,5|La cine a alergat Samuel când a auzit prima chemare?|Eli|Saul|David|Natan|Samuel credea că Eli îl chemase.
+M|Evenimente|8|Cine și-a dat seama că Iehova îl chema pe Samuel?|Eli|Hofni|Fineas|Elcana|Eli a înțeles cine îl chema pe băiat.
+M|Învățături|10|Ce atitudine a exprimat Samuel când a răspuns chemării divine?|Disponibilitatea de a asculta|Dorința de a fugi|Refuzul de a sluji|Interesul pentru o răsplată|Răspunsul său arăta că era gata să asculte.
+M|Evenimente|18|Cât din mesajul primit i-a spus Samuel lui Eli?|Tot mesajul|Doar începutul|Doar partea plăcută|Nimic|Samuel nu i-a ascuns niciun amănunt.
+M|Geografie|21|În ce localitate i se revela Iehova lui Samuel?|Șilo|Betleem|Nazaret|Ghibeon|Șilo era locul revelațiilor menționate în încheierea capitolului.
+D|Istorie|1|Cum era descris cuvântul lui Iehova în zilele copilăriei lui Samuel?|Era rar|Era vestit zilnic în fiecare cetate|Era necunoscut numai egiptenilor|Era scris exclusiv pentru regi|Viziunile nu erau frecvente în acea perioadă.
+D|Detalii și obiecte|3|Ce lumină nu se stinsese încă atunci când Samuel era culcat?|Lampa lui Dumnezeu|O făclie de război|Un foc de pe munte|O lampă de corabie|Menționarea lămpii situează împrejurările chemării nocturne.
+D|Cronologie|8|După a câta chemare a înțeles Eli cine îl striga pe Samuel?|A treia|Prima|A șaptea|A zecea|Samuel venise deja de trei ori la Eli.
+D|Viața cotidiană|15|Ce a deschis Samuel dimineața după noaptea chemării?|Ușile casei lui Iehova|Porțile Ierihonului|Ferestrele palatului|Depozitele de grâu|Samuel și-a continuat slujirea obișnuită dimineața.
+D|Învățături|13|Ce omisiune a lui Eli este menționată în judecata asupra casei lui?|Nu și-a mustrat fiii|Nu a construit un palat|Nu a numărat poporul|Nu a adunat o armată|Eli cunoștea purtarea fiilor, dar nu intervenise cum trebuia.
+@1 Samuel|1-samuel|25|abigail-impiedica-razbunare
+M|Personaje|3|Cum se numea soțul Abigailei înainte ca ea să devină soția lui David?|Nabal|Saul|Urie|Abner|Nabal este prezentat în contrast cu discernământul soției sale.
+M|Viața cotidiană|4|Ce activitate desfășura Nabal când David a trimis oameni la el?|Tunderea oilor|Seceratul grâului|Construirea unui templu|Pescuitul pe lac|Cererea lui David a venit în timpul tunsului oilor.
+M|Evenimente|18,19|Ce a pregătit Abigail pentru David și oamenii lui?|Provizii de hrană|Arme noi|O coroană|Un tribut de cai|Ea a plecat cu hrană pentru a preveni conflictul.
+M|Învățături|32,33|Pentru ce a lăudat-o David pe Abigail?|L-a oprit să se răzbune|L-a ajutat să ia tronul imediat|I-a promis o armată|I-a ascuns identitatea|Intervenția ei l-a ferit de vărsare de sânge.
+M|Detalii și obiecte|20|Pe ce animal călătorea Abigail când l-a întâlnit pe David?|Un măgar|Un cal|O cămilă|Un catâr regal|Abigail a coborât în grabă de pe măgar.
+D|Istorie|2|Câte oi avea Nabal, potrivit descrierii averii sale?|3000|1000|7000|500|Averea lui includea trei mii de oi.
+D|Personaje|5|Câți tineri a trimis David inițial la Nabal?|Zece|Doi|Patruzeci|Șapte|David le-a dat celor zece un mesaj pașnic.
+D|Evenimente|13|Câți oameni au rămas cu bagajele când David a pornit spre Nabal?|200|400|600|100|Aproximativ patru sute au plecat, iar două sute au rămas.
+D|Detalii și obiecte|18|Câte pâini a luat Abigail pentru darul dus lui David?|200|100|50|20|Pâinile făceau parte dintr-un dar mai amplu de hrană.
+D|Învățături|15,16|Cu ce au comparat slujitorii protecția oferită de oamenii lui David?|Cu un zid ocrotitor|Cu un jug greu|Cu o capcană|Cu o furtună|Ei mărturiseau că păstorii și turmele fuseseră apărați.
+@1 Regi|1-regi|3|solomon-intelepciune-judecata
+M|Învățături|9|Ce a cerut Solomon pentru a putea judeca poporul?|O inimă ascultătoare și discernământ|O armată mai mare|Moartea tuturor vecinilor|Mai mult aur|Cererea urmărea îndeplinirea responsabilității de conducător.
+M|Cronologie|5|Când a avut Solomon visul în care Dumnezeu i-a vorbit la Ghibeon?|Noaptea|La amiază|În timpul unei bătălii|În timpul unei călătorii pe mare|Iehova i s-a arătat într-un vis nocturn.
+M|Istorie|16|Câte femei au venit înaintea lui Solomon cu disputa despre copil?|Două|Trei|Șapte|Zece|Fiecare pretindea că pruncul viu îi aparținea.
+M|Învățături|26|Ce a cerut adevărata mamă când viața copilului a fost amenințată?|Să fie dat celeilalte femei viu|Să fie ascuns în palat|Să fie trimis în Egipt|Să fie vândut|Ea a pus viața copilului înaintea propriei revendicări.
+M|Evenimente|27|Cui i-a încredințat Solomon copilul după ce a văzut reacțiile femeilor?|Mamei care ceruse să fie cruțat|Celei care acceptase împărțirea|Unei slujitoare a palatului|Unui judecător din alt oraș|Compasiunea a dezvăluit cine era mama copilului.
+D|Geografie|4,5|Unde se afla Solomon când a primit promisiunea unei înțelepciuni deosebite?|Ghibeon|Samaria|Hebron|Dotan|Solomon venise la locul de închinare din Ghibeon.
+D|Istorie|4|Câte ofrande arse a adus Solomon pe altarul din Ghibeon?|1000|100|70|12|Numărul ofrandelor este precizat înaintea relatării visului.
+D|Detalii și obiecte|24|Ce obiect a cerut Solomon în timpul disputei despre copil?|O sabie|O balanță|Un sigiliu|Un vas cu apă|Cererea a pregătit proba reacțiilor celor două femei.
+D|Cronologie|18|La câte zile după prima femeie a născut și cealaltă?|Trei zile|Șapte zile|Zece zile|Patruzeci de zile|Mărturia descrie nașterile la un interval de trei zile.
+D|Învățături|14|De ce condiție era legată promisiunea unei vieți lungi pentru Solomon?|Să respecte poruncile lui Dumnezeu|Să construiască mai multe grajduri|Să nu părăsească niciodată palatul|Să adune tribut din toate țările|Promisiunea presupunea ascultare, după exemplul tatălui său.
+@1 Regi|1-regi|17|ilie-cherit-vaduva
+M|Evenimente|1|Ce lipsă a anunțat Ilie înaintea lui Ahab?|Lipsa ploii și a rouăi|Lipsa luminii soarelui|Lipsa apei mării|Lipsa zăpezii pe orice munte|Anunțul profetului privea o perioadă de secetă.
+M|Personaje|4,6|Ce păsări îi aduceau hrană lui Ilie lângă pârâu?|Corbi|Porumbei|Vulturi|Prepelițe|Corbii îi aduceau în mod repetat hrană.
+M|Evenimente|7|De ce a secat pârâul lângă care stătea Ilie?|Nu mai plouase|Fusese blocat cu pietre|Fusese deviat spre Ierusalim|Se revărsase în mare|Seceta a afectat și sursa lui de apă.
+M|Viața cotidiană|10|Ce făcea văduva când Ilie a întâlnit-o la intrarea cetății?|Strângea lemne|Țesea o mantie|Cumpăra pește|Secera orz|Lemnele urmau să fie folosite pentru pregătirea hranei.
+M|Învățături|14-16|Ce provizii ale văduvei au continuat să fie disponibile după promisiunea lui Ilie?|Făina și uleiul|Vinul și mierea|Peștele și sarea|Grâul și curmalele|Cele două rezerve nu s-au epuizat conform promisiunii.
+D|Geografie|3|Lângă ce vale sau pârâu trebuia Ilie să se ascundă?|Cherit|Chidron|Iaboc|Arnon|Locul de refugiu indicat era la Cherit.
+D|Cronologie|6|Când îi aduceau corbii hrană lui Ilie?|Dimineața și seara|Doar la miezul nopții|O dată pe săptămână|Numai la amiază|Relatarea menționează două momente zilnice de hrănire.
+D|Geografie|9|De ce cetate aparținea Sarepta, unde a fost trimis Ilie?|Sidon|Ierusalim|Samaria|Damasc|Sarepta este prezentată ca aparținând Sidonului.
+D|Detalii și obiecte|19|Unde l-a așezat Ilie pe fiul mort al văduvei?|Pe patul său din camera de sus|Pe altarul cetății|Într-o corabie|Lângă poarta palatului|Ilie l-a dus în camera unde locuia.
+D|Cronologie|21|De câte ori s-a întins Ilie peste copil înainte de învierea acestuia?|De trei ori|O singură dată|De șapte ori|De zece ori|Gestul a fost însoțit de rugăciune către Iehova.
+@2 Regi|2-regi|4|elisei-ulei-sunem
+M|Evenimente|1|Ce amenința creditorul văduvei care a cerut ajutorul lui Elisei?|Să-i ia cei doi copii ca sclavi|Să-i dărâme cetatea|Să-i ardă recolta|Să-i confişte corabia|Datoria punea în pericol libertatea celor doi copii.
+M|Detalii și obiecte|2|Ce bun mai avea văduva în casă când a vorbit cu Elisei?|Un vas cu ulei|Un sac cu argint|O ladă cu haine|Un coș cu pește|Uleiul rămas a fost punctul de pornire al miracolului.
+M|Viața cotidiană|3|Ce trebuia să împrumute văduva de la vecini?|Vase goale|Unelte de arat|Saci cu grâu|Haine de sărbătoare|Vasele aveau să fie umplute cu ulei.
+M|Învățături|7|Ce trebuia să facă văduva cu uleiul pentru a-și achita datoria?|Să-l vândă|Să-l verse pe pământ|Să-l ascundă|Să-l ducă faraonului|Venitul permitea achitarea datoriei și întreținerea familiei.
+M|Evenimente|10|Ce a pregătit femeia din Sunem pentru găzduirea lui Elisei?|O cameră pe acoperiș|Un cort de război|O corabie mică|O încăpere în palat|Familia i-a oferit un spațiu de odihnă.
+D|Cronologie|6|În ce moment a încetat să mai curgă uleiul în casa văduvei?|Când nu au mai fost vase|La primul apus|După umplerea primului vas|La întoarcerea creditorului|Uleiul a încetat după umplerea tuturor vaselor disponibile.
+D|Geografie|8|În ce localitate îl găzduia femeia înstărită pe Elisei?|Sunem|Betel|Ierihon|Ghilgal|Sunem este locul familiei ospitaliere din relatare.
+D|Personaje|12|Cum se numea slujitorul lui Elisei care a chemat-o pe sunamită?|Ghehazi|Eliezer|Baruc|Obadia|Ghehazi îl însoțea și îl ajuta pe profet.
+D|Detalii și obiecte|10|Pe lângă pat, masă și scaun, ce s-a pus în camera lui Elisei?|Un lampadar|Un război de țesut|O balanță|O armură|Mobilierul simplu includea și o sursă de lumină.
+D|Geografie|25|La ce munte s-a dus sunamita să-l caute pe Elisei pentru copilul ei?|Carmel|Sinai|Tabor|Nebo|Ea a călătorit până la profetul aflat la Carmel.
+@Neemia|neemia|8|ezra-citire-lege
+M|Personaje|1,2|Cine a adus și a citit cartea Legii înaintea poporului?|Ezra|Daniel|Amos|Zaharia|Ezra era preot și copist al Legii.
+M|Detalii și obiecte|4|Pe ce stătea Ezra ca să poată citi înaintea adunării?|O platformă de lemn|Un car de luptă|Un acoperiș de piatră|O corabie|Platforma fusese pregătită special pentru acea ocazie.
+M|Evenimente|5|Ce a făcut poporul când Ezra a deschis cartea?|S-a ridicat în picioare|A plecat din piață|A închis porțile|A început un marș|Adunarea s-a ridicat când cartea a fost deschisă.
+M|Învățături|8|Cum îi ajutau leviții pe oameni în timpul citirii Legii?|Explicau sensul celor citite|Ascundeau cartea|Înlocuiau Legea cu zvonuri|Le cereau să nu pună întrebări|Citirea era însoțită de explicații pentru înțelegere.
+M|Învățături|10|Cui trebuiau trimise porții de mâncare în acea zi de bucurie?|Celor care nu aveau nimic pregătit|Doar conducătorilor militari|Doar negustorilor|Numai celor veniți din Egipt|Bucuria sărbătorii includea grija pentru cei fără provizii.
+D|Geografie|1|În fața cărei porți s-a adunat poporul pentru citirea Legii?|Poarta Apelor|Poarta Oilor|Poarta Peștilor|Poarta Cailor|Adunarea s-a strâns în piața din fața Porții Apelor.
+D|Cronologie|2|În ce zi a lunii a șaptea a fost adusă Legea înaintea adunării?|În prima zi|În ziua a zecea|În ziua a paisprezecea|În ultima zi|Data este menționată la începutul capitolului.
+D|Cronologie|3|Cât timp a citit Ezra cu glas tare în acea dimineață?|Din zori până la amiază|De la amiază la apus|O singură oră seara|Toată noaptea|Oamenii au ascultat pe durata întregii dimineți.
+D|Viața cotidiană|14-16|Ce locuințe temporare au construit oamenii pentru sărbătoare?|Colibe din ramuri|Turnuri din cărămizi|Case din piatră|Corturi din piei de animale|Legea le amintea să locuiască temporar în colibe.
+D|Istorie|18|În a câta zi a avut loc adunarea solemnă de după cele șapte zile de sărbătoare?|A opta|A treia|A zecea|A douăsprezecea|Adunarea solemnă urma celor șapte zile ale sărbătorii.
+@Iona|iona|4|iona-planta-indurare
+M|Evenimente|1|Cum a reacționat Iona la cruțarea cetății Ninive?|S-a mâniat|A organizat o sărbătoare|A devenit rege|A cerut să rămână acolo ca negustor|Reacția lui Iona a dus la o lecție despre îndurare.
+M|Geografie|5|În ce parte a cetății s-a așezat Iona să vadă ce se va întâmpla?|La est|La vest|La nord|La sud|Profetul și-a făcut un adăpost în partea de est.
+M|Viața cotidiană|6|Ce folos îi aducea planta care a crescut lângă Iona?|Îi oferea umbră|Îi asigura pâine|Îi dădea apă|Îi servea drept barcă|Planta îl proteja pe Iona de căldură.
+M|Evenimente|7|Ce a atacat planta, făcând-o să se usuce?|Un vierme|O pasăre|O turmă de capre|Un roi de lăcuste|Dumnezeu a trimis un vierme care a afectat planta.
+M|Învățături|10,11|Ce sublinia comparația dintre plantă și locuitorii cetății?|Valoarea vieții oamenilor și îndurarea|Necesitatea construirii unui palat|Superioritatea unui tip de grădină|Importanța impozitelor|Lecția îl îndemna pe Iona să înțeleagă mila divină.
+D|Învățături|2|Ce calitate a lui Dumnezeu a recunoscut chiar Iona în rugăciunea sa?|Îndurarea|Dorința de câștig|Nepăsarea|Nedreptatea|Iona știa că Dumnezeu manifestă compasiune și răbdare.
+D|Cronologie|7|Când a atacat viermele planta care îi făcea umbră lui Iona?|În zorii zilei următoare|După șapte ani|La miezul nopții aceleiași zile|După patruzeci de zile|Atacul a avut loc în dimineața următoare.
+D|Geografie|8|Din ce direcție venea vântul arzător trimis după uscarea plantei?|Din est|Din vest|Din nord|Din sud|Căldura vântului a accentuat disconfortul profetului.
+D|Istorie|11|Ce număr este depășit de locuitorii Ninivei menționați în încheierea cărții?|120000|12000|1200|120|În încheiere sunt menționați peste o sută douăzeci de mii.
+D|Detalii și obiecte|11|Pe lângă oameni, ce alte viețuitoare sunt amintite în motivul de îndurare pentru Ninive?|Numeroase animale|Doar peștii din mare|Numai corbii|Exclusiv lăcustele|Întrebarea finală amintește și animalele cetății.
+@Marcu|marcu|2|isus-paralitic-levi
+M|Evenimente|4|Pe unde l-au coborât oamenii pe paralitic înaintea lui Isus?|Printr-o deschidere în acoperiș|Printr-un tunel|Pe fereastra unei corăbii|Peste zidul cetății|Mulțimea împiedica accesul obișnuit la Isus.
+M|Învățături|5|Ce a observat Isus la cei care l-au adus pe paralitic?|Credința lor|Bogăția lor|Originea lor regală|Priceperea lor comercială|Acțiunea lor perseverentă exprima încredere în ajutorul lui Isus.
+M|Detalii și obiecte|11,12|Ce trebuia să-și ia omul vindecat când pleca acasă?|Targa|Cârja unui soldat|Masa încăperii|O ladă cu provizii|Vindecarea i-a permis să-și ducă singur targa.
+M|Personaje|14|Pe cine a chemat Isus să-l urmeze de la locul de încasare a impozitelor?|Levi|Nicodim|Lazăr|Iair|Levi s-a ridicat și a răspuns chemării.
+M|Viața cotidiană|23|Ce culegeau discipolii când treceau prin lanuri în sabat?|Spice|Măsline|Struguri|Smochine|Activitatea lor a provocat întrebarea fariseilor.
+D|Geografie|1|În ce oraș se afla casa unde a fost adus paraliticul?|Capernaum|Betleem|Ierihon|Nazaret|La începutul capitolului este numit Capernaumul.
+D|Personaje|3|Câți bărbați îl purtau pe paralitic?|Patru|Doi|Șapte|Doisprezece|Marcu precizează numărul celor care îl transportau.
+D|Istorie|14|Al cui fiu era Levi, potrivit relatării lui Marcu?|Al lui Alfeu|Al lui Zebedei|Al lui Iona|Al lui Cleopa|Numele tatălui îl identifică pe Levi în relatare.
+D|Învățături|17|Cu cine i-a comparat Isus pe cei care au nevoie de ajutor spiritual?|Cu bolnavii care au nevoie de medic|Cu negustorii care caută perle|Cu soldații care cer arme|Cu pescarii care repară mreje|Comparația explica apropierea sa de oameni păcătoși.
+D|Detalii și obiecte|22|În ce recipiente trebuia pus vinul nou în comparația lui Isus?|Burdufuri noi|Burdufuri vechi|Vase crăpate|Coșuri de papură|Recipientele potrivite evitau pierderea vinului și a burdufurilor.
+@Luca|luca|15|ilustrari-lucruri-pierdute
+M|Viața cotidiană|4|Câte oi avea omul din ilustrarea despre oaia pierdută?|100|50|12|200|Păstorul avea o sută de oi înaintea pierderii.
+M|Evenimente|5|Cum a dus păstorul acasă oaia găsită?|Pe umeri|Într-o căruță|Într-un coș|Pe un măgar|El a purtat-o cu bucurie pe umeri.
+M|Personaje|11,12|Care fiu a cerut să-și primească partea de avere înainte de a pleca?|Cel mai tânăr|Cel mai în vârstă|Amândoi în același timp|Niciunul dintre fii|Cererea fiului mai tânăr deschide relatarea plecării sale.
+M|Viața cotidiană|15|Ce animale a ajuns să păzească fiul risipitor?|Porci|Oi|Cămile|Cai|După pierderea averii, el a acceptat această muncă.
+M|Învățături|20|Cum a reacționat tatăl când și-a văzut fiul întorcându-se?|A alergat să-l îmbrățișeze|A încuiat poarta|A chemat soldații|L-a trimis în alt sat|Tatăl i-a arătat compasiune înainte de a-i asculta mărturisirea.
+D|Detalii și obiecte|8|Câte drahme avea femeia înainte de a pierde una?|Zece|Cinci|Douăzeci|O sută|Moneda pierdută făcea parte dintr-un total de zece.
+D|Viața cotidiană|8|Ce făcea femeia, pe lângă aprinderea lămpii, pentru a găsi drahma?|Mătura casa|Scotea apă din fântână|Săpa în vie|Cerea o monedă vecinilor|Căutarea ei atentă includea măturarea casei.
+D|Evenimente|14|Ce dezastru a urmat după cheltuirea averii fiului mai tânăr?|O foamete mare|O invazie de corăbii|Un potop|Un incendiu în palat|Lipsurile țării i-au agravat situația personală.
+D|Detalii și obiecte|22|Ce a cerut tatăl să i se pună pe mâna fiului întors?|Un inel|O brățară de fier|O mănușă|O bandă de pânză|Primirea includea haină, inel și sandale.
+D|Personaje|28|Cine s-a mâniat și a refuzat inițial să intre la sărbătoare?|Fiul mai mare|Tatăl|Unul dintre vecini|Fiul întors|Tatăl a ieșit să discute și cu fiul mai mare.
+@Luca|luca|19|zaheu-mine-intrare
+M|Personaje|2|Ce ocupație avea Zacheu?|Mai-mare al încasatorilor de impozite|Pescar|Preot|Constructor de corăbii|Zacheu avea o poziție de conducere în colectarea impozitelor.
+M|Evenimente|3,4|De ce s-a urcat Zacheu într-un copac pentru a-l vedea pe Isus?|Era scund și mulțimea îl împiedica|Se ascundea de o furtună|Trebuia să culeagă fructe|Repara o casă|Înălțimea copacului îi oferea o vedere peste mulțime.
+M|Evenimente|5,6|Ce i-a spus Isus lui Zacheu când l-a văzut în copac?|Că va sta în casa lui|Că trebuie să plece din cetate|Că va primi o coroană|Că trebuie să construiască un altar|Zacheu l-a primit cu bucurie ca oaspete.
+M|Învățături|8|Ce parte din bunurile sale a spus Zacheu că le dă săracilor?|Jumătate|O zecime|O sutime|Totul, fără excepție|Declarația arăta o schimbare concretă a priorităților sale.
+M|Geografie|1|În ce cetate se afla Isus când l-a întâlnit pe Zacheu?|Ierihon|Betleem|Nazaret|Cana|Întâlnirea s-a petrecut în timpul trecerii prin Ierihon.
+D|Viața cotidiană|8|De câte ori promitea Zacheu să restituie ce luase prin înșelăciune?|De patru ori|De două ori|De șapte ori|De zece ori|Restituirea promisă depășea valoarea luată inițial.
+D|Detalii și obiecte|4|În ce fel de copac s-a urcat Zacheu?|Un sicomor|Un cedru|Un măslin|Un palmier|Luca precizează felul copacului ales de Zacheu.
+D|Istorie|13|Câtor sclavi le-a încredințat omul de neam nobil bani în ilustrarea despre mine?|Zece|Doi|Cinci|Doisprezece|Cei zece trebuiau să facă negoț în lipsa stăpânului.
+D|Detalii și obiecte|20|În ce a păstrat unul dintre sclavi mina fără să o folosească?|O pânză|Un vas cu ulei|Un coș cu pâine|Un cufăr al regelui|Sclavul a înapoiat suma fără niciun câștig.
+D|Învățături|40|Ce a spus Isus că ar striga dacă discipolii ar tăcea?|Pietrele|Copacii|Soldații romani|Negustorii|Răspunsul său sublinia că lauda nu putea fi redusă la tăcere.
+@Ioan|ioan|4|samariteana-fantana-iacob
+M|Geografie|4|Prin ce regiune a trecut Isus între Iudeea și Galileea?|Samaria|Idumeea|Decapole|Pereea|Întâlnirea cu femeia a avut loc în Samaria.
+M|Detalii și obiecte|6|A cui fântână este numită în relatarea întâlnirii cu samariteana?|A lui Iacob|A lui Moise|A lui Solomon|A lui Ghedeon|Fântâna era asociată cu patriarhul Iacob.
+M|Viața cotidiană|7|Pentru ce venise femeia la fântâna unde stătea Isus?|Să scoată apă|Să vândă pâine|Să cumpere pește|Să aducă o ofrandă|O activitate zilnică a prilejuit discuția cu Isus.
+M|Învățături|23,24|Cum trebuie să se închine adevărații închinători, potrivit cuvintelor lui Isus?|Cu spirit și adevăr|Numai într-un singur oraș|Doar prin daruri scumpe|Fără să cunoască pe cine se închină|Isus a pus accentul pe felul închinării.
+M|Evenimente|28,29|Ce a făcut femeia după discuția cu Isus?|A mers să le spună oamenilor din cetate|A plecat cu o corabie|S-a ascuns într-o peșteră|A cerut să devină conducător|Mărturia ei i-a făcut pe alții să vină la Isus.
+D|Geografie|5|Cum se numea cetatea samariteană aflată lângă fântână?|Sihar|Sebaste|Gaza|Tiberiada|Ioan localizează întâlnirea în apropiere de Sihar.
+D|Cronologie|6|Aproximativ ce oră a zilei este menționată când Isus stătea la fântână?|A șasea|A treia|A noua|A douăsprezecea|Relatarea folosește numerotarea orelor din timpul zilei.
+D|Viața cotidiană|8|Pentru ce plecaseră discipolii în cetate înaintea discuției de la fântână?|Să cumpere hrană|Să închirieze o corabie|Să aducă soldați|Să cumpere lemn|Isus rămăsese la fântână în lipsa lor.
+D|Detalii și obiecte|28|Ce a lăsat femeia la fântână când s-a dus în cetate?|Vasul de apă|Mantia lui Isus|O pungă cu argint|Un sul al Legii|Graba de a vorbi celorlalți a întrerupt activitatea ei.
+D|Cronologie|40|Cât timp a rămas Isus cu samaritenii după invitația lor?|Două zile|Șapte zile|O lună|Patruzeci de zile|Șederea le-a permis mai multora să-l asculte direct.
+@Faptele|faptele|8|filip-samaria-etiopian
+M|Personaje|5|Cine a predicat despre Cristos în Samaria în Faptele 8?|Filip|Barnaba|Apolo|Timotei|Filip a vestit mesajul și a făcut semne acolo.
+M|Învățături|18-20|Ce a încercat Simon să obțină oferindu-le bani apostolilor?|Autoritatea de a transmite spirit sfânt|O casă în Ierusalim|Un loc într-o corabie|O scutire de impozite|Petru a respins ideea cumpărării darului lui Dumnezeu.
+M|Detalii și obiecte|28|Din ce carte profetică citea etiopianul în carul său?|Isaia|Ieremia|Ezechiel|Daniel|Filip l-a auzit citind din profeția lui Isaia.
+M|Învățături|35|Despre cine i-a explicat Filip vestea bună etiopianului?|Isus|Alexandru|Cirus|Irod|Explicația a pornit de la pasajul pe care îl citea.
+M|Evenimente|38|Ce a făcut Filip după ce carul etiopianului a fost oprit lângă apă?|L-a botezat|I-a vândut un sul|L-a trimis înapoi la palat|I-a cerut un tribut|Cei doi au coborât în apă pentru botez.
+D|Personaje|14|Ce doi apostoli au fost trimiși din Ierusalim în Samaria?|Petru și Ioan|Pavel și Barnaba|Iacov și Andrei|Toma și Matei|Apostolii au venit după vestea despre acceptarea mesajului.
+D|Geografie|26|Spre ce oraș cobora din Ierusalim drumul indicat lui Filip de înger?|Gaza|Damasc|Cezareea|Ierihon|Îngerul i-a indicat drumul care ducea spre Gaza.
+D|Istorie|27|De ce responsabilitate se ocupa etiopianul la curtea reginei Candace?|Întregul tezaur|Armata de cavalerie|Construcția templelor|Paza porților cetății|El era un demnitar cu responsabilitate financiară.
+D|Învățături|30,31|Ce nevoie a recunoscut etiopianul când Filip l-a întrebat dacă înțelege?|Avea nevoie de cineva să-l îndrume|Avea nevoie de o coroană|Avea nevoie de mai mulți cai|Avea nevoie să învețe pescuitul|El a acceptat ajutor pentru înțelegerea Scripturilor.
+D|Geografie|40|Unde s-a aflat Filip după despărțirea de etiopian?|Asdod|Betleem|Filipi|Efes|Din Asdod, Filip a continuat să predice în cetăți.
+@Faptele|faptele|16|pavel-sila-filipi
+M|Personaje|14|Cum se numea vânzătoarea de purpură care a ascultat mesajul lui Pavel?|Lidia|Priscila|Dorca|Maria|Lidia a ascultat și a primit mesajul predicat.
+M|Geografie|12|În ce cetate au fost întemnițați Pavel și Sila în această relatare?|Filipi|Atena|Corint|Efes|Evenimentele sunt plasate în colonia romană Filipi.
+M|Cronologie|25|Când se rugau și cântau Pavel și Sila în închisoare, ascultați de ceilalți deținuți?|Pe la miezul nopții|În zori|La amiază|Înainte de apus|Rugăciunile și cântările sunt situate în mijlocul nopții.
+M|Evenimente|26|Ce eveniment a deschis ușile închisorii?|Un cutremur puternic|Un incendiu în piață|Un atac al corăbiilor|O inundație a râului|Cutremurul a zguduit temeliile și a slăbit legăturile.
+M|Învățături|28|Cum l-a liniștit Pavel pe temnicerul care credea că deținuții fugiseră?|I-a spus că erau toți acolo|I-a promis bani|I-a spus să fugă și el|I-a ascuns intrarea|Pavel l-a oprit să-și facă rău.
+D|Personaje|1-3|Ce discipol tânăr a fost luat de Pavel ca însoțitor la începutul capitolului?|Timotei|Tit|Marcu|Luca|Frații vorbeau de bine despre tânărul Timotei.
+D|Geografie|8,9|În ce localitate a avut Pavel viziunea omului macedonean?|Troa|Antiohia|Ierusalim|Milet|Viziunea a orientat călătoria din Troa spre Macedonia.
+D|Viața cotidiană|13|Unde au căutat Pavel și însoțitorii un loc de rugăciune în sabat?|Lângă un râu, în afara porții|În arena cetății|În palatul guvernatorului|Pe puntea unei corăbii|Acolo au vorbit cu femeile care se adunaseră.
+D|Geografie|14|Din ce cetate provenea Lidia?|Tiatira|Sardes|Laodiceea|Pergam|Lidia locuia în Filipi, dar provenea din Tiatira.
+D|Istorie|37,38|Ce cetățenie au invocat Pavel și Sila după pedepsirea lor fără judecată?|Romană|Egipteană|Persană|Babiloniană|Magistrații s-au temut când au aflat că erau romani.

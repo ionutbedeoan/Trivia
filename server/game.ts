@@ -244,12 +244,17 @@ export class GameService {
     return room;
   }
   join(session: Session, code: unknown, name: unknown) {
+    const normalizedCode = typeof code === 'string' ? code.trim().toUpperCase() : '';
     requireValue(
-      typeof code === 'string' && /^[A-Z2-9]{6}$/.test(code.toUpperCase()),
+      /^[A-Z2-9]{6}$/.test(normalizedCode),
       'Codul camerei trebuie să aibă 6 caractere.',
     );
-    const room = [...this.rooms.values()].find((r) => r.code === code.toUpperCase());
-    requireValue(room, 'Camera nu există sau codul a expirat.', 404);
+    const room = [...this.rooms.values()].find((r) => r.code === normalizedCode);
+    requireValue(
+      room,
+      'Camera nu există pe acest server sau codul a expirat. Deschide linkul de invitație copiat de gazdă.',
+      404,
+    );
     if (room.players.some((p) => p.sessionId === session.id)) return room;
     requireValue(
       !this.active(session),
@@ -469,7 +474,7 @@ export class GameService {
     const answers = room.players.map((p) => {
       const answer = room.answers.get(p.id);
       const previous = p.score;
-      p.score = Math.max(0, p.score + (!answer ? 0 : answer.option === q.correct ? 100 : -50));
+      p.score += !answer ? 0 : answer.option === q.correct ? 100 : -50;
       const delta = p.score - previous;
       return {
         playerId: p.id,

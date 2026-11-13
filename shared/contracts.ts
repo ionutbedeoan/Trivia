@@ -72,6 +72,7 @@ export interface SessionInfo {
   csrf: string;
   user: User | null;
   roomId: string | null;
+  invitationOrigin: string;
 }
 export interface ProfileStats {
   completed: number;
