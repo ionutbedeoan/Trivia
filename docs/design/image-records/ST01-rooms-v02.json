@@ -1,0 +1,14 @@
+{
+  "id": "ST01-rooms-v02",
+  "screen": [
+    "S02",
+    "S03"
+  ],
+  "device": "states",
+  "path": "design/proposals/ST01-rooms-v02.png",
+  "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-0466416e-98f1-4534-875b-c769b05d368f.png",
+  "status": "generated-review-pending",
+  "width": 1536,
+  "height": 1024,
+  "bytes": 1705291
+}

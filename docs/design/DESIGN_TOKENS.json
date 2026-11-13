@@ -1,0 +1,56 @@
+{
+  "status": "Direction C selected; detailed screen proposals pending final review",
+  "name": "Ritm clar",
+  "version": "0.2",
+  "units": "CSS pixels for specifications; PNG pixel dimensions are recorded separately",
+  "primitive": {
+    "color": {"paper": "#F3F6FC", "white": "#FFFFFF", "ink": "#17243D", "slate": "#526078", "cobalt": "#3158C9", "cobaltHover": "#2748AA", "cobaltPressed": "#203C8F", "blueTint": "#E8EEFF", "peach": "#F3B49B", "divider": "#D8DFEE", "controlBorder": "#738098", "green": "#166044", "greenTint": "#E8F4EC", "red": "#A12E34", "redTint": "#FCEDEE", "amber": "#785018", "amberTint": "#FFF3D6", "disabledText": "#59667D", "disabledSurface": "#E6EAF2"},
+    "spacing": [4, 8, 12, 16, 24, 32, 48, 64, 96],
+    "fontFamily": "Inter",
+    "fontFallback": "sans-serif",
+    "fontWeight": [400, 500, 600, 700],
+    "iconSize": [16, 20, 24]
+  },
+  "semantic": {
+    "canvas": "primitive.color.paper",
+    "surface": "primitive.color.white",
+    "textPrimary": "primitive.color.ink",
+    "textSecondary": "primitive.color.slate",
+    "actionPrimary": "primitive.color.cobalt",
+    "onPrimary": "primitive.color.white",
+    "hover": "primitive.color.cobaltHover",
+    "pressed": "primitive.color.cobaltPressed",
+    "selectionSurface": "primitive.color.blueTint",
+    "focusRing": "primitive.color.cobalt",
+    "decorativeAccent": "primitive.color.peach",
+    "borderDecorative": "primitive.color.divider",
+    "borderControl": "primitive.color.controlBorder",
+    "successText": "primitive.color.green",
+    "successSurface": "primitive.color.greenTint",
+    "errorText": "primitive.color.red",
+    "errorSurface": "primitive.color.redTint",
+    "warningText": "primitive.color.amber",
+    "warningSurface": "primitive.color.amberTint"
+  },
+  "typography": {
+    "display": {"desktopSize": 56, "desktopLineHeight": 64, "mobileSize": 36, "mobileLineHeight": 44, "weight": 700},
+    "title": {"desktopSize": 40, "desktopLineHeight": 48, "mobileSize": 30, "mobileLineHeight": 38, "weight": 700},
+    "question": {"desktopSize": 28, "desktopLineHeight": 38, "mobileSize": 24, "mobileLineHeight": 34, "weight": 600},
+    "body": {"desktopSize": 18, "desktopLineHeight": 28, "mobileSize": 16, "mobileLineHeight": 26, "weight": 400},
+    "control": {"size": 16, "lineHeight": 24, "weight": 600},
+    "supporting": {"size": 14, "lineHeight": 22, "weight": 400},
+    "scores": {"tabularFigures": true}
+  },
+  "layout": {"contentMaxWidth": 1200, "desktopColumns": 12, "columnGap": 24, "mobileGutter": 20, "smallMobileGutter": 16, "mobileBreakpoint": 768, "wideBreakpoint": 1024, "readingMaxWidth": 720, "referenceDesktop": [1440, 900], "referenceMobile": [390, 844], "additionalReviewWidths": [320, 768], "zoomReviewPercent": 200},
+  "components": {
+    "button": {"radius": 12, "minHeight": 48, "desktopProminentHeight": 52, "minHitTarget": [44, 44], "background": "semantic.actionPrimary", "foreground": "semantic.onPrimary", "loadingKeepsLabel": true},
+    "input": {"radius": 12, "minHeight": 48, "labelAlwaysVisible": true, "border": "semantic.borderControl"},
+    "card": {"radius": 12, "paddingMobile": 20, "paddingDesktop": 32, "background": "semantic.surface"},
+    "dialog": {"radius": 20, "returnFocusToTrigger": true, "initialDestructiveFocus": "cancel"},
+    "answerOption": {"minHeight": 56, "wrapText": true, "selectedColor": "semantic.actionPrimary", "selectionSubmitsAnswer": false, "correctnessHiddenBeforeReveal": true},
+    "focus": {"ringWidth": 2, "surfaceGap": 2, "color": "semantic.focusRing"},
+    "avatar": {"shape": "circle", "content": "initials or abstract geometry"}
+  },
+  "motion": {"feedbackMs": 150, "dialogMs": 200, "contextMaxMs": 250, "reducedMotion": "Remove spatial movement; preserve equivalent text and timing", "soundDefault": "off", "decorativeAnimationDefault": "off"},
+  "accessibility": {"target": "WCAG 2.2 AA", "normalTextContrastMin": 4.5, "largeTextAndFunctionalUIContrastMin": 3, "colorOnlyMeaning": false, "focusFullyVisibleDesignObjective": true, "keyboardAndScreenReaderTestsExecuted": false}
+}

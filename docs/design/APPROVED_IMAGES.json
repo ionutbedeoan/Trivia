@@ -1,0 +1,321 @@
+{
+  "approvalMessage": "Sunt de acord cu toate",
+  "scope": "Ecranele S01-S21 si detaliile mobile; anexele prezentate se adauga la finalizarea exportului",
+  "images": [
+    {
+      "id": "S01-desktop-guest-v01",
+      "path": "design/approved/S01-desktop-guest-v01.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "6cf822c42844c84675777f36f7ab5e1cded0eeca9ff14a90d1a5bb12ceba0147"
+    },
+    {
+      "id": "S01-mobile-guest-v01",
+      "path": "design/approved/S01-mobile-guest-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "2a4479b45d0e2ec982d0f1a8529cdd7a82fe8d5d2f3dd5a849bca773f4afc16b"
+    },
+    {
+      "id": "S02-desktop-v02",
+      "path": "design/approved/S02-desktop-v02.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "5177c93b888f3cb7cc915a278f5cae1acb86224d97fa134ed887c9cf709962c4"
+    },
+    {
+      "id": "S02-mobile-v01",
+      "path": "design/approved/S02-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "be20c55b9bb579c9ed62c48e2e94c931a3e53caab17fe96351d7a46fed18811a"
+    },
+    {
+      "id": "S03-desktop-v01",
+      "path": "design/approved/S03-desktop-v01.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "3cd1a4b68edb52d2e720557134a50309c09ab123d7a279b629233a2611caffc9"
+    },
+    {
+      "id": "S03-mobile-v01",
+      "path": "design/approved/S03-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "bbb60e99210ed2eb34c6eaddbd538da2ec6cd62c0282a8e4a5b948814ee3892e"
+    },
+    {
+      "id": "S04-desktop-v01",
+      "path": "design/approved/S04-desktop-v01.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "b25e31b0beb23d7c615f27008329b15d1c4fca1f3f81df7f2aebd9d0ec2a7912"
+    },
+    {
+      "id": "S04-mobile-v01",
+      "path": "design/approved/S04-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "c5248b8b3cb5f700f7fe8aa43eacbebed8b3d9e74934568d152b0cfed5e27624"
+    },
+    {
+      "id": "S05-desktop-v01",
+      "path": "design/approved/S05-desktop-v01.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "a52528ace12fae651a5859b184bc492aaa7f1c69a505669c78e976c3fa9d6dab"
+    },
+    {
+      "id": "S05-mobile-v01",
+      "path": "design/approved/S05-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "92d066856cbe259462a38011d9b2237e3b830e1aa10e18a23e007754c7cf1068"
+    },
+    {
+      "id": "S06-desktop-v01",
+      "path": "design/approved/S06-desktop-v01.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "d9dce23910217f8168823e58da98a35c26e0edd1a1fe719352712825a3c7997c"
+    },
+    {
+      "id": "S06-mobile-v01",
+      "path": "design/approved/S06-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "4f900994aeb045c743f3aa2a2b033d59b79c3d470d7fe7551af228e6db8501c6"
+    },
+    {
+      "id": "S07-desktop-v02",
+      "path": "design/approved/S07-desktop-v02.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "b5b8a217f03ddc515fc6736e4c65e1822693befb92bbc16568eae564ead8afbe"
+    },
+    {
+      "id": "S07-mobile-v02",
+      "path": "design/approved/S07-mobile-v02.png",
+      "width": 977,
+      "height": 1609,
+      "sha256": "8ad06346038df352612e5b254c4fb0e83a36b6ea5afe7ea0263415fb58f8cd91"
+    },
+    {
+      "id": "S08-desktop-v02",
+      "path": "design/approved/S08-desktop-v02.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "1f9d2d4f364bd429b4ec768e7bd92af61c8e6acabcb96f4be496e3962fdd49e1"
+    },
+    {
+      "id": "S08-mobile-v02",
+      "path": "design/approved/S08-mobile-v02.png",
+      "width": 806,
+      "height": 1952,
+      "sha256": "83c1b17fea3ca754740e2eed3caa831b379488594f9d083673230bc23fd6cdad"
+    },
+    {
+      "id": "S09-desktop-v01",
+      "path": "design/approved/S09-desktop-v01.png",
+      "width": 1487,
+      "height": 1058,
+      "sha256": "24eac002c146a2691a5a6ebdc52cb077db284a351de5d3e074b3ab1bfebf3d4e"
+    },
+    {
+      "id": "S09-mobile-v01",
+      "path": "design/approved/S09-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "48599655d5ea6baff936a56a18038b1da6959305d420bdb15bc044f2dc4f1497"
+    },
+    {
+      "id": "S10-desktop-v01",
+      "path": "design/approved/S10-desktop-v01.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "07c197dc5f4ccb7e3b29f8475e5f1bc92195f6b9b375e32e01a978ac8884ee00"
+    },
+    {
+      "id": "S10-mobile-v01",
+      "path": "design/approved/S10-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "45b28040f4bf1e4f3d95641f1f7b694cd335601081a3f30940f47b85329abec6"
+    },
+    {
+      "id": "S11-desktop-v01",
+      "path": "design/approved/S11-desktop-v01.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "87795742512d24f915a4f48136a4988c24bc464dcfb55a6f26a971970ce4ba7b"
+    },
+    {
+      "id": "S11-mobile-v01",
+      "path": "design/approved/S11-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "fbac8bf2db5097f0df84c0e1a2ddf2f5e898062e53fe725b7e19152bdde86481"
+    },
+    {
+      "id": "S12-desktop-v01",
+      "path": "design/approved/S12-desktop-v01.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "bbccc9bdb1c5d7ebe206e966531455f0478269d5dd54d8724da6ce5d0297f6e9"
+    },
+    {
+      "id": "S12-mobile-v01",
+      "path": "design/approved/S12-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "242c1c97ac593cca0cb1ab88ec86e95a3861a06b8fe77514a190e1569f13f915"
+    },
+    {
+      "id": "S13-desktop-v01",
+      "path": "design/approved/S13-desktop-v01.png",
+      "width": 1487,
+      "height": 1058,
+      "sha256": "2d371879e645b201a65be9b60c5f3cee5c7c0dde9d87f42fbd10f6c85044a696"
+    },
+    {
+      "id": "S13-mobile-v01",
+      "path": "design/approved/S13-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "966bf549226c4430838f0ab65df9c02ee7a71af1fa3fc1890bae07d67c0929ce"
+    },
+    {
+      "id": "S14-desktop-v02",
+      "path": "design/approved/S14-desktop-v02.png",
+      "width": 1487,
+      "height": 1058,
+      "sha256": "aadd0def1fb562649110d1e65e13f5eba2eaa7fb6300dc31dd38fcbbf20c41de"
+    },
+    {
+      "id": "S14-mobile-v02",
+      "path": "design/approved/S14-mobile-v02.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "0d7f4082f2397e28d00651eb575f8fddc0f37fecb7a527d0c13e89c904c5bb76"
+    },
+    {
+      "id": "S15-desktop-v01",
+      "path": "design/approved/S15-desktop-v01.png",
+      "width": 1487,
+      "height": 1058,
+      "sha256": "5e295def25d8592f0554bb5b711a38ba15b1019c3329c36a3312ac16cd466e16"
+    },
+    {
+      "id": "S15-mobile-v01",
+      "path": "design/approved/S15-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "053663d9823c4bf320a806cd73141a75dd3ff5cde945d627a872c79a169bed7d"
+    },
+    {
+      "id": "S16-desktop-v02",
+      "path": "design/approved/S16-desktop-v02.png",
+      "width": 1487,
+      "height": 1058,
+      "sha256": "5689cc85bce63cfb9df5844c7c5c422cbd6c4df0c9106fb8c607333603ce846c"
+    },
+    {
+      "id": "S16-mobile-v03",
+      "path": "design/approved/S16-mobile-v03.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "72f984f70e6b5157f842daac25ce1b6a60343d434231f518c1b59d2937a30d17"
+    },
+    {
+      "id": "S17-desktop-v02",
+      "path": "design/approved/S17-desktop-v02.png",
+      "width": 1586,
+      "height": 992,
+      "sha256": "87000780332eaa03ffafdcae4741056642dbd5a16bb8a91fd01bfa0d76784b10"
+    },
+    {
+      "id": "S17-mobile-v02",
+      "path": "design/approved/S17-mobile-v02.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "bfec36b2465e881128774afc7ab6a2e7ebcac404b00823310f8609f0578ea4b5"
+    },
+    {
+      "id": "S18-desktop-v02",
+      "path": "design/approved/S18-desktop-v02.png",
+      "width": 1487,
+      "height": 1058,
+      "sha256": "05f48592da561c7167ebed839011ff1f0d0738e505632969611735ae1f38060f"
+    },
+    {
+      "id": "S18-mobile-review-v01",
+      "path": "design/approved/S18-mobile-review-v01.png",
+      "width": 977,
+      "height": 1609,
+      "sha256": "9fec9a92e85d59c1013be2852ce7b8be27eb0253fc996f58fa0b925521605251"
+    },
+    {
+      "id": "S18-mobile-source-v01",
+      "path": "design/approved/S18-mobile-source-v01.png",
+      "width": 978,
+      "height": 1609,
+      "sha256": "58cfd8d5befc2c4b0ef48466514160ecd5b2cbdb1e4bcf0086ee62137f8d9ae0"
+    },
+    {
+      "id": "S18-mobile-v02",
+      "path": "design/approved/S18-mobile-v02.png",
+      "width": 977,
+      "height": 1609,
+      "sha256": "39eb0673583f88635c245b34ad4431159a58d16cb2b953976051a5510b1fb476"
+    },
+    {
+      "id": "S19-desktop-v02",
+      "path": "design/approved/S19-desktop-v02.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "ab8a72f40e2ed972b145cc786c647c29c81a7be0ef7f9cedb64aff14db7ec476"
+    },
+    {
+      "id": "S19-mobile-v02",
+      "path": "design/approved/S19-mobile-v02.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "d66a464271216d79623aa89bc463ec8afbc9d2bc0ecc2e121dcc441ff818f72c"
+    },
+    {
+      "id": "S20-desktop-v01",
+      "path": "design/approved/S20-desktop-v01.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "379250aebc5b1cc8a6eba4c689f4fbfa461fe445dc759e40c914dafd887d6404"
+    },
+    {
+      "id": "S20-mobile-v01",
+      "path": "design/approved/S20-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "73eed773c832f316ce6db71f7b027e1c5f65dac4d9345bf56cf8898ee4aa6f7c"
+    },
+    {
+      "id": "S21-desktop-v01",
+      "path": "design/approved/S21-desktop-v01.png",
+      "width": 1585,
+      "height": 992,
+      "sha256": "f8196c08f6008dea2fa4d70e3689bb79b0662154ae8a440e94a4f5a349f34145"
+    },
+    {
+      "id": "S21-mobile-v01",
+      "path": "design/approved/S21-mobile-v01.png",
+      "width": 977,
+      "height": 1610,
+      "sha256": "18ddac6b0d8e34c721e6fa683be65295072df875a6d55bc30aeb819ec79e89d9"
+    },
+    {
+      "id": "S01-states-v01",
+      "path": "design/approved/S01-states-v01.png",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "32c1f9aade5b6b851468f2600aeaa05a52fa079e87693b3194c66ae71d33437e"
+    }
+  ]
+}

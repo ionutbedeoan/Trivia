@@ -1,0 +1,222 @@
+# Format: nivel|categorie|versete|întrebare|corect|alternativa 1|alternativa 2|alternativa 3|explicație originală
+# M = Mediu, D = Dificil. Fiecare bloc conține cinci întrebări din fiecare nivel.
+@Geneza|geneza|22|avraam-isaac-moria
+M|Geografie|2|În ce ținut a fost trimis Avraam pentru a-l aduce pe Isaac ca ofrandă?|Moria|Gosen|Moab|Basan|Destinația indicată lui Avraam era ținutul Moria.
+M|Cronologie|4|În a câta zi de călătorie a văzut Avraam locul de la distanță?|A treia|A doua|A șaptea|A patra|Locul a devenit vizibil în a treia zi a călătoriei.
+M|Detalii și obiecte|6|Cine a purtat lemnele pentru ofrandă în ultima parte a drumului?|Isaac|Unul dintre slujitori|Avraam|Un păstor întâlnit pe drum|Avraam a pus lemnele pe fiul său Isaac.
+M|Evenimente|13|Ce animal a adus Avraam ca ofrandă în locul fiului său?|Un berbec|Un vițel|Un țap|Un porumbel|Animalul găsit lângă locul ofrandei l-a înlocuit pe Isaac.
+M|Învățături|8|Ce convingere a exprimat Avraam când Isaac a întrebat despre animalul de jertfă?|Dumnezeu va asigura animalul|Slujitorii vor cumpăra animalul|Isaac trebuie să găsească singur animalul|Nu era nevoie de niciun animal|Răspunsul lui Avraam exprima încredere în purtarea de grijă a lui Dumnezeu.
+D|Viața cotidiană|3|Câți slujitori a luat Avraam cu el la plecarea spre Moria?|Doi|Trei|Patru|Unul|La plecare, Avraam era însoțit de Isaac și de doi slujitori.
+D|Detalii și obiecte|13|În ce era prins berbecul observat de Avraam?|Cu coarnele într-un tufiș|Cu picioarele într-o plasă|Cu lâna într-un gard de piatră|Cu gâtul într-o funie|Relatarea precizează cum era reținut animalul pe care l-a văzut Avraam.
+D|Învățături|12|Ce a arătat testul despre atitudinea lui Avraam față de Dumnezeu?|Că se temea de Dumnezeu|Că dorea să conducă o armată|Că urmărea o răsplată de la oameni|Că refuza orice îndrumare|Mesajul îngerului leagă ascultarea lui Avraam de teama sa de Dumnezeu.
+D|Istorie|17,18|Ce grupuri urmau să primească binecuvântare prin descendența lui Avraam?|Toate națiunile pământului|Numai locuitorii Egiptului|Numai familia lui Lot|Numai regii din Canaan|Promisiunea depășea familia imediată a lui Avraam și privea națiunile.
+D|Personaje|20-23|Cine este numit în acest capitol ca tată al Rebecăi?|Betuel|Laban|Nahor|Cemuel|Lista familiei lui Nahor îl identifică pe Betuel drept tatăl Rebecăi.
+@Geneza|geneza|24|rebecca-cautare-sotie
+M|Personaje|29|Cum se numea fratele Rebecăi care a venit la slujitorul lui Avraam?|Laban|Esau|Lot|Abimelec|Laban a ieșit să-l întâmpine pe omul venit la izvor.
+M|Viața cotidiană|19,20|Ce ajutor suplimentar i-a oferit Rebeca slujitorului după ce i-a dat apă?|Să adape și cămilele|Să-i repare sandalele|Să-i tundă oile|Să-i construiască un cort|Rebeca s-a oferit să scoată apă și pentru animalele călătorului.
+M|Geografie|10|Spre ce regiune a pornit slujitorul pentru a găsi o soție pentru Isaac?|Mesopotamia|Madian|Filistia|Edom|Călătoria l-a dus spre cetatea lui Nahor, în Mesopotamia.
+M|Evenimente|64,65|Ce a făcut Rebeca după ce a aflat cine era bărbatul întâlnit pe câmp?|S-a acoperit cu un văl|A aruncat darurile|S-a întors la familie|A aprins o torță|După identificarea lui Isaac, Rebeca a luat vălul și s-a acoperit.
+M|Învățături|12-14|Cui i-a cerut slujitorul îndrumare înainte de a o întâlni pe Rebeca?|Lui Iehova, prin rugăciune|Regelui cetății|Unui ghicitor|Unui comandant de oști|Slujitorul și-a prezentat cererea lui Dumnezeu la izvor.
+D|Detalii și obiecte|10|Câte cămile a luat slujitorul din bunurile stăpânului său?|Zece|Șapte|Douăsprezece|Douăzeci|Numărul cămilelor cu care a pornit este precizat la începutul călătoriei.
+D|Detalii și obiecte|22|Ce greutate avea inelul de aur dat Rebecăi pentru nas?|O jumătate de siclu|Un siclu|Doi sicli|Zece sicli|Greutatea inelului este menționată separat de greutatea brățărilor.
+D|Cronologie|11|În ce moment al zilei a ajuns slujitorul la fântâna de lângă cetate?|Spre seară|La miezul nopții|În zori|La amiază|Sosirea a coincis cu timpul când femeile ieșeau să scoată apă.
+D|Istorie|3,4|Din ce grup nu trebuia slujitorul să aleagă o soție pentru Isaac?|Dintre fiicele canaaniților|Dintre rudele lui Avraam|Dintre femeile din familia lui Nahor|Dintre urmașele lui Betuel|Instrucțiunea lui Avraam deosebea locuitorii Canaanului de rudele sale.
+D|Viața cotidiană|55,56|Cât timp au propus fratele și mama Rebecăi să mai rămână ea acasă?|Cel puțin zece zile|Încă patruzeci de zile|Un an întreg|Șapte luni|Familia a cerut o amânare, dar slujitorul a dorit să plece fără întârziere.
+@Geneza|geneza|41|iosif-vise-faraon
+M|Personaje|9-13|Cine i-a amintit faraonului despre Iosif și interpretarea viselor din închisoare?|Mai-marele paharnicilor|Mai-marele brutarilor|Potifar|Unul dintre frații lui Iosif|Un slujitor readus în funcție și-a amintit ce făcuse Iosif pentru el.
+M|Evenimente|26-30|Ce reprezentau cele șapte vaci slabe din visul faraonului?|Șapte ani de foamete|Șapte regi viitori|Șapte provincii cucerite|Șapte zile de sărbătoare|Iosif a explicat că vacile slabe anunțau perioada de lipsă.
+M|Viața cotidiană|34-36|Ce măsură practică a recomandat Iosif pentru anii de belșug?|Strângerea și depozitarea hranei|Închiderea tuturor piețelor|Oprirea agriculturii|Mutarea întregii populații în pustiu|Depozitarea din anii buni trebuia să asigure hrană în timpul foametei.
+M|Geografie|1,2|Lângă ce râu se afla faraonul în primul său vis?|Nil|Iordan|Eufrat|Tigru|Visul despre vaci începe pe malul Nilului.
+M|Învățături|16|Cui i-a atribuit Iosif capacitatea de a da interpretarea corectă?|Lui Dumnezeu|Preoților egipteni|Propriei educații la curte|Mai-marelui paharnicilor|Iosif nu și-a atribuit lui însuși puterea de a explica visul.
+D|Cronologie|46|Câți ani avea Iosif când a intrat în serviciul faraonului ca administrator?|Treizeci|Douăzeci|Patruzeci|Cincizeci|Vârsta lui Iosif este precizată la începutul activității sale în Egipt.
+D|Detalii și obiecte|42|Ce obiect de autoritate a luat faraonul de la el și i l-a dat lui Iosif?|Inelul cu sigiliu|Coroana de aur|Sceptrul de argint|Sabia de luptă|Transferul inelului marca autoritatea administrativă primită de Iosif.
+D|Istorie|34|Ce parte din recoltă a recomandat Iosif să fie colectată în cei șapte ani buni?|O cincime|O zecime|O treime|O jumătate|Planul lui Iosif prevedea o cotă precisă pentru rezervele de hrană.
+D|Personaje|45|Cum se numea soția pe care faraonul i-a dat-o lui Iosif?|Asenat|Sefora|Mical|Abigail|Asenat este identificată și prin familia din care provenea.
+D|Învățături|32|Ce semnifica repetarea visului faraonului, potrivit lui Iosif?|Hotărârea lui Dumnezeu era sigură și urma să fie împlinită curând|Faraonul trebuia să uite primul vis|Foametea putea fi evitată prin magie|Interpretarea era încă necunoscută|Cele două vise întăreau același mesaj, nu ofereau două predicții fără legătură.
+@Exodul|exodul|12|paste-iesire-egipt
+M|Detalii și obiecte|7|Unde trebuia pus sângele animalului de Paște pe casele israeliților?|Pe cei doi ușori și pe partea de sus a ușii|Pe podeaua fiecărei camere|Pe acoperișul casei|Pe gardul curții|Semnul era aplicat la intrarea casei unde se mânca masa de Paște.
+M|Viața cotidiană|8,9|Cum trebuia pregătită carnea animalului de Paște?|Friptă la foc|Fiartă în apă|Uscată la soare|Mâncată crudă|Instrucțiunile de pregătire excludeau atât carnea crudă, cât și fierberea ei.
+M|Evenimente|29|Ce categorie a fost lovită în a zecea plagă, inclusiv în familia faraonului?|Întâii născuți|Toți păstorii|Toți soldații|Doar copiii sub cinci ani|Plaga a afectat întâii născuți, de la casa regală până la alte familii.
+M|Învățături|26,27|Ce trebuiau părinții israeliți să explice copiilor despre Paște?|Că amintea de cruțarea caselor lor în Egipt|Că sărbătorea construirea unui templu|Că marca alegerea unui rege|Că comemora victoria asupra Ierihonului|Transmiterea sensului comemorării către copii făcea parte din instrucțiuni.
+M|Cronologie|6|Până în ce zi a lunii trebuia păstrat animalul ales pentru Paște?|Până în ziua a paisprezecea|Până în ziua a șaptea|Până în ziua a douăzecea|Până în ultima zi a anului|Ziua sacrificării era stabilită distinct de ziua alegerii animalului.
+D|Cronologie|3|În ce zi a lunii trebuia aleasă oaia pentru fiecare familie?|În ziua a zecea|În ziua întâi|În ziua a șasea|În ziua a paisprezecea|Alegerea animalului avea loc înaintea serii când urma să fie sacrificat.
+D|Detalii și obiecte|22|Ce plantă trebuia folosită pentru aplicarea sângelui la intrare?|Isop|Cedru|Mirt|Măslin|Un mănunchi din această plantă era înmuiat în sângele din vas.
+D|Istorie|40,41|Ce perioadă de ședere este menționată la încheierea relatării despre ieșire?|430 de ani|400 de zile|480 de ani|70 de ani|Textul precizează durata perioadei care se încheia la plecarea din Egipt.
+D|Viața cotidiană|11|Ce trebuiau israeliții să aibă în mână când mâncau Paștele în grabă?|Un toiag|O trâmbiță|Un snop de grâu|O cupă cu ulei|Ținuta și obiectele purtate arătau că erau pregătiți să plece.
+D|Geografie|37|Între ce două locuri este descrisă prima deplasare a israeliților după plecare?|De la Ramses la Sucot|De la Ierihon la Ghilgal|De la Hebron la Beer-Șeba|De la Nazaret la Capernaum|Relatarea numește punctele acestei etape de început a călătoriei.
+@Exodul|exodul|16|mana-pustiu
+M|Viața cotidiană|16|Ce cantitate de mană trebuia strânsă pentru fiecare persoană într-o zi obișnuită?|Un omer|O efă|Un homer|Două efe|Cantitatea zilnică era stabilită după numărul persoanelor din fiecare cort.
+M|Cronologie|22|În ce zi strângeau israeliții o cantitate dublă de mană?|În ziua a șasea|În ziua întâi|În ziua a patra|În ziua a șaptea|Recoltarea dublă pregătea hrana pentru ziua următoare de odihnă.
+M|Detalii și obiecte|31|Cu ce gust era comparată mana în Exodul 16?|Turte cu miere|Struguri acri|Pâine cu usturoi|Măsline sărate|Descrierea manei include atât aspectul, cât și gustul ei.
+M|Evenimente|13|Ce păsări au acoperit tabăra seara, înainte de apariția manei?|Prepelițe|Porumbei|Corbi|Rândunele|Hrana din seara respectivă a fost urmată de mană dimineața.
+M|Învățături|4|Ce urmărea Dumnezeu să pună la încercare prin instrucțiunile despre mana zilnică?|Ascultarea poporului față de legea sa|Abilitatea poporului de a construi nave|Cunoașterea limbii egiptene|Preferința pentru un rege|Regulile strângerii manei erau și un test al ascultării.
+D|Cronologie|1|În ce zi a lunii a doua au ajuns israeliții în pustiul Sin?|În ziua a cincisprezecea|În ziua întâi|În ziua a zecea|În ziua a douăzeci și una|Momentul sosirii este dat în raport cu plecarea din Egipt.
+D|Geografie|1|Între ce două locuri era situat pustiul Sin?|Elim și Sinai|Cades și Hebron|Ierihon și Ai|Betel și Dan|Poziția pustiului este descrisă prin două repere ale călătoriei.
+D|Detalii și obiecte|36|Ce fracțiune dintr-o efă reprezenta un omer?|O zecime|O cincime|O jumătate|Un sfert|Ultimul verset explică raportul dintre cele două măsuri de volum.
+D|Personaje|33,34|Cine a pus vasul cu mană înaintea Mărturiei, după porunca dată lui Moise?|Aaron|Iosua|Caleb|Ietro|Aaron a îndeplinit instrucțiunea privind păstrarea unei mostre de mană.
+D|Istorie|35|Până la ce hotar au mâncat israeliții mană, potrivit capitolului?|Hotarul țării Canaanului|Hotarul Asiriei|Hotarul Filistiei de lângă Gaza|Hotarul Babilonului|Relatarea leagă încetarea acestei perioade de apropierea de țara promisă.
+@Numerele|numerele|13|cercetare-canaan
+M|Geografie|3|Din ce pustiu i-a trimis Moise pe cercetași în Canaan?|Paran|Sin|Șur|Etam|Punctul de plecare al cercetașilor era pustiul Paran.
+M|Personaje|16|Ce nume i-a dat Moise lui Hoșea, fiul lui Nun?|Iosua|Caleb|Eleazar|Otniel|Moise a schimbat numele cercetașului din tribul lui Efraim.
+M|Cronologie|25|Cât timp au cercetat țara cei trimiși de Moise?|40 de zile|12 zile|7 zile|30 de zile|Cercetașii s-au întors după patruzeci de zile de explorare.
+M|Detalii și obiecte|23|Ce fruct a necesitat doi oameni pentru a fi transportat pe o prăjină?|Un ciorchine de struguri|O rodie|O smochină|Un pepene|Ciorchinele tăiat din vale a fost un exemplu al roadelor țării.
+M|Învățături|30|Ce poziție a susținut Caleb când ceilalți au speriat poporul?|Să înainteze, fiindcă puteau cuceri țara|Să se întoarcă imediat în Egipt|Să aleagă un rege canaanit|Să renunțe definitiv la țară|Caleb a încurajat acțiunea în locul descurajării răspândite de ceilalți.
+D|Istorie|22|Cu câți ani înaintea Țoanului din Egipt fusese construit Hebronul?|Șapte|Zece|Doisprezece|Patruzeci|Relatarea include o comparație istorică între cele două cetăți.
+D|Geografie|23,24|Ce vale a primit un nume legat de ciorchinele tăiat de cercetași?|Eșcol|Chidron|Acor|Hinom|Numele văii era asociat cu rodul luat de acolo.
+D|Viața cotidiană|20|Ce sezon agricol era în curs când au fost trimiși cercetașii?|Coacerea primilor struguri|Strângerea măslinelor|Secerișul de iarnă al orzului|Culesul curmalelor|Momentul explică de ce au putut aduce struguri din țară.
+D|Personaje|6|Din ce trib provenea Caleb, fiul lui Iefune?|Iuda|Efraim|Beniamin|Levi|Lista cercetașilor îl asociază pe Caleb cu tribul lui Iuda.
+D|Evenimente|33|Cu ce insecte s-au comparat cercetașii speriați în fața locuitorilor văzuți?|Lăcuste|Furnici|Albine|Fluturi|Comparația făcea parte din raportul lor descurajator.
+@Iosua|iosua|2|rahab-cercetasi
+M|Geografie|1|Ce cetate trebuiau să cerceteze în mod special cei doi oameni trimiși de Iosua?|Ierihon|Ai|Hebron|Gabaon|Misiunea secretă avea drept țintă principală Ierihonul.
+M|Personaje|1|Cine i-a găzduit pe cei doi cercetași în Ierihon?|Rahab|Debora|Hulda|Miriam|Cercetașii au intrat în casa lui Rahab.
+M|Evenimente|15|Cum i-a ajutat Rahab pe cercetași să iasă din cetate?|I-a coborât cu o funie pe fereastră|I-a ascuns într-un car cu fân|Le-a deschis o poartă subterană|I-a deghizat în soldați|Casa ei, aflată pe zid, permitea ieșirea prin fereastră.
+M|Învățături|11|Ce a recunoscut Rahab despre Iehova în discuția cu cercetașii?|Că este Dumnezeu în cer și pe pământ|Că are putere numai în pustiu|Că depinde de regele Ierihonului|Că nu mai poate ocroti Israelul|Rahab și-a exprimat recunoașterea autorității lui Dumnezeu.
+M|Viața cotidiană|18|Unde trebuia Rahab să-i adune pe membrii familiei pentru a fi ocrotiți?|În casa ei|La palatul regal|La fântâna din afara zidurilor|În tabăra urmăritorilor|Locul de refugiu stabilit pentru familie era chiar locuința ei.
+D|Cronologie|16|Câte zile trebuiau cercetașii să se ascundă în munți?|Trei|Două|Șapte|Patruzeci|Ascunderea le permitea să aștepte întoarcerea urmăritorilor.
+D|Geografie|1|Din ce loc i-a trimis Iosua pe cei doi cercetași?|Șitim|Ghilgal|Beer-Șeba|Silo|Misiunea a pornit din Șitim, înainte de trecerea în țară.
+D|Detalii și obiecte|6|Printre ce materiale de pe acoperiș i-a ascuns Rahab?|Tulpini de in|Snopi de grâu|Ramuri de palmier|Pieile unor animale|Materialele erau așezate în rânduri pe acoperiș.
+D|Istorie|10|Despre înfrângerea căror doi regi amoriți auzise Rahab?|Sihon și Og|Balac și Eglon|Adoni-Țedec și Iabin|Saul și David|Rahab a amintit acțiunile Israelului de dincolo de Iordan.
+D|Detalii și obiecte|18,21|Ce semn a legat Rahab de fereastră?|Un șnur stacojiu|O pânză albastră|O ramură de măslin|Un inel de fier|Semnul vizibil identifica locuința care trebuia cruțată.
+@Judecătorii|judecatorii|7|ghedeon-madian
+M|Evenimente|7|Cu câți oameni urma Ghedeon să-i înfrunte pe madianiți după selecție?|300|600|1000|10000|Grupul păstrat după proba de la apă era mult mai mic decât armata inițială.
+M|Geografie|1|Lângă ce izvor a tăbărât Ghedeon înaintea luptei?|Harod|En-Ghedi|Ghihon|En-Roghel|Relatarea situează tabăra israelită la izvorul Harod.
+M|Detalii și obiecte|16|În ce erau ascunse torțele oamenilor lui Ghedeon?|În ulcioare mari|În saci de piele|În coșuri de papură|În cutii de lemn|Vasele ascundeau lumina până la momentul acțiunii comune.
+M|Istorie|16|În câte cete a împărțit Ghedeon cei 300 de oameni?|Trei|Două|Patru|Șase|Organizarea în cete permitea desfășurarea în jurul taberei.
+M|Învățături|2|De ce a spus Iehova că armata lui Ghedeon era prea numeroasă?|Pentru ca Israelul să nu-și atribuie singur salvarea|Pentru că toți oamenii erau neînarmați|Pentru a-l face pe Ghedeon rege|Pentru a amâna lupta un an|Reducerea numărului de oameni trebuia să împiedice lauda de sine.
+D|Personaje|10,11|Ce slujitor l-a însoțit pe Ghedeon când a coborât să asculte tabăra dușmană?|Pura|Oreb|Zeb|Zeba|Ghedeon a primit permisiunea să coboare împreună cu slujitorul său.
+D|Istorie|3|Câți oameni au plecat după anunțul adresat celor temători?|22000|10000|3000|12000|Prima reducere a armatei i-a vizat pe cei care se temeau.
+D|Cronologie|19|La începutul cărei străji de noapte au ajuns Ghedeon și oamenii lui la tabără?|Al străjii de la mijloc|Al primei străji|Al ultimei străji|La sfârșitul tuturor străjilor|Atacul a început imediat după schimbarea străjerilor din acel interval.
+D|Viața cotidiană|13|Din ce cereală era pâinea văzută în visul madianitului?|Orz|Grâu|Mei|Secară|Visul prezenta o pâine obișnuită care lovea un cort din tabără.
+D|Detalii și obiecte|20|În ce mână țineau oamenii torțele după spargerea ulcioarelor?|În mâna stângă|În mâna dreaptă|În ambele mâini|Nu le țineau, ci le puneau pe pământ|Cealaltă mână era folosită pentru a sufla în corn.
+@Rut|rut|2|rut-boaz-seceris
+M|Personaje|1|Din familia cărui bărbat era Boaz, ruda menționată a lui Naomi?|Elimelec|Manoah|Iese|Lameh|Legătura de familie este precizată înainte ca Rut să ajungă pe ogor.
+M|Viața cotidiană|2,3|Ce activitate a cerut Rut să poată face pe ogoare?|Să strângă spice rămase după secerători|Să păzească viile|Să cosească lâna oilor|Să vândă pește|Strângerea spicelor îi oferea hrană ei și lui Naomi.
+M|Geografie|4|Din ce cetate a venit Boaz când și-a salutat secerătorii?|Betleem|Ierusalim|Hebron|Ierihon|Sosirea lui Boaz este legată de Betleem.
+M|Învățături|4|Ce le-a dorit Boaz secerătorilor când i-a salutat?|Ca Iehova să fie cu ei|Ca regele Moabului să-i ocrotească|Ca nimeni să nu-i vadă|Ca ogorul să rămână nesecerat|Salutul său exprima preocupare pentru lucrători și respect față de Dumnezeu.
+M|Cronologie|17|Până în ce moment a zilei a continuat Rut să strângă spice?|Până seara|Până la amiază|Până la răsărit|Până la începutul nopții următoare|Rut a lucrat pe ogor pe durata zilei și apoi a bătut spicele.
+D|Detalii și obiecte|17|Cam cât orz a obținut Rut după ce a bătut spicele?|O efă|Un omer|Un log|Zece homeri|Cantitatea recoltată după o zi de lucru era de aproximativ o efă.
+D|Viața cotidiană|14|În ce i-a oferit Boaz lui Rut să-și înmoaie bucata de pâine?|În oțet|În ulei parfumat|În apă sărată|În lapte acru|Invitația de la masă includea această băutură acră folosită cu pâinea.
+D|Învățături|12|Sub ale cui aripi a spus Boaz că venise Rut să caute refugiu?|Ale lui Iehova, Dumnezeul Israelului|Ale regelui Moabului|Ale unei căpetenii din Betleem|Ale tatălui ei|Boaz a legat hotărârea lui Rut de încrederea ei în Dumnezeul Israelului.
+D|Cronologie|23|Până la încheierea căror două secerișuri a rămas Rut lângă slujitoarele lui Boaz?|Al orzului și al grâului|Al inului și al viței-de-vie|Al măslinelor și al smochinelor|Al meiului și al orezului|Relatarea urmărește munca ei pe durata celor două secerișuri.
+D|Personaje|5-7|Cine i-a spus lui Boaz cine era tânăra care strângea spice?|Slujitorul care supraveghea secerătorii|Regele din Betleem|Un preot din Silo|Un negustor moabit|Boaz a cerut informații omului care avea în grijă lucrătorii.
+@1 Samuel|1-samuel|17|david-goliat
+M|Geografie|2|În ce vale și-au așezat tabăra Saul și bărbații Israelului în fața filistenilor?|Valea Ela|Valea Chidron|Valea Hinom|Valea Iordanului|Pozițiile celor două armate sunt descrise la începutul relatării.
+M|Personaje|28|Care frate mai mare al lui David s-a mâniat când l-a auzit vorbind despre Goliat?|Eliab|Abinadab|Șama|Ionatan|Eliab a pus la îndoială motivele pentru care David venise la luptă.
+M|Detalii și obiecte|40|Câte pietre netede a ales David din albia pârâului?|Cinci|Trei|Șapte|Douăsprezece|David și-a pregătit pietrele înainte de apropierea de filistean.
+M|Evenimente|39|De ce a renunțat David la echipamentul militar pus pe el de Saul?|Nu era obișnuit cu el|Era făcut din lemn|Îi fusese interzis de Iese|Îl împrumutase de la Goliat|David nu a folosit echipamentul cu care nu era familiarizat.
+M|Învățături|47|Ce a spus David că nu erau necesare pentru ca Iehova să salveze?|Sabia și sulița|Ascultarea și curajul|Încrederea și credința|O rugăciune sinceră|David a arătat că rezultatul luptei nu depindea de superioritatea armelor.
+D|Cronologie|16|Câte zile s-a prezentat Goliat dimineața și seara înaintea Israelului?|40|7|12|30|Provocarea filisteanului s-a repetat pe o perioadă precizată.
+D|Viața cotidiană|18|Câte bucăți de brânză i-a trimis Iese comandantului de o mie?|Zece|Cinci|Șapte|Douăsprezece|Darurile pentru comandant făceau parte din însărcinarea dată lui David.
+D|Istorie|13|Câți dintre fiii cei mai mari ai lui Iese îl urmaseră pe Saul la luptă?|Trei|Doi|Patru|Șapte|David venise să afle vești despre cei trei frați aflați în armată.
+D|Detalii și obiecte|7|Cu ce obiect este comparat mânerul suliței lui Goliat?|Sulul unui țesător|Un toiag de păstor|O ramură de isop|Un stâlp de aramă gol pe dinăuntru|Comparația subliniază dimensiunea armei filisteanului.
+D|Personaje|55|Pe cine a întrebat Saul al cui fiu era David când acesta ieșea la luptă?|Pe Abner|Pe Ionatan|Pe Samuel|Pe Ahitofel|Saul i-a adresat întrebarea comandantului armatei sale.
+@1 Regi|1-regi|18|ilie-carmel
+M|Geografie|19,20|Pe ce munte i-a adunat Ilie pe israeliți și pe profeții lui Baal?|Carmel|Sinai|Nebo|Tabor|Întâlnirea hotărâtoare a avut loc pe muntele Carmel.
+M|Personaje|3,4|Cine ascunsese o sută de profeți ai lui Iehova și îi hrănise?|Obadia|Ghehazi|Hazael|Iehu|Administratorul casei lui Ahab îi protejase pe profeți de persecuție.
+M|Detalii și obiecte|31|Câte pietre a folosit Ilie pentru reconstruirea altarului?|Douăsprezece|Șapte|Zece|Patruzeci|Pietrele corespundeau numărului triburilor fiilor lui Iacob.
+M|Învățături|21|Ce alegere le-a cerut Ilie israeliților să facă?|Să-l urmeze pe adevăratul Dumnezeu|Să slujească simultan tuturor zeilor|Să aleagă un alt rege prin tragere la sorți|Să părăsească pentru totdeauna țara|Ilie a respins oscilarea dintre închinarea la Iehova și la Baal.
+M|Evenimente|38|Ce a mistuit ofranda, lemnele și chiar apa din șanț?|Focul venit de la Iehova|Un cutremur|O inundație|O armată de lăcuste|Răspunsul prin foc a făcut parte din demonstrația cerută pe Carmel.
+D|Istorie|19|Câți profeți ai lui Baal a cerut Ilie să fie adunați?|450|400|300|120|Numărul profeților lui Baal este diferit de cel al profeților stâlpului sacru.
+D|Viața cotidiană|4|Cu ce două lucruri îi aproviziona Obadia pe profeții ascunși?|Pâine și apă|Carne și vin|Lapte și miere|Pește și ulei|Hrana și apa le asigurau supraviețuirea în ascunzătoare.
+D|Detalii și obiecte|33,34|De câte ori a cerut Ilie să fie turnate cele patru vase cu apă peste ofrandă?|De trei ori|De două ori|De șapte ori|O singură dată|Porunca privind apa a fost repetată până la a treia turnare.
+D|Cronologie|43,44|La a câta privire spre mare a anunțat slujitorul apariția unui nor mic?|La a șaptea|La a treia|La a patra|La a douăsprezecea|Ilie l-a trimis în mod repetat să privească până când a apărut semnul ploii.
+D|Geografie|46|Până la intrarea cărei cetăți a alergat Ilie înaintea lui Ahab?|Izreel|Samaria|Megido|Betel|Ultimul verset precizează locul până unde a alergat Ilie.
+@2 Regi|2-regi|5|naaman-vindecare
+M|Personaje|1|Ce funcție avea Naaman în serviciul regelui Siriei?|Comandant al armatei|Paharnic|Mare preot|Paznic al tezaurului|Naaman era un om important în conducerea militară a Siriei.
+M|Geografie|10|În ce râu trebuia Naaman să se spele pentru a se vindeca?|Iordan|Nil|Tigru|Eufrat|Îndrumarea lui Elisei desemna Iordanul, nu un râu din Siria.
+M|Evenimente|10,14|De câte ori s-a scufundat Naaman în apa râului, potrivit instrucțiunii?|De șapte ori|De trei ori|De două ori|De zece ori|Vindecarea a urmat îndeplinirii instrucțiunii primite prin mesager.
+M|Învățături|16|Cum a răspuns Elisei ofertei de daruri după vindecare?|A refuzat darurile|A cerut dublarea lor|A păstrat numai aurul|A cerut un teritoriu|Elisei nu a primit plata pe care Naaman a încercat să i-o ofere.
+M|Viața cotidiană|2,3|Cine i-a vorbit soției lui Naaman despre profetul din Samaria?|O fetiță israelită luată captivă|O negustoreasă egipteană|O rudă a regelui Siriei|O slujitoare filisteană|Mesajul inițial a venit de la o tânără aflată în casa familiei.
+D|Geografie|12|Ce două râuri ale Damascului a invocat Naaman când s-a supărat?|Abana și Parpar|Iaboc și Arnon|Chidron și Chișon|Ulai și Chebar|Naaman a comparat apele Siriei cu cele ale Israelului.
+D|Detalii și obiecte|5|Câte schimburi de haine a luat Naaman la plecarea spre Israel?|Zece|Șapte|Două|Douăzeci|Hainele făceau parte din darurile pregătite pentru călătorie.
+D|Personaje|20|Care slujitor a alergat după Naaman pentru a obține daruri?|Ghehazi|Baruc|Pura|Ahazia|Slujitorul lui Elisei a urmărit ceea ce profetul refuzase.
+D|Istorie|18|În casa cărui zeu îl sprijinea Naaman pe regele său?|Rimon|Dagon|Baal-Peor|Nebo|Naaman a explicat o situație legată de îndatoririle lui față de stăpânul său.
+D|Învățături|15|Ce concluzie a exprimat Naaman despre Dumnezeu după vindecare?|Că adevăratul Dumnezeu este cel al Israelului|Că idolii Siriei îl vindecaseră|Că darurile lui făcuseră minunea|Că râul vindeca pe oricine fără îndrumare|Vindecarea i-a schimbat înțelegerea despre Dumnezeul Israelului.
+@Daniel|daniel|3|trei-evrei-cuptor
+M|Personaje|12|Care trei tineri au fost acuzați că nu se închină statuii de aur?|Șadrac, Meșac și Abed-Nego|Daniel, Ezra și Neemia|Iosua, Caleb și Fineas|Hagai, Zaharia și Maleahi|Acuzația îi numea pe cei trei administratori iudei.
+M|Geografie|1|Pe ce câmpie a ridicat Nebucadnețar statuia de aur?|Dura|Șinear de lângă Ur|Megido|Moab|Statuia a fost ridicată în provincia Babilonului, pe câmpia Dura.
+M|Evenimente|6|Ce pedeapsă era prevăzută pentru refuzul închinării la statuie?|Aruncarea într-un cuptor aprins|Exilarea în Egipt|Pierderea cetățeniei pentru un an|Închiderea într-o groapă cu șerpi|Decretul regelui amenința direct viața celor care nu se supuneau.
+M|Detalii și obiecte|5|Ce trebuia să audă mulțimea înainte de a se închina statuii?|Sunetul instrumentelor muzicale|Citirea unui vis|Trei bătăi în poarta cetății|Un tunet|Semnalul era muzica interpretată cu mai multe instrumente.
+M|Învățături|17,18|Ce hotărâre au exprimat tinerii chiar dacă Dumnezeu nu i-ar fi salvat?|Nu aveau să se închine statuii|Aveau să ceară un alt idol|Aveau să-și părăsească definitiv credința|Aveau să recunoască statuia drept creator|Loialitatea lor nu depindea de o garanție a eliberării imediate.
+D|Detalii și obiecte|1|Ce înălțime avea statuia de aur, în coți?|60|30|90|120|Înălțimea este dată împreună cu lățimea statuii.
+D|Istorie|1|Ce lățime avea statuia de aur, în coți?|6|12|10|20|Dimensiunile statuii erau de șaizeci de coți înălțime și șase lățime.
+D|Evenimente|19|De câte ori mai tare decât de obicei a cerut regele să fie încălzit cuptorul?|De șapte ori|De trei ori|De zece ori|De douăsprezece ori|Porunca a fost dată după răspunsul ferm al celor trei tineri.
+D|Învățături|28|Pe cine a spus regele că trimisese Dumnezeu pentru a-i salva pe slujitorii săi?|Pe îngerul său|Pe o armată a mezilor|Pe preoții Babilonului|Pe un sol egiptean|Nebucadnețar a atribuit salvarea intervenției trimisului lui Dumnezeu.
+D|Viața cotidiană|27|Ce au constatat demnitarii despre mirosul hainelor tinerilor după ieșirea din foc?|Nu aveau nici miros de foc|Miroseau puternic a fum|Miroseau a ulei de măsline|Miroseau a sulf ars|Examinarea hainelor a întărit constatarea că focul nu-i vătămase.
+@Daniel|daniel|5|belsatar-scriere-zid
+M|Personaje|1|Ce rege a organizat ospățul în timpul căruia a apărut scrierea pe zid?|Belșațar|Darius|Cirus|Ahașveroș|Relatarea începe cu ospățul dat de Belșațar demnitarilor săi.
+M|Geografie|2,3|Din templul cărei cetăți proveneau vasele folosite la ospăț?|Ierusalim|Samaria|Ninive|Susa|Vasele proveneau din templul de la Ierusalim și fuseseră luate în Babilon.
+M|Evenimente|5|Ce a apărut și a scris pe tencuiala zidului palatului?|Degetele unei mâini omenești|Un înger cu o sabie|O pasăre cu o tăbliță|O flacără care lua forma unui leu|Regele a putut vedea mâna în timp ce aceasta scria.
+M|Personaje|12,13|Cine a fost chemat să explice scrierea după ce înțelepții nu au reușit?|Daniel|Ezra|Ezechiel|Ieremia|Daniel a fost adus înaintea regelui la recomandarea reginei.
+M|Învățături|22,23|Ce i-a reproșat Daniel lui Belșațar, deși cunoștea experiența lui Nebucadnețar?|Că nu și-a umilit inima|Că refuzase să învețe arta războiului|Că nu construise un palat mai mare|Că nu plătise tribut Egiptului|Daniel a arătat că regele nu învățase din lecția umilirii anterioare.
+D|Istorie|1|Câți demnitari sunt menționați ca invitați la ospățul lui Belșațar?|O mie|O sută|Cinci sute|Trei mii|Mărimea ospățului este precizată în primul verset.
+D|Detalii și obiecte|7|Ce rang i-a promis regele celui care explica scrierea?|Al treilea în regat|Al doilea după marele preot|Comandant peste o sută de oameni|Guvernator al Egiptului|Rangul promis însoțea haina purpurie și colierul de aur.
+D|Învățături|27|Ce însemna evaluarea exprimată prin cuvântul „techel”?|Regele fusese cântărit și găsit lipsit|Regele urma să primească o coroană nouă|Regatul urma să dureze încă o mie de ani|Toate datoriile regelui erau anulate|Explicația folosea imaginea cântăririi pentru a arăta verdictul asupra regelui.
+D|Cronologie|30|Când a fost ucis Belșațar în raport cu interpretarea scrierii?|În aceeași noapte|După trei ani|După patruzeci de zile|La următoarea sărbătoare anuală|Relatarea prezintă împlinirea verdictului în noaptea ospățului.
+D|Istorie|31|Câți ani avea Darius Medul când a primit regatul?|Aproximativ 62|Aproximativ 30|Aproximativ 40|Aproximativ 80|Vârsta noului conducător este indicată la sfârșitul capitolului.
+@Neemia|neemia|2|neemia-misiune-ierusalim
+M|Personaje|1|Cărui rege i-a prezentat Neemia cererea de a merge la Ierusalim?|Artaxerxe|Cirus|Darius Medul|Nebucadnețar|Cererea a fost făcută la curtea lui Artaxerxe.
+M|Evenimente|3,5|Ce dorea Neemia să refacă în cetatea unde erau mormintele strămoșilor săi?|Cetatea aflată în ruine|Un port la mare|O piramidă|Un palat în Babilon|Neemia a cerut permisiunea să se ocupe de refacerea cetății.
+M|Învățături|4,5|Ce a făcut Neemia înainte de a-i răspunde regelui ce anume cerea?|S-a rugat Dumnezeului cerurilor|A consultat un astrolog|A aruncat sorți în fața regelui|A cerut sfatul lui Sanbalat|Neemia s-a rugat înainte de a-și formula cererea.
+M|Cronologie|12,13|În ce parte a zilei a inspectat Neemia zidurile în prima sa cercetare?|Noaptea|La amiază|Imediat după răsărit|În timpul mesei regale|Inspecția inițială a fost făcută discret, după lăsarea nopții.
+M|Geografie|11|În ce cetate a ajuns Neemia pentru misiunea de reconstruire?|Ierusalim|Ninive|Susa|Ecbatana|Destinația misiunii era cetatea Ierusalimului.
+D|Istorie|1|În al câtelea an al lui Artaxerxe a făcut Neemia această cerere?|Al douăzecilea|Al șaptelea|Al doisprezecelea|Al treizecilea|Datarea capitolului folosește anul de domnie al regelui persan.
+D|Cronologie|1|În ce lună a vorbit Neemia cu regele despre situația cetății?|Nisan|Chislev|Elul|Adar|Luna este precizată împreună cu anul de domnie al regelui.
+D|Personaje|8|Cum se numea păzitorul parcului regal de la care Neemia cerea lemn?|Asaf|Hatac|Hegai|Eliab|Scrisoarea solicitată pentru Asaf privea materialul necesar lucrărilor.
+D|Detalii și obiecte|7|Ce documente i-a cerut Neemia regelui pentru a putea călători în siguranță?|Scrisori către guvernatorii de Dincolo de Râu|Un recensământ al Babilonului|O listă a preoților egipteni|O copie a unui tratat cu Moabul|Scrisorile urmau să asigure trecerea lui până în Iuda.
+D|Geografie|13,15|Prin ce poartă a ieșit și apoi a reintrat Neemia în timpul inspecției?|Poarta Văii|Poarta Oilor|Poarta Peștilor|Poarta Cailor|Aceeași poartă este menționată atât la plecare, cât și la întoarcere.
+@Estera|estera|4|estera-interventie-popor
+M|Detalii și obiecte|1|Ce a pus Mardoheu pe el în semn de durere după aflarea decretului?|Pânză de sac și cenușă|Haine purpurii și o coroană|O platoșă și un coif|Haine albe de sărbătoare|Îmbrăcămintea și cenușa arătau durerea lui Mardoheu.
+M|Cronologie|16|Cât timp a cerut Estera să postească iudeii pentru ea?|Trei zile, noapte și zi|Șapte zile numai dimineața|O lună întreagă|Patruzeci de zile|Durata postului cerut era precizată în mesajul către Mardoheu.
+M|Evenimente|8|Pentru cine trebuia Estera să mijlocească înaintea regelui?|Pentru poporul ei|Pentru armata Egiptului|Pentru negustorii Tirului|Pentru slujitorii lui Haman|Mardoheu i-a cerut să intervină pentru iudeii amenințați de decret.
+M|Istorie|11|Ce gest al regelui putea salva o persoană intrată fără chemare în curtea interioară?|Întinderea sceptrului de aur|Ridicarea unei cupe cu vin|Deschiderea unei ferestre|Scoaterea inelului de pe mână|Estera a explicat excepția de la pedeapsa prevăzută de legea curții.
+M|Învățături|16|Ce arăta hotărârea Esterei de a intra la rege, în ciuda riscului?|Disponibilitatea de a-și risca viața pentru intervenție|Dorința de a părăsi poporul|Siguranța că legea fusese deja anulată|Refuzul de a mai asculta de Mardoheu|Estera a acceptat riscul personal al cererii în favoarea poporului ei.
+D|Personaje|5,6|Ce slujitor al curții a purtat mesajele între Estera și Mardoheu?|Hatac|Hegai|Asaf|Harbona|Estera l-a trimis pe Hatac să afle ce se întâmplase.
+D|Cronologie|11|De câte zile nu mai fusese Estera chemată la rege?|Treizeci|Șapte|Paisprezece|Nouăzeci|Această absență a chemării explica dificultatea intervenției ei.
+D|Viața cotidiană|2|Cu ce îmbrăcăminte nu se putea intra la poarta regelui?|Cu pânză de sac|Cu haine de in|Cu mantie purpurie|Cu sandale|Regula de la poartă l-a împiedicat pe Mardoheu să intre astfel îmbrăcat.
+D|Geografie|8|În ce cetate fusese emis decretul a cărui copie a trimis-o Mardoheu Esterei?|Susa|Ninive|Ecbatana|Babilon|Copia documentului emis în Susa trebuia să-i arate Esterei pericolul.
+D|Personaje|16|Cine urma să postească împreună cu Estera în palat?|Slujitoarele ei|Fiii lui Haman|Comandanții regelui|Toți negustorii străini|Estera a inclus în hotărârea sa și femeile care o slujeau.
+@Matei|matei|14|isus-multime-apa
+M|Evenimente|21|Aproximativ câți bărbați au mâncat la înmulțirea pâinilor relatată în Matei 14?|5000, în afară de femei și copii|4000 în total, inclusiv copiii|3000, fără niciun copil|7000 numai dintre discipoli|Numărătoarea din relatare distinge bărbații de femeile și copiii prezenți.
+M|Detalii și obiecte|17|Ce hrană aveau discipolii înainte de hrănirea mulțimii din Matei 14?|Cinci pâini și doi pești|Șapte pâini și trei pești|Două pâini și cinci pești|Douăsprezece pâini și un pește|Cantitatea inițială era mică în raport cu mulțimea.
+M|Personaje|28,29|Care discipol a coborât din barcă pentru a merge pe apă spre Isus?|Petru|Andrei|Filip|Toma|Petru a cerut să vină spre Isus și a ieșit din barcă.
+M|Învățături|14|Ce sentiment l-a îndemnat pe Isus să se ocupe de bolnavii din mulțime?|Compasiunea|Dorința de răzbunare|Teama de un soldat|Nemulțumirea față de hrană|Isus a reacționat la nevoile oamenilor cu milă.
+M|Geografie|34|În ce ținut au debarcat după traversarea mării, potrivit sfârșitului capitolului?|Ghenezaret|Decapole|Moab|Samaria|Locul debarcării este numit după relatarea mersului pe apă.
+D|Cronologie|25|În ce strajă a nopții a venit Isus spre discipoli mergând pe apă?|A patra|Prima|A doua|A treia|Relatarea indică ultima dintre cele patru străji ale nopții.
+D|Istorie|6|Cu ocazia cărei sărbătoriri a dansat fiica Irodiadei înaintea lui Irod?|A zilei lui de naștere|A Paștelui|A Sărbătorii Colibelor|A consacrării templului|Prilejul petrecerii este menționat în relatarea despre Ioan Botezătorul.
+D|Detalii și obiecte|20|Câte coșuri pline cu resturi s-au adunat după hrănirea celor 5000 de bărbați?|Douăsprezece|Șapte|Cinci|Patru|Numărul coșurilor este un detaliu distinct al acestei hrăniri.
+D|Viața cotidiană|19|Pe ce i-a așezat Isus pe oameni înainte de distribuirea hranei?|Pe iarbă|Pe băncile sinagogii|Pe treptele templului|Pe corăbii|Mulțimea a fost așezată pe iarbă pentru masă.
+D|Învățături|33|Ce au recunoscut cei din barcă despre Isus după liniștirea vântului?|Că este Fiul lui Dumnezeu|Că este regele Siriei|Că este Ioan întors din Egipt|Că este un comandant roman|Reacția lor a exprimat recunoașterea identității lui Isus.
+@Luca|luca|1|vestiri-zaharia-maria
+M|Personaje|19,26|Ce înger este numit atât în vestirea către Zaharia, cât și în cea către Maria?|Gabriel|Mihael|Abadon|Rafael|Numele trimisului apare în ambele relatări ale vestirii.
+M|Geografie|26|În ce cetate din Galileea a fost trimis Gabriel la Maria?|Nazaret|Capernaum|Cana|Betleem|Locul întâlnirii cu Maria era Nazaretul din Galileea.
+M|Cronologie|26,36|În a câta lună de sarcină era Elisabeta când Gabriel a fost trimis la Maria?|A șasea|A treia|A șaptea|A noua|Vestirea către Maria este datată în raport cu sarcina Elisabetei.
+M|Învățături|37|Ce idee i-a transmis Gabriel Mariei despre puterea lui Dumnezeu?|Că nicio declarație a lui Dumnezeu nu este imposibil de împlinit|Că Dumnezeu poate acționa numai în Iudeea|Că promisiunile depind de aprobarea Romei|Că minunile se încheiaseră în trecut|Îngerul a încurajat încrederea Mariei în capacitatea lui Dumnezeu de a-și împlini cuvântul.
+M|Evenimente|20|Ce i s-a întâmplat lui Zaharia după ce nu a crezut vestirea îngerului?|A rămas fără putința de a vorbi pentru un timp|A fost exilat în Babilon|A fost înlocuit de regele Irod|A plecat imediat în Egipt|Starea lui Zaharia urma să dureze până la împlinirea celor vestite.
+D|Istorie|5|Din ce grup preoțesc făcea parte Zaharia?|Grupul lui Abia|Grupul lui Iehoiarib|Grupul lui Maleahi|Grupul lui Ezra|Apartenența lui Zaharia este precizată în prezentarea familiei sale.
+D|Cronologie|56|Aproximativ cât timp a rămas Maria la Elisabeta?|Trei luni|Zece zile|Șase luni|Un an|Relatarea precizează durata vizitei înaintea întoarcerii Mariei acasă.
+D|Viața cotidiană|9|Ce serviciu preoțesc îndeplinea Zaharia când i s-a arătat îngerul?|Oferirea tămâiei în sanctuar|Spălarea hainelor preoțești|Numărarea turmelor pentru impozit|Repararea zidurilor Ierusalimului|Slujirea lui Zaharia era legată de altarul tămâiei.
+D|Detalii și obiecte|63|Ce a cerut Zaharia pentru a indica numele copilului?|O tăbliță de scris|Un sul al recensământului|Un sigiliu regal|O harfă|Zaharia a comunicat numele în scris înainte de a-și recăpăta vorbirea.
+D|Personaje|3,4|Cui îi este adresată relatarea ordonată prezentată la începutul Evangheliei după Luca?|Lui Teofil|Lui Timotei|Lui Titus|Lui Corneliu|Autorul precizează destinatarul pentru care a alcătuit relatarea.
+@Ioan|ioan|11|lazar-inviere
+M|Geografie|1|În ce sat locuiau Lazăr și surorile sale?|Betania|Betel|Cana|Nain|Betania este identificată ca satul Mariei și al Martei.
+M|Personaje|1-3|Cum se numeau surorile lui Lazăr?|Maria și Marta|Maria și Salome|Priscila și Lidia|Elisabeta și Ana|Cele două surori i-au trimis lui Isus vestea îmbolnăvirii fratelui lor.
+M|Cronologie|17|De câte zile se afla Lazăr în mormânt când a sosit Isus?|Patru|Două|Trei|Șapte|Durata de la îngropare este precizată la sosirea lui Isus.
+M|Învățături|25|Cum s-a descris Isus când a discutat cu Marta despre înviere?|Învierea și viața|Un simplu păzitor al mormintelor|Conducătorul armatei din Iudeea|Cel care nu poate schimba nimic|Declarația lui Isus lega speranța vieții de credința în el.
+M|Evenimente|39,41|Ce le-a cerut Isus oamenilor să facă înainte de a-l chema pe Lazăr afară?|Să înlăture piatra|Să zidească intrarea|Să-i aducă o barcă|Să aprindă focuri în jurul mormântului|Piatra de la intrare a fost îndepărtată înaintea chemării lui Lazăr.
+D|Cronologie|6|Câte zile a mai rămas Isus în locul unde era după ce a auzit că Lazăr era bolnav?|Două|Trei|Patru|Șapte|Plecarea spre Iudeea nu a urmat imediat primirii veștii.
+D|Personaje|16|Ce discipol, numit și Geamănul, a spus să meargă și ei cu Isus?|Toma|Bartolomeu|Iacov|Filip|Toma și-a exprimat hotărârea în fața celorlalți discipoli.
+D|Detalii și obiecte|38|Ce fel de loc era mormântul lui Lazăr?|O peșteră închisă cu o piatră|O groapă acoperită cu frunze|O cameră din palat|O barcă îngropată în nisip|Forma mormântului explică prezența pietrei de la intrare.
+D|Istorie|49|Cine era mare preot în anul în care conducătorii au discutat uciderea lui Isus?|Caiafa|Ana ca mare preot în funcție|Gamaliel|Nicodim|Capitolul îl identifică pe Caiafa în această funcție.
+D|Învățături|41,42|De ce a rostit Isus cu voce tare mulțumirea către Tatăl înainte de învierea lui Lazăr?|Pentru ca mulțimea să creadă că Tatăl îl trimisese|Pentru a cere o plată pentru minune|Pentru a-i chema pe soldații romani|Pentru a afla unde era mormântul|Isus a explicat că rostirea publică avea în vedere credința celor prezenți.
+@Faptele|faptele|12|petru-eliberare-inchisoare
+M|Personaje|2|Care apostol, frate al lui Ioan, a fost ucis cu sabia la porunca lui Irod?|Iacov|Andrei|Filip|Bartolomeu|Relatarea îl identifică pe Iacov prin legătura de familie cu Ioan.
+M|Evenimente|7-10|Cine l-a condus pe Petru afară din închisoare?|Un înger al lui Iehova|Un soldat plătit de discipoli|Guvernatorul roman|Un negustor din Tir|Eliberarea a avut loc prin intervenția îngerului trimis la Petru.
+M|Învățături|5|Ce făcea congregația în timp ce Petru era ținut în închisoare?|Se ruga stăruitor lui Dumnezeu pentru el|Alegea un nou rege|Încerca să cumpere toate armele orașului|Pregătea o corabie pentru Irod|Congregația a răspuns situației prin rugăciune insistentă.
+M|Geografie|12|La a cui casă s-a dus Petru după eliberare, unde erau adunați mulți discipoli?|A Mariei, mama lui Ioan numit Marcu|A Lidiei, în Filipi|A Priscilei, în Corint|A Dorcăi, în Iope|Casa identificată în relatare era un loc de adunare pentru rugăciune.
+M|Detalii și obiecte|7|Ce a căzut de pe mâinile lui Petru când îngerul l-a trezit?|Lanțurile|Inelele de aur|Mănușile de piele|Tăblițele pentru scris|Înlăturarea legăturilor a fost una dintre primele etape ale eliberării.
+D|Istorie|4|Câte grupe de câte patru soldați a pus Irod să-l păzească pe Petru?|Patru|Două|Trei|Șase|Paza fusese organizată în patru grupe distincte.
+D|Personaje|13,14|Cum se numea slujitoarea care a recunoscut glasul lui Petru la poartă?|Roda|Damaris|Lidia|Persida|Bucuria a făcut-o să ducă vestea înainte de a-i deschide.
+D|Detalii și obiecte|6|Între câți soldați dormea Petru în noaptea eliberării?|Doi|Patru|Șase|Opt|Petru era legat cu două lanțuri și se afla între doi soldați.
+D|Evenimente|9|Ce credea Petru la început despre cele petrecute în timpul eliberării?|Că avea o viziune|Că fusese numit guvernator|Că îl vizita regele Irod|Că închisoarea fusese distrusă de un cutremur|La început nu și-a dat seama că eliberarea era reală.
+D|Geografie|19|În ce cetate a coborât Irod din Iudeea după căutarea nereușită a lui Petru?|Cezareea|Antiohia|Tars|Efes|Capitolul precizează următoarea deplasare a lui Irod.

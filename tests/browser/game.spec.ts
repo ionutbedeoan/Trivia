@@ -1,0 +1,247 @@
+import { test, expect } from '@playwright/test';
+import type { Page, BrowserContext } from '@playwright/test';
+const root = process.env.E2E_BASE_URL ?? 'http://127.0.0.1:3100';
+async function waitForConnection(page: Page) {
+  await expect(page.getByText('Se conectează la server…')).toHaveCount(0);
+}
+for (const capacity of [1, 2, 4])
+  test(`${capacity} browsere: lobby → 12 întrebări → rezultat → revanșă`, async ({ browser }) => {
+    const contexts: BrowserContext[] = [],
+      pages: Page[] = [],
+      errors: string[] = [];
+    for (let i = 0; i < capacity; i++) {
+      const context = await browser.newContext({
+        viewport: i % 2 ? { width: 390, height: 844 } : { width: 1440, height: 900 },
+      });
+      contexts.push(context);
+      const page = await context.newPage();
+      page.on('pageerror', (e) => errors.push(e.message));
+      page.on('dialog', (d) => d.accept());
+      pages.push(page);
+    }
+    try {
+      const host = pages[0];
+      await host.goto(capacity === 1 ? root + '/' : `${root}/creeaza`);
+      if (capacity === 1)
+        await host.getByRole('link', { name: 'Joacă singur', exact: true }).click();
+      await waitForConnection(host);
+      await host.getByLabel('Pseudonim', { exact: true }).fill('Andrei');
+      await host
+        .getByRole('radio', {
+          name: capacity === 1 ? 'Singur' : String(capacity),
+          exact: true,
+        })
+        .check();
+      if (capacity === 4) await host.getByRole('radio', { name: 'Dificil', exact: true }).check();
+      await expect(host.getByRole('group', { name: 'Timp de răspuns' })).toHaveCount(0);
+      await host.getByRole('button', { name: 'Creează camera', exact: true }).click();
+      const code = await host.getByTestId('room-code').textContent();
+      for (let i = 1; i < capacity; i++) {
+        await pages[i].goto(`${root}/intra?cod=${code}`);
+        await waitForConnection(pages[i]);
+        await pages[i]
+          .getByLabel('Pseudonim', { exact: true })
+          .fill(['Elena', 'Radu', 'Ioana'][i - 1]);
+        await pages[i].getByRole('button', { name: 'Intră', exact: true }).click();
+        await expect(pages[i].getByTestId('room-code')).toHaveText(code!);
+      }
+      for (const page of pages) await page.getByLabel('Sunt pregătit', { exact: true }).check();
+      await host.getByRole('button', { name: 'Începe partida' }).click();
+      const questions = new Set<string>();
+      for (let index = 0; index < 12; index++) {
+        if (index === 0)
+          for (const page of pages)
+            await page.getByRole('button', { name: 'Sunt gata', exact: true }).click();
+        for (const page of pages)
+          await expect(page.locator('.game-meta')).toContainText(`Întrebarea ${index + 1}/12`);
+        for (const page of pages) {
+          await expect(page.getByRole('button', { name: 'Sunt gata', exact: true })).toHaveCount(0);
+          await expect(page.locator('.inline-feedback')).toHaveCount(0);
+          await expect(page.getByText('Mizează · o utilizare')).toHaveCount(0);
+          await expect(page.getByRole('button', { name: 'Mai am nevoie de timp' })).toHaveCount(0);
+          if (index === 0 && page.viewportSize()!.width < 768) {
+            const scores = await page.locator('.score-sidebar').boundingBox();
+            const question = await page.locator('.question-card').boundingBox();
+            expect(scores!.y + scores!.height).toBeLessThanOrEqual(question!.y);
+            expect(scores!.width).toBeLessThanOrEqual(290);
+            await page.screenshot({ path: 'artifacts/question-mobile.png', fullPage: true });
+          }
+        }
+        const questionCards = await Promise.all(
+          pages.map((page) => page.locator('.question-card').elementHandle()),
+        );
+        const text = await host.locator('.question-card h1').textContent();
+        expect(questions.has(text!)).toBeFalsy();
+        questions.add(text!);
+        if (index === 0)
+          await host.screenshot({ path: `artifacts/game-${capacity}-desktop.png`, fullPage: true });
+        for (const [i, page] of pages.entries()) {
+          await page
+            .getByRole('radio')
+            .nth(i % 4)
+            .check();
+          await page.getByRole('button', { name: 'Trimite răspunsul', exact: true }).click();
+          if (index === 1 && i === 0 && capacity === 2) {
+            await page.reload();
+            await expect(
+              page.getByText('Răspuns înregistrat. Așteptăm ceilalți jucători.'),
+            ).toBeVisible();
+            await expect(page.getByRole('dialog')).toHaveCount(0, { timeout: 15000 });
+            await expect(
+              page.getByRole('button', { name: 'Trimite răspunsul', exact: true }),
+            ).toBeDisabled();
+            // This reload is intentional; compare the refreshed card with its
+            // subsequent inline feedback, rather than a handle from the old document.
+            questionCards[i] = await page.locator('.question-card').elementHandle();
+          }
+        }
+        for (const [i, page] of pages.entries()) {
+          await expect(
+            page.getByRole('heading', { name: 'Rezultatul tău', exact: true }),
+          ).toBeVisible();
+          expect(await questionCards[i]!.evaluate((node) => node.isConnected)).toBeTruthy();
+          await expect(page.locator('.question-card h1')).toHaveText(text!);
+          await expect(page.locator('.question-card .answer')).toHaveCount(4);
+          await expect(page.locator('.question-card .feedback-reference a')).toHaveAttribute(
+            'href',
+            /^https:/,
+          );
+          await expect(page.locator('.answer.correct')).toHaveCount(1);
+        }
+        if (index === 0 && capacity === 2) {
+          await pages[1].reload();
+          await expect(
+            pages[1].getByRole('heading', { name: 'Rezultatul tău', exact: true }),
+          ).toBeVisible();
+          await expect(pages[1].getByRole('dialog')).toHaveCount(0, { timeout: 15000 });
+          await pages[1].screenshot({ path: 'artifacts/explanation-mobile.png', fullPage: true });
+        }
+        for (const page of pages)
+          await page.getByRole('button', { name: 'Am citit', exact: true }).click();
+      }
+      for (const page of pages) {
+        await expect(page).toHaveURL(/\/rezultat\//);
+        if (capacity === 1)
+          await expect(page.getByRole('heading', { name: 'Partidă încheiată!' })).toBeVisible();
+        await expect(page.locator('.recap details')).toHaveCount(12);
+        await expect(page.getByRole('button', { name: 'Revanșă', exact: true })).toBeVisible();
+      }
+      await host.screenshot({ path: `artifacts/result-${capacity}.png`, fullPage: true });
+      for (const page of pages)
+        await page.getByRole('button', { name: 'Revanșă', exact: true }).click();
+      for (const page of pages) {
+        await expect(page).toHaveURL(/\/camera\//);
+        await expect(page.getByLabel('Sunt pregătit', { exact: true })).not.toBeChecked();
+      }
+      for (const page of pages) await page.getByLabel('Sunt pregătit', { exact: true }).check();
+      await host.getByRole('button', { name: 'Începe partida' }).click();
+      for (const page of pages)
+        await expect(page.getByRole('button', { name: 'Sunt gata', exact: true })).toBeVisible();
+      expect(errors).toEqual([]);
+    } finally {
+      for (const context of contexts) await context.close();
+    }
+  });
+test('cont: creare, cod recuperare, deconectare, conectare, resetare și ștergere', async ({
+  page,
+}) => {
+  const login = `user-${Date.now()}`;
+  const password = 'Parola initiala lunga 123';
+  await page.goto(`${root}/cont/creare`);
+  await waitForConnection(page);
+  await page.getByLabel('Identificator', { exact: true }).fill(login);
+  await page.getByLabel('Pseudonim implicit', { exact: true }).fill('Maria');
+  await page.getByLabel('Parolă', { exact: true }).fill(password);
+  await page.getByLabel('Confirmă parola', { exact: true }).fill(password);
+  await page.getByRole('button', { name: 'Creează cont', exact: true }).click();
+  const code = await page.locator('.recovery-code').textContent();
+  expect(code!.length).toBeGreaterThan(20);
+  await page.getByLabel('Am păstrat codul').check();
+  await page.getByRole('button', { name: 'Continuă' }).click();
+  await expect(page.getByRole('heading', { name: 'Maria', exact: true })).toBeVisible();
+  await page.goto(`${root}/setari`);
+  await page.getByRole('button', { name: 'Deconectare', exact: true }).click();
+  await page.goto(`${root}/cont/conectare`);
+  await waitForConnection(page);
+  await page.getByLabel('Identificator').fill(login);
+  await page.getByLabel('Parolă', { exact: true }).fill(password);
+  await page.getByRole('button', { name: 'Conectează-te', exact: true }).click();
+  await expect(page).toHaveURL(/\/profil/);
+  await page.goto(`${root}/setari`);
+  await page.getByRole('button', { name: 'Deconectare', exact: true }).click();
+  await page.goto(`${root}/cont/recuperare`);
+  await waitForConnection(page);
+  await page.getByLabel('Identificator').fill(login);
+  await page.getByLabel('Cod de recuperare').fill(code!);
+  await page.getByLabel('Parolă nouă', { exact: true }).fill('Parola noua lunga 456');
+  await page.getByLabel('Confirmă parola nouă').fill('Parola noua lunga 456');
+  await page.getByRole('button', { name: 'Resetează parola' }).click();
+  await expect(page.locator('.recovery-code')).not.toHaveText(code!);
+  await page.getByLabel('Am păstrat codul').check();
+  await page.getByRole('button', { name: 'Continuă' }).click();
+  await page.getByLabel('Identificator').fill(login);
+  await page.getByLabel('Parolă', { exact: true }).fill('Parola noua lunga 456');
+  await page.getByRole('button', { name: 'Conectează-te', exact: true }).click();
+  await expect(page).toHaveURL(/\/profil/);
+  await page.goto(`${root}/setari`);
+  await page.getByRole('button', { name: 'Șterge contul', exact: true }).click();
+  await page.getByRole('dialog').getByLabel('Parola curentă').fill('Parola noua lunga 456');
+  await page.getByRole('dialog').getByRole('button', { name: 'Confirmă', exact: true }).click();
+  await expect(page).toHaveURL(root + '/');
+});
+test('editor: acces, filtrare, editare, salvare și persistență', async ({ page }) => {
+  await page.goto(`${root}/admin/intrebari`);
+  await expect(page.getByRole('heading', { name: 'Acces interzis' })).toBeVisible();
+  await page.goto(`${root}/cont/conectare`);
+  await waitForConnection(page);
+  await page.getByLabel('Identificator').fill('editor-e2e');
+  await page.getByLabel('Parolă', { exact: true }).fill('TestEditorPassword_2026');
+  await page.getByRole('button', { name: 'Conectează-te', exact: true }).click();
+  await expect(page).toHaveURL(/\/profil/);
+  await page.goto(`${root}/admin/intrebari`);
+  await expect(page.locator('.editor-list-row')).toHaveCount(224);
+  await page.getByLabel('Stare', { exact: true }).selectOption('Publicat');
+  await expect(page.getByRole('heading', { name: 'Niciun rezultat' })).toBeVisible();
+  await page.getByRole('button', { name: 'Resetează filtrele' }).click();
+  await page.getByRole('link', { name: 'Q008', exact: true }).click();
+  await expect(page.getByLabel('Enunț', { exact: true })).toContainText('Iona');
+  await page.getByLabel('Note editoriale').fill('Notă verificată în browser');
+  await page.getByRole('button', { name: 'Salvează schița', exact: true }).click();
+  await expect(page.getByText('Modificările au fost salvate.')).toBeVisible();
+  await page.reload();
+  await expect(page.getByLabel('Note editoriale')).toHaveValue('Notă verificată în browser');
+});
+test('responsive, meniu, rute și lipsa erorilor JavaScript', async ({ page }) => {
+  const errors: string[] = [];
+  page.on('pageerror', (e) => errors.push(e.message));
+  for (const width of [1440, 768, 390, 320]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const route of [
+      '/',
+      '/creeaza',
+      '/intra',
+      '/cum-se-joaca',
+      '/despre-si-surse',
+      '/confidentialitate',
+      '/setari',
+      '/cont/creare',
+      '/nu-exista',
+    ]) {
+      await page.goto(root + route);
+      await waitForConnection(page);
+      await expect(page.locator('main h1').first()).toBeVisible();
+      expect(
+        await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),
+        `${route} la ${width}px`,
+      ).toBeTruthy();
+    }
+    await page.goto(root + '/');
+    await waitForConnection(page);
+    await page.screenshot({ path: `artifacts/home-${width}.png`, fullPage: true });
+  }
+  await page.getByRole('button', { name: 'Meniu', exact: true }).click();
+  await expect(page.locator('#main-nav')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#main-nav')).not.toBeVisible();
+  expect(errors).toEqual([]);
+});

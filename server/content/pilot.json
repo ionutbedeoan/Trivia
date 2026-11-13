@@ -1,0 +1,247 @@
+﻿[
+  {
+    "id": "Q001",
+    "text": "Câți ani avea Noe când a venit Potopul?",
+    "options": ["120", "600", "500", "900"],
+    "category": "Personaje",
+    "difficulty": "Ușor",
+    "factGroup": "potop-geneza7",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q002",
+    "text": "Câte zile și nopți a durat ploaia torențială a Potopului?",
+    "options": ["7", "30", "150", "40"],
+    "category": "Evenimente",
+    "difficulty": "Mediu",
+    "factGroup": "potop-geneza7",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q003",
+    "text": "În ce zi a lunii a doua a început Potopul?",
+    "options": ["17", "1", "10", "27"],
+    "category": "Cronologie",
+    "difficulty": "Dificil",
+    "factGroup": "potop-geneza7",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q004",
+    "text": "Ce rege apare în relatarea aruncării lui Daniel în groapa cu lei?",
+    "options": ["Saul", "Solomon", "Darius", "Irod"],
+    "category": "Personaje",
+    "difficulty": "Ușor",
+    "factGroup": "daniel-groapa",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q005",
+    "text": "De câte ori pe zi obișnuia Daniel să se roage, potrivit acestei relatări?",
+    "options": ["3", "2", "7", "1"],
+    "category": "Viața cotidiană",
+    "difficulty": "Mediu",
+    "factGroup": "daniel-groapa",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q006",
+    "text": "Câți satrapi a numit Darius peste regat?",
+    "options": ["12", "70", "100", "120"],
+    "category": "Istorie",
+    "difficulty": "Dificil",
+    "factGroup": "daniel-groapa",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q007",
+    "text": "În ce oraș a fost trimis Iona să anunțe judecata?",
+    "options": ["Ierihon", "Ninive", "Betleem", "Damasc"],
+    "category": "Geografie",
+    "difficulty": "Ușor",
+    "factGroup": "iona-plecare",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q008",
+    "text": "Spre ce destinație mergea corabia aleasă de Iona pentru a fugi?",
+    "options": ["Tir", "Roma", "Tarsis", "Efes"],
+    "category": "Geografie",
+    "difficulty": "Mediu",
+    "factGroup": "iona-plecare",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q009",
+    "text": "Din ce port s-a îmbarcat Iona?",
+    "options": ["Iope", "Sidon", "Cezareea", "Milet"],
+    "category": "Geografie",
+    "difficulty": "Dificil",
+    "factGroup": "iona-plecare",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q010",
+    "text": "Ce discipol a fost trimis să-l ajute pe Saul să-și recapete vederea?",
+    "options": ["Apolo", "Sila", "Timotei", "Anania"],
+    "category": "Personaje",
+    "difficulty": "Ușor",
+    "factGroup": "saul-damasc",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q011",
+    "text": "Cum se numea strada unde trebuia căutat Saul?",
+    "options": ["Regală", "Dreaptă", "Nouă", "Mare"],
+    "category": "Detalii și obiecte",
+    "difficulty": "Mediu",
+    "factGroup": "saul-damasc",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q012",
+    "text": "Din ce oraș era Saul, potrivit indicației date lui Anania?",
+    "options": ["Lida", "Iope", "Tars", "Antiohia"],
+    "category": "Geografie",
+    "difficulty": "Dificil",
+    "factGroup": "saul-damasc",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q013",
+    "text": "Cui le-a cerut Isus discipolilor să le arate iubire, pe lângă cei care îi iubesc?",
+    "options": ["Dușmanilor", "Numai rudelor", "Numai vecinilor", "Numai prietenilor"],
+    "category": "Învățături",
+    "difficulty": "Ușor",
+    "factGroup": "predica-matei5",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q014",
+    "text": "Ce moștenire este asociată celor blânzi?",
+    "options": ["Un palat", "O armată", "O coroană pământească", "Pământul"],
+    "category": "Învățături",
+    "difficulty": "Mediu",
+    "factGroup": "predica-matei5",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q015",
+    "text": "Ce trebuia făcut înaintea oferirii darului, dacă un frate avea ceva împotriva celui care îl aducea?",
+    "options": [
+      "Schimbarea darului",
+      "Împăcarea cu fratele",
+      "Chemarea mulțimii",
+      "Amânarea pe termen nedefinit"
+    ],
+    "category": "Învățături",
+    "difficulty": "Dificil",
+    "factGroup": "predica-matei5",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q016",
+    "text": "Cine l-a ajutat pe călătorul rănit din ilustrarea lui Isus?",
+    "options": ["Un preot", "Un levit", "Un samaritean", "Un soldat"],
+    "category": "Personaje",
+    "difficulty": "Ușor",
+    "factGroup": "samaritean-ilustrare",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q017",
+    "text": "Spre ce oraș cobora omul plecat din Ierusalim?",
+    "options": ["Ierihon", "Nazaret", "Cana", "Iope"],
+    "category": "Geografie",
+    "difficulty": "Mediu",
+    "factGroup": "samaritean-ilustrare",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q018",
+    "text": "Câți dinari i-a dat samariteanul hangiului a doua zi?",
+    "options": ["1", "5", "10", "2"],
+    "category": "Viața cotidiană",
+    "difficulty": "Dificil",
+    "factGroup": "samaritean-ilustrare",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q019",
+    "text": "Cine a primit porunca să-și întindă mâna spre mare?",
+    "options": ["Aaron", "Moise", "Iosua", "Caleb"],
+    "category": "Evenimente",
+    "difficulty": "Ușor",
+    "factGroup": "exod-trecere",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q020",
+    "text": "Din ce direcție a bătut vântul puternic în noaptea retragerii mării?",
+    "options": ["Nord", "Vest", "Est", "Sud"],
+    "category": "Evenimente",
+    "difficulty": "Mediu",
+    "factGroup": "exod-trecere",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q021",
+    "text": "Câte care speciale a luat faraonul, pe lângă celelalte care ale Egiptului?",
+    "options": ["600", "300", "900", "120"],
+    "category": "Istorie",
+    "difficulty": "Dificil",
+    "factGroup": "exod-trecere",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q022",
+    "text": "Ce rege a început construirea templului descris în 1 Regi 6?",
+    "options": ["David", "Saul", "Ezechia", "Solomon"],
+    "category": "Istorie",
+    "difficulty": "Ușor",
+    "factGroup": "templu-solomon",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q023",
+    "text": "În al câtelea an al domniei lui Solomon a început construirea templului?",
+    "options": ["Al doilea", "Al patrulea", "Al șaptelea", "Al zecelea"],
+    "category": "Cronologie",
+    "difficulty": "Mediu",
+    "factGroup": "templu-solomon",
+    "status": "În verificare",
+    "verifiedAt": ""
+  },
+  {
+    "id": "Q024",
+    "text": "Cum se numea luna a doua, în care a început construirea templului?",
+    "options": ["Nisan", "Etanim", "Ziv", "Bul"],
+    "category": "Cronologie",
+    "difficulty": "Dificil",
+    "factGroup": "templu-solomon",
+    "status": "În verificare",
+    "verifiedAt": ""
+  }
+]

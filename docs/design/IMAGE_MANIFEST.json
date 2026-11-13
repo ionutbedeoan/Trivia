@@ -1,0 +1,741 @@
+{
+  "direction": "C ? Ritm clar",
+  "approval": "S01 approved; remaining screens pending final review",
+  "targetViewports": {
+    "desktop": "1440x900",
+    "mobile": "390x844"
+  },
+  "images": [
+    {
+      "id": "S02-desktop-v01",
+      "screen": "S02",
+      "device": "desktop",
+      "path": "design/proposals/S02-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-f24f674d-527c-47c4-9fa2-8dbc560abf9d.png",
+      "status": "generated-review-pending",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1560854
+    },
+    {
+      "id": "S02-desktop-v02",
+      "screen": "S02",
+      "device": "desktop",
+      "path": "design/proposals/S02-desktop-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-48c17a43-b822-4bda-a293-f31cadfad409.png",
+      "status": "generated-review-pending",
+      "width": 1585,
+      "height": 992,
+      "bytes": 1645623
+    },
+    {
+      "id": "S02-mobile-v01",
+      "screen": "S02",
+      "device": "mobile",
+      "path": "design/proposals/S02-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-2e0dd811-8364-45dc-b9e6-ae99ebbaf2a8.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1449963
+    },
+    {
+      "id": "S03-desktop-v01",
+      "screen": "S03",
+      "device": "desktop",
+      "path": "design/proposals/S03-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-587b30e7-036c-45ca-aefe-e1b566510bab.png",
+      "status": "generated-review-pending",
+      "width": 1585,
+      "height": 992,
+      "bytes": 1540425
+    },
+    {
+      "id": "S03-mobile-v01",
+      "screen": "S03",
+      "device": "mobile",
+      "path": "design/proposals/S03-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-c11b0fb5-0340-4239-9101-4ae0e771c81a.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1497308
+    },
+    {
+      "id": "S04-desktop-v01",
+      "screen": "S04",
+      "device": "desktop",
+      "path": "design/proposals/S04-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-aac0c94b-0bfb-4a40-9c7d-f4c2785a8297.png",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1462841,
+      "status": "generated-review-pending"
+    },
+    {
+      "id": "S04-mobile-v01",
+      "screen": "S04",
+      "device": "mobile",
+      "path": "design/proposals/S04-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-d9fa4aa3-91a2-403a-aaaa-0d77b09a142b.png",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1481638,
+      "status": "generated-review-pending"
+    },
+    {
+      "id": "S05-desktop-v01",
+      "screen": "S05",
+      "device": "desktop",
+      "path": "design/proposals/S05-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-69903dfb-ebcb-41d9-9bb4-ecc195df357a.png",
+      "status": "generated-review-pending",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1354821
+    },
+    {
+      "id": "S05-mobile-v01",
+      "screen": "S05",
+      "device": "mobile",
+      "path": "design/proposals/S05-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-725fdaea-99f4-4ca3-8615-1bd024d93e42.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1479977
+    },
+    {
+      "id": "S06-desktop-v01",
+      "screen": "S06",
+      "device": "desktop",
+      "path": "design/proposals/S06-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-18bfc2da-92f0-4aac-a55e-c273349beb2b.png",
+      "width": 1585,
+      "height": 992,
+      "bytes": 1450175,
+      "status": "generated-review-pending"
+    },
+    {
+      "id": "S06-mobile-v01",
+      "screen": "S06",
+      "device": "mobile",
+      "path": "design/proposals/S06-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-5052a8a1-d392-4ed1-89a9-769199f8546b.png",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1441369,
+      "status": "generated-review-pending"
+    },
+    {
+      "id": "S07-desktop-v01",
+      "screen": "S07",
+      "device": "desktop",
+      "path": "design/proposals/S07-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-1a17eac9-c7ff-4923-a795-8b37a6ef9247.png",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1519163,
+      "status": "generated-review-pending"
+    },
+    {
+      "id": "S07-desktop-v02",
+      "screen": "S07",
+      "device": "desktop",
+      "path": "design/proposals/S07-desktop-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-422ce385-bac3-4a79-a41f-863090b14330.png",
+      "status": "generated-review-pending",
+      "width": 1585,
+      "height": 992,
+      "bytes": 1611678
+    },
+    {
+      "id": "S07-mobile-v01",
+      "screen": "S07",
+      "device": "mobile",
+      "path": "design/proposals/S07-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-4db0faea-79a7-4f84-b953-b9e7f2d6855f.png",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1527533,
+      "status": "generated-review-pending"
+    },
+    {
+      "id": "S07-mobile-v02",
+      "screen": "S07",
+      "device": "mobile",
+      "path": "design/proposals/S07-mobile-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-48d599bb-7f08-49ab-b6dc-b5853239fb60.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1609,
+      "bytes": 1567531
+    },
+    {
+      "id": "S08-desktop-v01",
+      "screen": "S08",
+      "device": "desktop",
+      "path": "design/proposals/S08-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-ab4ca35b-6c7f-4fa9-9d7c-4968f5c2ec9b.png",
+      "status": "generated-review-pending",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1548346
+    },
+    {
+      "id": "S08-desktop-v02",
+      "screen": "S08",
+      "device": "desktop",
+      "path": "design/proposals/S08-desktop-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-0fccd3e7-91be-42cb-9eb8-8671210f452d.png",
+      "status": "generated-review-pending",
+      "width": 1086,
+      "height": 1448,
+      "bytes": 1636844
+    },
+    {
+      "id": "S08-mobile-v01",
+      "screen": "S08",
+      "device": "mobile",
+      "path": "design/proposals/S08-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-4617444d-f034-4403-812c-ea36e7d72b45.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1505597
+    },
+    {
+      "id": "S08-mobile-v02",
+      "screen": "S08",
+      "device": "mobile",
+      "path": "design/proposals/S08-mobile-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-4ccddd20-e100-4bf4-8a8c-47faa3bd803a.png",
+      "status": "generated-review-pending",
+      "width": 806,
+      "height": 1952,
+      "bytes": 1480960
+    },
+    {
+      "id": "S09-desktop-v01",
+      "screen": "S09",
+      "device": "desktop",
+      "path": "design/proposals/S09-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-dcd4d42d-bb6d-4ec7-835f-9fd013d3aea1.png",
+      "status": "generated-review-pending",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1401397
+    },
+    {
+      "id": "S09-mobile-v01",
+      "screen": "S09",
+      "device": "mobile",
+      "path": "design/proposals/S09-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-a68117ef-42ae-464d-a050-703576a7395c.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1506892
+    },
+    {
+      "id": "S10-desktop-v01",
+      "screen": "S10",
+      "device": "desktop",
+      "path": "design/proposals/S10-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-a729cb89-62c2-44ff-b622-3c790f2a6871.png",
+      "status": "generated-review-pending",
+      "width": 1585,
+      "height": 992,
+      "bytes": 1419170
+    },
+    {
+      "id": "S10-mobile-v01",
+      "screen": "S10",
+      "device": "mobile",
+      "path": "design/proposals/S10-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-7ab7f209-f82c-49f7-b4a1-69a38058c2bf.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1444613
+    },
+    {
+      "id": "S11-desktop-v01",
+      "screen": "S11",
+      "device": "desktop",
+      "path": "design/proposals/S11-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-ed87db13-b45d-41d9-83dd-2dd3427cf392.png",
+      "status": "generated-review-pending",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1409822
+    },
+    {
+      "id": "S11-mobile-v01",
+      "screen": "S11",
+      "device": "mobile",
+      "path": "design/proposals/S11-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-7c715caf-5fd5-48c3-ba57-f19d2d39b302.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1331337
+    },
+    {
+      "id": "S12-desktop-v01",
+      "screen": "S12",
+      "device": "desktop",
+      "path": "design/proposals/S12-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-8768753b-218b-4682-8582-e2e708af7c61.png",
+      "status": "generated-review-pending",
+      "width": 1585,
+      "height": 992,
+      "bytes": 1439933
+    },
+    {
+      "id": "S12-mobile-v01",
+      "screen": "S12",
+      "device": "mobile",
+      "path": "design/proposals/S12-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-0d46189f-2acc-4a8d-8df5-39885130e5bd.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1478124
+    },
+    {
+      "id": "S13-desktop-v01",
+      "screen": "S13",
+      "device": "desktop",
+      "path": "design/proposals/S13-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-f31dc97c-92c6-4e64-b843-28a0cb8f1332.png",
+      "status": "generated-review-pending",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1504829
+    },
+    {
+      "id": "S13-mobile-v01",
+      "screen": "S13",
+      "device": "mobile",
+      "path": "design/proposals/S13-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-2c3cd565-7cef-4afb-834a-0d003548450f.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1525244
+    },
+    {
+      "id": "S14-desktop-v01",
+      "screen": "S14",
+      "device": "desktop",
+      "path": "design/proposals/S14-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-fcb2e6e5-d2f8-4643-bcd4-59abaa108b26.png",
+      "status": "generated-review-pending",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1690959
+    },
+    {
+      "id": "S14-desktop-v02",
+      "screen": "S14",
+      "device": "desktop",
+      "path": "design/proposals/S14-desktop-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-0bd39818-a6de-431d-8a79-3b524f78b95c.png",
+      "status": "generated-review-pending",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1759198
+    },
+    {
+      "id": "S14-mobile-v01",
+      "screen": "S14",
+      "device": "mobile",
+      "path": "design/proposals/S14-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-7bb32d4d-28c6-4c2f-9b1f-758a94771edb.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1522179
+    },
+    {
+      "id": "S14-mobile-v02",
+      "screen": "S14",
+      "device": "mobile",
+      "path": "design/proposals/S14-mobile-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-663ad4fa-f980-4da2-bd47-6588b6afae9c.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1749929
+    },
+    {
+      "id": "S15-desktop-v01",
+      "screen": "S15",
+      "device": "desktop",
+      "path": "design/proposals/S15-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-4b0b16a8-754d-4cbf-aa90-e220e061e0f3.png",
+      "status": "generated-review-pending",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1542254
+    },
+    {
+      "id": "S15-mobile-v01",
+      "screen": "S15",
+      "device": "mobile",
+      "path": "design/proposals/S15-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-e977f574-b936-4d89-bd5d-f806105fbaf0.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1558633
+    },
+    {
+      "id": "S16-desktop-v01",
+      "screen": "S16",
+      "device": "desktop",
+      "path": "design/proposals/S16-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-4cf56ce9-ac64-4cad-8349-b08398d382aa.png",
+      "status": "generated-review-pending",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1773026
+    },
+    {
+      "id": "S16-desktop-v02",
+      "screen": "S16",
+      "device": "desktop",
+      "path": "design/proposals/S16-desktop-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-ff4a9e3b-a577-408b-82fa-7c98de8c67fb.png",
+      "status": "generated-review-pending",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1781365
+    },
+    {
+      "id": "S16-mobile-v01",
+      "screen": "S16",
+      "device": "mobile",
+      "path": "design/proposals/S16-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-4d08722c-399c-41d6-a3f4-bd5018cb44cc.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1730306
+    },
+    {
+      "id": "S16-mobile-v02",
+      "screen": "S16",
+      "device": "mobile",
+      "path": "design/proposals/S16-mobile-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-99d72311-85ed-4234-829a-edb4fabd642c.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1827666
+    },
+    {
+      "id": "S16-mobile-v03",
+      "screen": "S16",
+      "device": "mobile",
+      "path": "design/proposals/S16-mobile-v03.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-b0f0da74-6656-440d-8489-cae32ea9e9eb.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1870780
+    },
+    {
+      "id": "S17-desktop-v01",
+      "screen": "S17",
+      "device": "desktop",
+      "path": "design/proposals/S17-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-ee3504f6-4758-41e3-b8d1-aa1ae0c3a445.png",
+      "status": "generated-review-pending",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1500638
+    },
+    {
+      "id": "S17-desktop-v02",
+      "screen": "S17",
+      "device": "desktop",
+      "path": "design/proposals/S17-desktop-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-a03ecc51-62d9-4bc8-a491-272e407209c0.png",
+      "status": "generated-review-pending",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1678137
+    },
+    {
+      "id": "S17-mobile-v01",
+      "screen": "S17",
+      "device": "mobile",
+      "path": "design/proposals/S17-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-b956d166-a897-4926-837b-188ea25b726f.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1491489
+    },
+    {
+      "id": "S17-mobile-v02",
+      "screen": "S17",
+      "device": "mobile",
+      "path": "design/proposals/S17-mobile-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-70fb79b0-0057-4d8b-80e9-a026eaf43e61.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1697553
+    },
+    {
+      "id": "S18-desktop-v01",
+      "screen": "S18",
+      "device": "desktop",
+      "path": "design/proposals/S18-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-fa491474-2ded-4ea9-936b-bbb69ce59bfb.png",
+      "status": "generated-review-pending",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1628043
+    },
+    {
+      "id": "S18-desktop-v02",
+      "screen": "S18",
+      "device": "desktop",
+      "path": "design/proposals/S18-desktop-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-09eececd-4371-4333-8730-f2455c53d5db.png",
+      "status": "generated-review-pending",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1693806
+    },
+    {
+      "id": "S18-mobile-review-v01",
+      "screen": "S18",
+      "device": "mobile-detail",
+      "path": "design/proposals/S18-mobile-review-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-4326c00f-3bd6-4d80-b7ca-49450700a150.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1609,
+      "bytes": 1499285
+    },
+    {
+      "id": "S18-mobile-source-v01",
+      "screen": "S18",
+      "device": "mobile-detail",
+      "path": "design/proposals/S18-mobile-source-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-463e544d-ddad-43fa-beaf-f2b5c01505bb.png",
+      "status": "generated-review-pending",
+      "width": 978,
+      "height": 1609,
+      "bytes": 1213289
+    },
+    {
+      "id": "S18-mobile-v01",
+      "screen": "S18",
+      "device": "mobile",
+      "path": "design/proposals/S18-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-0b79a438-e085-4aa2-b370-97ac444c0237.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1485290
+    },
+    {
+      "id": "S18-mobile-v02",
+      "screen": "S18",
+      "device": "mobile",
+      "path": "design/proposals/S18-mobile-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-c6d9e341-00fb-4300-8264-ae88ab20f11e.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1609,
+      "bytes": 1469909
+    },
+    {
+      "id": "S19-desktop-v01",
+      "screen": "S19",
+      "device": "desktop",
+      "path": "design/proposals/S19-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-6055caa3-4e48-45ec-8078-3c46f1458b8c.png",
+      "status": "generated-review-pending",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1461791
+    },
+    {
+      "id": "S19-desktop-v02",
+      "screen": "S19",
+      "device": "desktop",
+      "path": "design/proposals/S19-desktop-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-2e856cd0-8bf4-4522-bb83-0d889446d5a4.png",
+      "status": "generated-review-pending",
+      "width": 1585,
+      "height": 992,
+      "bytes": 1609221
+    },
+    {
+      "id": "S19-mobile-v01",
+      "screen": "S19",
+      "device": "mobile",
+      "path": "design/proposals/S19-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-9252d7a8-a650-422f-8e7a-a04e85470a7d.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1453248
+    },
+    {
+      "id": "S19-mobile-v02",
+      "screen": "S19",
+      "device": "mobile",
+      "path": "design/proposals/S19-mobile-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-0162742d-09cc-49c8-9eb7-744696961527.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1616104
+    },
+    {
+      "id": "S20-desktop-v01",
+      "screen": "S20",
+      "device": "desktop",
+      "path": "design/proposals/S20-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-343b03b4-78a2-434b-81d2-9b0283f031b9.png",
+      "status": "generated-review-pending",
+      "width": 1585,
+      "height": 992,
+      "bytes": 1327566
+    },
+    {
+      "id": "S20-mobile-v01",
+      "screen": "S20",
+      "device": "mobile",
+      "path": "design/proposals/S20-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-c9d096f3-84d9-4cf0-b7d0-62981bc7e5dd.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1418700
+    },
+    {
+      "id": "S21-desktop-v01",
+      "screen": "S21",
+      "device": "desktop",
+      "path": "design/proposals/S21-desktop-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-d376d17d-e6da-42ad-8af4-a171c8fa372f.png",
+      "status": "generated-review-pending",
+      "width": 1585,
+      "height": 992,
+      "bytes": 1341896
+    },
+    {
+      "id": "S21-mobile-v01",
+      "screen": "S21",
+      "device": "mobile",
+      "path": "design/proposals/S21-mobile-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-100ef777-eb7c-48f9-b751-d617f8cb6fce.png",
+      "status": "generated-review-pending",
+      "width": 977,
+      "height": 1610,
+      "bytes": 1407258
+    },
+    {
+      "id": "ST01-rooms-v01",
+      "screen": [
+        "S02",
+        "S03"
+      ],
+      "device": "states",
+      "path": "design/proposals/ST01-rooms-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-6318328d-168a-4fb6-a642-c395465bc9eb.png",
+      "status": "generated-review-pending",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1645688
+    },
+    {
+      "id": "ST01-rooms-v02",
+      "screen": [
+        "S02",
+        "S03"
+      ],
+      "device": "states",
+      "path": "design/proposals/ST01-rooms-v02.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-0466416e-98f1-4534-875b-c769b05d368f.png",
+      "status": "generated-review-pending",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1705291
+    },
+    {
+      "id": "ST02-lobby-v01",
+      "screen": [
+        "S04"
+      ],
+      "device": "states",
+      "path": "design/proposals/ST02-lobby-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-3c857fad-38d2-4913-9226-2ae3785b2748.png",
+      "status": "generated-review-pending",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1658897
+    },
+    {
+      "id": "ST03-round-v01",
+      "screen": [
+        "S05"
+      ],
+      "device": "states",
+      "path": "design/proposals/ST03-round-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-5797f2a2-a21c-42f0-a2e2-a81ce8eb585b.png",
+      "status": "generated-review-pending",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1581783
+    },
+    {
+      "id": "ST04-question-v01",
+      "screen": [
+        "S06"
+      ],
+      "device": "states",
+      "path": "design/proposals/ST04-question-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-13699b52-5fb7-4278-84af-aa27c260d76f.png",
+      "status": "generated-review-pending",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1654815
+    },
+    {
+      "id": "ST05-explanation-v01",
+      "screen": [
+        "S07"
+      ],
+      "device": "states",
+      "path": "design/proposals/ST05-explanation-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-ead09e58-2487-47c2-96c9-181cb07f3dba.png",
+      "status": "generated-review-pending",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1689732
+    },
+    {
+      "id": "ST06-result-v01",
+      "screen": [
+        "S08"
+      ],
+      "device": "states",
+      "path": "design/proposals/ST06-result-v01.png",
+      "source": "C:\\Users\\STRUMFI TECH\\.codex\\generated_images\\01a1d0ad-6f50-7bd1-a2cd-521cd7cccd3c\\exec-7a7c7b3b-3eb3-4403-a36a-c481a79941ad.png",
+      "status": "generated-review-pending",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1690122
+    }
+  ]
+}
