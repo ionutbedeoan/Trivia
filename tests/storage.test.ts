@@ -8,12 +8,11 @@ import { Storage } from '../server/storage';
 import { createBackup } from '../server/backup';
 import { createApplication } from '../server/index';
 
-test('SQLite persistă conturile; backup-ul poate fi restaurat; restartul anulează partidele active', async () => {
+test('SQLite persistă sesiunile anonime; backup restaurabil; restartul anulează partidele active', async () => {
   const folder = mkdtempSync(join(tmpdir(), 'provocarea-storage-')),
     path = join(folder, 'game.sqlite');
   const storage = new Storage(path);
-  const account = storage.createAccount('persistat', 'Andrei', 'parola de test persistenta');
-  const session = storage.createSession(account.id);
+  const session = storage.createSession();
   storage.db
     .prepare('INSERT INTO matches VALUES(?,?,?,?,?,?)')
     .run(
@@ -29,8 +28,8 @@ test('SQLite persistă conturile; backup-ul poate fi restaurat; restartul anulea
   const restored = join(folder, 'restored.sqlite');
   copyFileSync(backupPath, restored);
   const app = createApplication({ dbPath: restored });
-  assert.equal(app.storage.authenticate('persistat', 'parola de test persistenta').id, account.id);
-  assert.equal(app.storage.session(session.token)?.accountId, account.id);
+
+  assert.equal(app.storage.session(session.token)?.id, session.session.id);
   assert.equal(
     app.storage.db.prepare('SELECT status FROM matches WHERE id=?').get('active')?.status,
     'cancelled',

@@ -388,7 +388,7 @@ interface StoredResult {
   players: { id: string; sessionId?: string; name: string; score: number }[];
 }
 export function Result() {
-  const { snapshot, command, session, leave } = useApp(),
+  const { snapshot, command, leave } = useApp(),
     { path, navigate } = useNavigation();
   const id = path.split('/').at(-1)!;
   const [stored, setStored] = useState<StoredResult | null>(null),
@@ -537,14 +537,7 @@ export function Result() {
             )}
             <Link to="/">Acasă</Link>
           </Card>
-          {!session?.user && (
-            <Card className="stack">
-              <h3>Salvează progresul cu un cont</h3>
-              <p className="small">Partidele de test nu se includ în statistici.</p>
-              <Link to="/cont/creare?retur=rezultat">Creează cont</Link>
-              <Link to="/cont/conectare?retur=rezultat">Conectare</Link>
-            </Card>
-          )}
+
           {error && <Notice tone="error">{error}</Notice>}
         </div>
       </div>

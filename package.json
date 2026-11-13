@@ -10,7 +10,6 @@
     "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.server.json",
     "test": "tsx --test tests/*.test.ts",
     "test:e2e": "playwright test",
-    "editor:grant": "tsx server/grant-editor.ts",
     "db:backup": "tsx server/backup.ts",
     "content:build": "node scripts/build-content.mjs",
     "content:export": "node scripts/export-questions.mjs",

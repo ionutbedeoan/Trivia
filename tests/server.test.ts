@@ -4,7 +4,7 @@ import { once } from 'node:events';
 import { createServer } from 'node:http';
 import { WebSocket } from 'ws';
 import { createApplication } from '../server/index';
-import type { EditorialQuestion, SessionInfo, Snapshot } from '../shared/contracts';
+import type { SessionInfo, Snapshot } from '../shared/contracts';
 import { invitationOrigin } from '../server/network';
 import type { IncomingMessage } from 'node:http';
 
@@ -117,7 +117,7 @@ test('serverul integrat se poate opri cu WebSocket activ fără acces la baza de
   assert.equal(ws.readyState, WebSocket.CLOSED);
 });
 
-test('HTTP și WebSocket: sesiuni, CSRF, acces privat, validări și rotația contului', async () => {
+test('HTTP și WebSocket: sesiuni anonime, CSRF, acces privat și API-uri de cont eliminate', async () => {
   const app = createApplication({ dbPath: ':memory:', countdownMs: 1 });
   app.server.listen(0, '127.0.0.1');
   await once(app.server, 'listening');
@@ -210,98 +210,25 @@ test('HTTP și WebSocket: sesiuni, CSRF, acces privat, validări și rotația co
           password: 'parola foarte lunga',
         })
       ).status,
-      409,
+      404,
     );
     await host.request('/rooms/leave', { roomId: room.roomId });
-    const created = await host.request<{ recoveryCode: string }>('/account/create', {
-      identifier: 'realuser',
-      name: 'Andrei',
-      password: 'parola foarte lunga',
-    });
-    assert.equal(created.status, 200);
-    const oldCookie = host.cookie;
-    await host.request('/account/logout', {});
-    await host.init();
-    assert.equal(
-      (await host.request('/account/login', { identifier: 'realuser', password: 'gresita' }))
-        .status,
-      401,
-    );
-    assert.equal(
-      (
-        await host.request('/account/login', {
-          identifier: 'realuser',
-          password: 'parola foarte lunga',
-        })
-      ).status,
-      200,
-    );
-    assert.notEqual(host.cookie, oldCookie);
-    assert.equal((await host.request('/questions')).status, 403);
-    assert.equal(
-      (
-        await host.request('/account/recover', {
-          identifier: 'realuser',
-          code: created.data.recoveryCode,
-          password: 'o parola noua foarte lunga',
-        })
-      ).status,
-      200,
-    );
-    assert.equal((await host.request('/profile')).status, 401);
+    for (const path of [
+      '/account/create',
+      '/account/login',
+      '/account/recover',
+      '/account/logout',
+      '/account/profile',
+      '/account/password',
+      '/account/delete',
+      '/questions/save',
+    ]) {
+      assert.equal((await host.request(path, {})).status, 404);
+    }
+    assert.equal((await host.request('/profile')).status, 404);
+    assert.equal((await host.request('/questions')).status, 404);
   } finally {
     sockets.forEach((ws) => ws.terminate());
-    await app.close();
-  }
-});
-test('editor: autorizare server, revizii, validare, publicare și retragere', async () => {
-  const app = createApplication({ dbPath: ':memory:' });
-  app.server.listen(0, '127.0.0.1');
-  await once(app.server, 'listening');
-  const origin = `http://127.0.0.1:${(app.server.address() as { port: number }).port}`;
-  const account = app.storage.createAccount('editor', 'Editor', 'parola editor foarte lunga');
-  app.storage.db.prepare("UPDATE accounts SET role='editor' WHERE id=?").run(account.id);
-  const { token, session } = app.storage.createSession(account.id);
-  const request = async (
-    question: EditorialQuestion,
-    revision = question.revision,
-    reason = '',
-  ) => {
-    const response = await fetch(origin + '/api/questions/save', {
-      method: 'POST',
-      headers: {
-        Origin: origin,
-        Cookie: `ps_session=${token}`,
-        'X-CSRF-Token': session.csrf,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ question, revision, reason }),
-    });
-    return { status: response.status, data: (await response.json()) as EditorialQuestion };
-  };
-  try {
-    let q = app.storage.questions()[7];
-    assert.equal((await request({ ...q, status: 'Publicat' })).status, 409);
-    assert.equal((await request({ ...q, status: 'Aprobat' })).status, 400);
-    q = (
-      await request({
-        ...q,
-        status: 'Aprobat',
-        checklist: Array(6).fill(true),
-        verifiedAt: '2026-11-12',
-        sourceTitle: 'Iona 1',
-        locator: '3',
-      })
-    ).data;
-    assert.equal(q.status, 'Aprobat');
-    assert.equal((await request({ ...q, status: 'Publicat' }, q.revision - 1)).status, 409);
-    q = (await request({ ...q, status: 'Publicat' })).data;
-    assert.equal(q.status, 'Publicat');
-    assert.equal((await request({ ...q, status: 'Retras' })).status, 400);
-    q = (await request({ ...q, status: 'Retras' }, q.revision, 'Necesită verificare suplimentară'))
-      .data;
-    assert.equal(q.status, 'Retras');
-  } finally {
     await app.close();
   }
 });

@@ -198,7 +198,7 @@ export function Privacy() {
       <div className="two-column">
         <div className="stack">
           <Notice>
-            Datele conturilor și rezultatele se păstrează în baza locală a serverului. Preferințele
+            Sesiunile anonime și rezultatele se păstrează în baza locală a serverului. Preferințele
             de afișare se păstrează în browser.
           </Notice>
           {[
@@ -208,11 +208,6 @@ export function Privacy() {
               'Joci cu un pseudonim, fără cont. Sesiunea este locală, iar rezultatul se păstrează temporar, timp de 24 de ore.',
             ],
             [
-              'user',
-              'Dacă ai cont',
-              'Contul are un identificator și un pseudonim. Progresul tău este păstrat până la ștergerea contului. Nu sunt obligatorii adresa de email, vârsta sau religia.',
-            ],
-            [
               'info',
               'Unde sunt datele',
               'Datele sunt stocate pe calculatorul care rulează serverul jocului. Administratorul dispozitivului le poate inspecta.',
@@ -220,17 +215,12 @@ export function Privacy() {
             [
               'clock',
               'Cât păstrăm',
-              'Sesiunea invitatului și rezultatul nerevendicat expiră după 24 h. Progresul contului se păstrează până la ștergerea contului. Datele tehnice fără secrete se păstrează maximum 7 zile.',
-            ],
-            [
-              'trash',
-              'Ștergerea contului',
-              'La cerere sunt șterse profilul, credențialele și progresul. Participările tale în rezultatele altor jucători sunt anonimizate.',
+              'Sesiunea invitatului și accesul la rezultat expiră după 24 h. Datele tehnice fără secrete se păstrează maximum 7 zile.',
             ],
             [
               'layers',
               'Copii de siguranță',
-              'Se păstrează ultimele 3 copii locale ale datelor. Ștergerea contului se reaplică la restaurare. Nu se promite dispariția instantanee din copii.',
+              'Se păstrează ultimele 3 copii locale ale datelor. Nu se promite dispariția instantanee din copii.',
             ],
           ].map(([icon, title, text]) => (
             <Card key={title}>
@@ -253,7 +243,7 @@ export function Privacy() {
             <h2>
               <Icon name="settings" /> Setări
             </h2>
-            <p>Poți ajusta preferințele și opțiunile contului.</p>
+            <p>Poți ajusta preferințele de joc.</p>
             <Link className="button primary" to="/setari">
               Setări →
             </Link>

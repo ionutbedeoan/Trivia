@@ -13,7 +13,6 @@ import type { Session } from './storage';
 interface Participant {
   id: string;
   sessionId: string;
-  accountId: string | null;
   name: string;
   ready: boolean;
   score: number;
@@ -201,7 +200,6 @@ export class GameService {
     return {
       id: randomUUID(),
       sessionId: session.id,
-      accountId: session.accountId,
       name: displayName(name),
       ready: false,
       score: 0,
@@ -399,9 +397,6 @@ export class GameService {
       room.players.forEach((p) => {
         p.score = 0;
         p.wagerUsed = false;
-        p.accountId =
-          (this.storage.db.prepare('SELECT accountId FROM sessions WHERE id=?').get(p.sessionId)
-            ?.accountId as string | null) ?? null;
       });
       this.phase(room, 'round');
       this.storage.db.prepare('INSERT INTO matches VALUES(?,?,?,?,?,?)').run(
@@ -526,7 +521,7 @@ export class GameService {
             room.matchId,
             p.id,
             p.sessionId,
-            p.accountId,
+            null,
             p.name,
             p.score,
             correct,
@@ -676,25 +671,17 @@ export class GameService {
   storedMatch(id: string, session: Session) {
     const row = this.storage.db.prepare('SELECT * FROM matches WHERE id=?').get(id) as
       { status: string; payload: string; created: number } | undefined;
-    requireValue(
-      row && (session.accountId || this.now() - row.created < 86400000),
-      'Rezultat indisponibil.',
-      404,
-    );
+    requireValue(row && this.now() - row.created < 86400000, 'Rezultat indisponibil.', 404);
     const data = JSON.parse(row.payload);
-    const result = this.storage.db
-      .prepare('SELECT participantId FROM results WHERE matchId=? AND accountId=?')
-      .get(id, session.accountId);
+
     requireValue(
-      data.players.some((p: { sessionId: string }) => p.sessionId === session.id) || result,
+      data.players.some((p: { sessionId: string }) => p.sessionId === session.id),
       'Acces refuzat.',
       403,
     );
     return {
       ...data,
-      selfId:
-        result?.participantId ??
-        data.players.find((p: { sessionId: string }) => p.sessionId === session.id)?.id,
+      selfId: data.players.find((p: { sessionId: string }) => p.sessionId === session.id)?.id,
       players: data.players.map(({ sessionId: _sessionId, ...p }: { sessionId: string }) => p),
       status: row.status,
     };

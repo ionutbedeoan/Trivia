@@ -49,23 +49,39 @@ function setup(
   };
   return { storage, game, sessions, room, command, advance, start, openRound };
 }
-function publishedBank(f: ReturnType<typeof setup>) {
-  const bank = f.storage.questions(),
-    categories = [...new Set(bank.map((q) => q.category))];
-  for (let i = 0; i < 12; i++) {
-    const q = bank.find((q) => q.category === categories[i % 8])!;
-    f.storage.saveQuestion(
-      {
-        ...q,
-        id: `TEST-${i}`,
-        difficulty: 'Mediu',
-        factGroup: `TEST-GROUP-${i}`,
-        status: 'Publicat',
-      },
-      0,
-    );
+
+test('anonymous lobby: absent host is removed and remaining guest becomes host', () => {
+  const f = setup();
+  try {
+    f.game.disconnected(f.sessions[0].id);
+    f.advance(60000, false);
+    assert.equal(f.room.players.length, 1);
+    assert.equal(f.room.host, f.room.players[0].id);
+    assert.equal(f.room.players[0].sessionId, f.sessions[1].id);
+  } finally {
+    f.storage.db.close();
   }
-}
+});
+
+test('anonymous results: participant only, inaccessible after 24 hours', () => {
+  const f = setup(1);
+  try {
+    f.start();
+    f.openRound();
+    for (let i = 0; i < 12; i++) {
+      f.command(f.sessions[0], 'answer', { option: f.room.questions[i].correct });
+      f.command(f.sessions[0], 'read');
+    }
+    const id = f.room.matchId!;
+    assert.equal(f.game.storedMatch(id, f.sessions[0]).players[0].score, 1200);
+    const outsider = f.storage.createSession().session;
+    assert.throws(() => f.game.storedMatch(id, outsider));
+    f.advance(86400000);
+    assert.throws(() => f.game.storedMatch(id, f.sessions[0]));
+  } finally {
+    f.storage.db.close();
+  }
+});
 for (const capacity of [1, 2, 4] as const)
   test(`${capacity} participanți: 12 întrebări, 3 runde, 1200, egalitate, recapitulare, revanșă`, () => {
     const f = setup(capacity);
@@ -240,15 +256,6 @@ test('corect +100, greșit -50 sub zero și expirare chiar la deconectare', () =
 
 test('12 greșeli dau -600: feedback, idempotență, clasament negativ și progres salvat', () => {
   const f = setup();
-  const accounts = ['negative-host', 'negative-guest'].map((name, i) => {
-    const account = f.storage.createAccount(
-      name,
-      ['Andrei', 'Elena'][i],
-      'parola pentru scor negativ',
-    );
-    f.storage.rotate(f.sessions[i], account.id);
-    return account;
-  });
   f.start();
   f.openRound();
   for (let index = 0; index < 12; index++) {
@@ -270,18 +277,6 @@ test('12 greșeli dau -600: feedback, idempotență, clasament negativ și progr
   );
   const stored = f.game.storedMatch(f.room.matchId!, f.sessions[0]);
   assert.equal(stored.players[0].score, -600);
-  assert.deepEqual(f.storage.profile(accounts[0].id), {
-    completed: 1,
-    wins: 0,
-    accuracy: 0,
-    best: -600,
-  });
-  assert.deepEqual(f.storage.profile(accounts[1].id), {
-    completed: 1,
-    wins: 1,
-    accuracy: 0,
-    best: -550,
-  });
   f.sessions.forEach((session) => f.command(session, 'rematch'));
   assert(f.room.players.every((p) => p.score === 0));
   f.storage.db.close();
@@ -304,70 +299,4 @@ test('deconectarea altui participant în timpul reluării păstrează întreaga 
   assert.equal(f.room.pausedAt, null);
   assert.equal(f.room.deadline, original);
   f.storage.db.close();
-});
-test('rezultatele eligibile se salvează o singură dată în progres, iar claim-ul este unic', () => {
-  const f = setup(2, '40', false);
-  publishedBank(f);
-  const account = f.storage.createAccount('andrei', 'Andrei', 'parola de test lunga');
-  f.storage.rotate(f.sessions[0], account.id);
-  f.start();
-  for (let i = 0; i < 12; i++) {
-    if (i === 0) f.openRound();
-    f.sessions.forEach((s) =>
-      f.command(s, 'answer', { option: f.room.questions[i].correct, wager: i === 0 }),
-    );
-    f.sessions.forEach((s) => f.command(s, 'read'));
-  }
-  assert.deepEqual(f.storage.profile(account.id), {
-    completed: 1,
-    wins: 1,
-    accuracy: 100,
-    best: 1200,
-  });
-  const account2 = f.storage.createAccount('elena', 'Elena', 'alta parola foarte lunga');
-  f.storage.rotate(f.sessions[1], account2.id);
-  f.storage.claim(f.sessions[1], f.game.now());
-  f.storage.claim(f.sessions[1], f.game.now());
-  assert.equal(f.storage.profile(account2.id).completed, 1);
-  f.storage.db.close();
-});
-test('partida normală singur, Dificil, salvează scorul și acuratețea în profil', () => {
-  const f = setup(1, '40', false);
-  f.command(f.sessions[0], 'settings', { settings: { ...f.room.settings, difficulty: 'Dificil' } });
-  const account = f.storage.createAccount('solo-normal', 'Andrei', 'parola pentru joc normal');
-  f.storage.rotate(f.sessions[0], account.id);
-  f.start();
-  f.openRound();
-  for (let i = 0; i < 12; i++) {
-    const q = f.room.questions[i];
-    assert.equal(q.difficulty, 'Dificil');
-    f.command(f.sessions[0], 'answer', { option: q.correct, wager: i === 0 });
-    f.command(f.sessions[0], 'read');
-  }
-  assert.equal(f.room.phase, 'finished');
-  assert.deepEqual(f.storage.profile(account.id), {
-    completed: 1,
-    wins: 1,
-    accuracy: 100,
-    best: 1200,
-  });
-  f.storage.db.close();
-});
-test('recovery code is single-use; passwords hashed; deletion anonymizes', () => {
-  const storage = new Storage(':memory:');
-  const account = storage.createAccount('tester', 'Tester', 'parola foarte lunga');
-  assert.equal(storage.authenticate('TESTER', 'parola foarte lunga').id, account.id);
-  assert.notEqual(
-    storage.db.prepare('SELECT password FROM accounts WHERE id=?').get(account.id)?.password,
-    'parola foarte lunga',
-  );
-  const session = storage.createSession(account.id).session;
-  const next = storage.recover('tester', account.code, 'parola schimbata acum');
-  assert(next !== account.code);
-  assert.throws(() => storage.recover('tester', account.code, 'alta parola schimbata'), /valide/);
-  assert.throws(() => storage.authenticate('tester', 'parola foarte lunga'), /corecte/);
-  assert.equal(storage.authenticate('tester', 'parola schimbata acum').id, account.id);
-  storage.deleteAccount(session);
-  assert.throws(() => storage.authenticate('tester', 'parola schimbata acum'), /corecte/);
-  storage.db.close();
 });

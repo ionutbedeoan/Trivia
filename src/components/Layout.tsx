@@ -85,13 +85,6 @@ export function Layout({ children }: { children: ReactNode }) {
             >
               <Link to="/cum-se-joaca">Cum se joacă</Link>
               <Link to="/setari">Setări</Link>
-              {session?.user?.role === 'editor' && <Link to="/admin/intrebari">Editor</Link>}
-              <Link
-                className="button secondary compact"
-                to={session?.user ? '/profil' : '/cont/conectare'}
-              >
-                {session?.user ? 'Profil' : 'Conectare'}
-              </Link>
             </nav>
           </>
         )}
@@ -124,7 +117,7 @@ export function Layout({ children }: { children: ReactNode }) {
       {snapshot && (
         <aside className="container demo-tools">
           {snapshot.settings.practice
-            ? 'Partidă de test · dificultăți mixte · fără salvare în progres.'
+            ? 'Partidă de test · dificultăți mixte · rezultate temporare.'
             : `Mod normal · ${snapshot.settings.capacity === 1 ? 'Singur' : `${snapshot.settings.capacity} jucători`} · ${snapshot.settings.difficulty}.`}{' '}
           Banca include întrebări în verificare editorială.
         </aside>

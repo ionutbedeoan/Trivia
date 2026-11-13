@@ -10,13 +10,13 @@ npm run build
 npm start
 ```
 
-Deschide **http://127.0.0.1:3001**. Serverul livrează aplicația și API-ul la aceeași adresă. Baza locală `data/game.sqlite` se creează automat. Nu există cont sau parolă implicită.
+Deschide **http://127.0.0.1:3001**. Serverul livrează aplicația și API-ul la aceeași adresă. Baza locală `data/game.sqlite` se creează automat. Jocul folosește exclusiv pseudonime, fără conturi.
 
 Pentru dezvoltare, `npm run dev` pornește Vite cu API-ul și WebSocket integrate la aceeași adresă, implicit **http://127.0.0.1:5174**, accesibil și prin IP-ul calculatorului în rețeaua locală. Dacă portul este ocupat, pornirea eșuează în loc să creeze un server separat pe alt port. Nu este necesar un al doilea proces pentru backend. Și `npm run preview` include API-ul, pe portul fix 4173.
 
 ## O partidă completă
 
-**Pentru joc singur:** pe Acasă apasă **„Joacă singur”**, alege dificultatea și creează camera. Bifează „Sunt pregătit”, apasă „Începe partida” și confirmă „Sunt gata”. Este o partidă normală, iar rezultatele se salvează dacă ai cont. Poți selecta și „Jucători” → „Singur”.
+**Pentru joc singur:** pe Acasă apasă **„Joacă singur”**, alege dificultatea și creează camera. Bifează „Sunt pregătit”, apasă „Începe partida” și confirmă „Sunt gata”. Este o partidă normală, iar rezultatele sunt accesibile temporar prin sesiunea anonimă. Poți selecta și „Jucători” → „Singur”.
 
 1. Creează camera, alege Singur, 2 sau 4 jucători și dificultatea Mediu sau Dificil.
 2. Trimite codul sau linkul celorlalți. Pe același calculator folosește browsere diferite ori o fereastră incognito pentru identități separate. Filele aceluiași profil folosesc aceeași sesiune și noua filă o preia pe cea veche.
@@ -31,17 +31,9 @@ Banca are **424 de întrebări**: 8 Ușor, 208 Mediu, 208 Dificil. Al doilea lot
 
 Întrebările, variantele, răspunsurile corecte și referințele sunt în [TOATE_INTREBARILE.md](docs/TOATE_INTREBARILE.md). `npm run content:build` regenerează ambele loturi din sursele structurate `server/content/expansion-200.txt` și `server/content/expansion-200-2.txt`; la pornire, importul adaugă numai ID-urile lipsă și păstrează editările existente. `npm run content:export` actualizează documentul din baza locală.
 
-## Conturi și editor
+## Joc fără conturi
 
-Contul este opțional. Crearea și resetarea parolei afișează un cod de recuperare o singură dată. Păstrează-l separat. Parolele sunt stocate cu scrypt și salt; codurile și tokenurile de sesiune sunt stocate ca hash. Nu există recuperare prin email.
-
-Pentru rolul editorial, creează mai întâi un cont, apoi rulează local:
-
-```powershell
-npm run editor:grant -- identificator
-```
-
-Reîncarcă aplicația; în meniu apare „Editor”. Un selector din interfață nu poate acorda acest drept. Editorul oferă salvare, verificare, aprobare, publicare, retragere cu motiv și controlul reviziilor concurente. Schimbările nu alterează întrebările deja rezervate într-o partidă.
+Jucătorii intră direct cu un pseudonim. Sesiunile anonime permit reconectarea și accesul temporar la rezultat. Loginul, profilul, recuperarea parolei și editorul web au fost eliminate. SQLite rămâne pentru întrebări, sesiuni și rezultate; publicarea pe Netlify nu este configurată de această modificare. Datele vechi nu sunt șterse automat.
 
 ## Teste
 
@@ -68,7 +60,7 @@ $env:DB_PATH = 'data/restored.sqlite'
 npm start
 ```
 
-Copiile mai vechi pot conține date șterse ulterior; cererile de ștergere trebuie reaplicate după restaurare. La restart, partidele active sunt anulate; conturile și rezultatele finalizate rămân disponibile.
+Copiile mai vechi pot conține date șterse ulterior; cererile de ștergere trebuie reaplicate după restaurare. La restart, partidele active sunt anulate; rezultatele finalizate rămân disponibile.
 
 ## Acces din rețeaua locală
 
@@ -76,6 +68,6 @@ Pornește **un singur server**: `npm run dev` pe portul 5174 sau buildul cu `npm
 
 După această actualizare, oprește instanțele vechi cu Ctrl+C în terminalele lor, pornește o singură instanță și creează o cameră nouă. **Copiază linkul** păstrează serverul și portul; pentru o pagină deschisă prin localhost, folosește automat IP-ul LAN, preferând adaptorul Wi-Fi. Cu mai multe rețele active, deschide aplicația prin IP-ul accesibil telefonului înainte de a copia invitația.
 
-Firewall-ul trebuie să permită accesul. `localhost` pe telefon desemnează telefonul. Folosirea conturilor reale pe o rețea partajată necesită HTTPS la aceeași origine și `COOKIE_SECURE=1`. Publicarea pe internet nu este configurată prin această implementare.
+Firewall-ul trebuie să permită accesul. `localhost` pe telefon desemnează telefonul. Publicarea pe o rețea partajată necesită HTTPS la aceeași origine și `COOKIE_SECURE=1`. Publicarea pe internet nu este configurată prin această implementare.
 
 Detalii: [handoff tehnic](docs/FULLSTACK_HANDOFF.md).

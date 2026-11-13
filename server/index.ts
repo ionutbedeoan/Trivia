@@ -2,13 +2,11 @@ import { createServer } from 'node:http';
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, sep, extname } from 'node:path';
-import { randomUUID } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
 import { WebSocketServer, WebSocket } from 'ws';
-import type { EditorialQuestion } from '../shared/contracts';
-import { AppError, displayName, requireValue } from './errors';
+import { AppError, requireValue } from './errors';
 import { GameService } from './game';
-import { hash, passwordHash, Storage } from './storage';
+import { Storage } from './storage';
 import type { Session } from './storage';
 import { invitationOrigin } from './network';
 
@@ -132,7 +130,6 @@ export function createApplication(options: { dbPath?: string; countdownMs?: numb
         cookie(res, token!);
         send(res, {
           csrf: session.csrf,
-          user: storage.user(session),
           roomId: game.active(session)?.id ?? null,
           invitationOrigin: invitationOrigin(req),
         });
@@ -152,16 +149,7 @@ export function createApplication(options: { dbPath?: string; countdownMs?: numb
               send(res, game.storedMatch(id, session));
             else throw e;
           }
-        } else if (path === '/api/profile')
-          send(res, storage.profile(storage.requireAccount(session).id));
-        else if (path === '/api/questions') {
-          requireValue(
-            storage.requireAccount(session).role === 'editor',
-            'Acces rezervat editorului.',
-            403,
-          );
-          send(res, storage.questions());
-        } else throw new AppError(404, 'Adresă necunoscută.');
+        } else throw new AppError(404, 'Adres? necunoscut?.');
         return;
       }
       requireValue(req.method === 'POST', 'Metodă nepermisă.', 405);
@@ -172,77 +160,7 @@ export function createApplication(options: { dbPath?: string; countdownMs?: numb
       );
       rateLimit(`request:${session.id}`, 250, 60000);
       const body = await readBody(req);
-      const active = game.active(session);
-      if (
-        path.startsWith('/api/account/') &&
-        !['profile', 'logout'].includes(path.split('/').at(-1)!)
-      )
-        requireValue(
-          !active || ['lobby', 'finished', 'cancelled'].includes(active.phase),
-          'Încheie sau părăsește partida înainte de a modifica accesul contului.',
-          409,
-        );
-      if (path === '/api/account/create') {
-        rateLimit(`auth:${req.socket.remoteAddress}`, 30);
-        const account = storage.createAccount(body.identifier, body.name, body.password);
-        cookie(res, storage.rotate(session, account.id));
-        storage.claim(session);
-        send(res, { recoveryCode: account.code, user: storage.user(session), csrf: session.csrf });
-      } else if (path === '/api/account/login') {
-        rateLimit(`auth:${req.socket.remoteAddress}`, 30);
-        rateLimit(`login:${String(body.identifier).toLowerCase()}`, 5);
-        const account = storage.authenticate(body.identifier, body.password);
-        cookie(res, storage.rotate(session, account.id));
-        storage.claim(session);
-        send(res, { user: storage.user(session), csrf: session.csrf });
-      } else if (path === '/api/account/recover') {
-        rateLimit(`auth:${req.socket.remoteAddress}`, 30);
-        rateLimit(`recover:${String(body.identifier).toLowerCase()}`, 5);
-        send(res, { recoveryCode: storage.recover(body.identifier, body.code, body.password) });
-      } else if (path === '/api/account/logout') {
-        if (active) game.leave(active, session);
-        storage.db.prepare('DELETE FROM sessions WHERE id=?').run(session.id);
-        const created = storage.createSession();
-        cookie(res, created.token);
-        send(res, { ok: true });
-      } else if (path === '/api/account/profile') {
-        const user = storage.requireAccount(session);
-        const name = displayName(body.name);
-        storage.db.prepare('UPDATE accounts SET name=? WHERE id=?').run(name, user.id);
-        send(res, { user: storage.user(session) });
-      } else if (
-        ['/api/account/password', '/api/account/recovery', '/api/account/delete'].includes(path)
-      ) {
-        const user = storage.requireAccount(session);
-        rateLimit(`security:${session.id}`, 10);
-        storage.authenticate(user.identifier, body.currentPassword);
-        if (path.endsWith('/delete')) {
-          requireValue(
-            !active || ['lobby', 'finished', 'cancelled'].includes(active.phase),
-            'Părăsește partida înainte de a șterge contul.',
-            409,
-          );
-          if (active) game.leave(active, session);
-          storage.deleteAccount(session);
-          const created = storage.createSession();
-          cookie(res, created.token);
-          send(res, { ok: true });
-        } else if (path.endsWith('/password')) {
-          storage.validatePassword(body.password);
-          storage.db
-            .prepare('UPDATE accounts SET password=? WHERE id=?')
-            .run(passwordHash(body.password), user.id);
-          storage.db
-            .prepare('DELETE FROM sessions WHERE accountId=? AND id<>?')
-            .run(user.id, session.id);
-          cookie(res, storage.rotate(session, user.id));
-          send(res, { csrf: session.csrf });
-        } else {
-          const code = `${randomUUID()}-${randomUUID()}`;
-          storage.db.prepare('UPDATE accounts SET recovery=? WHERE id=?').run(hash(code), user.id);
-          send(res, { recoveryCode: code });
-        }
-      } else if (path === '/api/rooms/create') {
+      if (path === '/api/rooms/create') {
         const room = game.create(session, body.name, body.settings);
         send(res, game.snapshot(room, session));
       } else if (path === '/api/rooms/join') {
@@ -256,21 +174,7 @@ export function createApplication(options: { dbPath?: string; countdownMs?: numb
         const room = game.get(String(body.roomId), session);
         game.leave(room, session, typeof body.targetId === 'string' ? body.targetId : undefined);
         send(res, { ok: true });
-      } else if (path === '/api/questions/save') {
-        requireValue(
-          storage.requireAccount(session).role === 'editor',
-          'Acces rezervat editorului.',
-          403,
-        );
-        const candidate = body.question as EditorialQuestion;
-        requireValue(
-          candidate && typeof candidate === 'object' && !Array.isArray(candidate),
-          'Întrebare invalidă.',
-        );
-        const existing = storage.questions().find((q) => q.id === candidate.id);
-        const q = validateQuestion(candidate, existing, String(body.reason ?? ''));
-        send(res, storage.saveQuestion(q, Number(body.revision)));
-      } else throw new AppError(404, 'Adresă necunoscută.');
+      } else throw new AppError(404, 'Adres? necunoscut?.');
       broadcast();
     } catch (e) {
       if (!(e instanceof AppError))
@@ -362,84 +266,6 @@ export function createApplication(options: { dbPath?: string; countdownMs?: numb
   };
 }
 
-function validateQuestion(
-  input: EditorialQuestion,
-  existing: EditorialQuestion | undefined,
-  reason: string,
-): EditorialQuestion {
-  const q: EditorialQuestion = {
-    id: existing?.id ?? `Q-${randomUUID().slice(0, 8)}`,
-    text: String(input.text ?? '').trim(),
-    options: Array.isArray(input.options) ? input.options.map(String) : [],
-    category: String(input.category ?? ''),
-    difficulty: input.difficulty,
-    factGroup: String(input.factGroup ?? '').trim(),
-    status: input.status,
-    correct: input.correct,
-    explanation: String(input.explanation ?? ''),
-    reference: String(input.reference ?? ''),
-    sourceUrl: String(input.sourceUrl ?? ''),
-    sourceTitle: String(input.sourceTitle ?? ''),
-    locator: String(input.locator ?? ''),
-    verifiedAt: String(input.verifiedAt ?? ''),
-    notes: String(input.notes ?? ''),
-    checklist: Array.isArray(input.checklist) ? input.checklist.map((v) => v === true) : [],
-    revision: input.revision,
-  };
-  requireValue(
-    ['Schiță', 'În verificare', 'Aprobat', 'Publicat', 'Retras'].includes(q.status),
-    'Stare editorială invalidă.',
-  );
-  requireValue(
-    ['Ușor', 'Mediu', 'Dificil'].includes(q.difficulty) &&
-      q.text.length <= 2000 &&
-      q.options.length === 4 &&
-      q.options.every((o) => o.length <= 1000),
-    'Metadate sau variante invalide.',
-  );
-  const from = existing?.status ?? 'Schiță';
-  const transitions: Record<string, string[]> = {
-    Schiță: ['Schiță', 'În verificare'],
-    'În verificare': ['Schiță', 'În verificare', 'Aprobat'],
-    Aprobat: ['Schiță', 'În verificare', 'Publicat'],
-    Publicat: ['Schiță', 'Retras'],
-    Retras: ['Schiță'],
-  };
-  requireValue(transitions[from].includes(q.status), 'Tranziție editorială nepermisă.', 409);
-  if (q.status !== 'Schiță') {
-    requireValue(
-      q.text &&
-        q.options.every((o) => o.trim()) &&
-        new Set(q.options.map((o) => o.trim().toLowerCase())).size === 4 &&
-        Number.isInteger(q.correct) &&
-        q.correct >= 0 &&
-        q.correct < 4 &&
-        q.explanation &&
-        q.reference &&
-        q.factGroup,
-      'Completează enunțul, variantele distincte, cheia, explicația, referința și grupul de fapte.',
-    );
-    let validUrl = false;
-    try {
-      validUrl = new URL(q.sourceUrl).protocol === 'https:';
-    } catch {
-      /* invalid */
-    }
-    requireValue(validUrl, 'URL-ul sursei trebuie să fie HTTPS valid.');
-  }
-  if (q.status === 'Aprobat' || q.status === 'Publicat')
-    requireValue(
-      q.checklist.length === 6 &&
-        q.checklist.every(Boolean) &&
-        /^\d{4}-\d{2}-\d{2}$/.test(q.verifiedAt) &&
-        q.sourceTitle &&
-        q.locator,
-      'Completează verificarea editorială, data și sursa.',
-    );
-  if (q.status === 'Retras')
-    requireValue(reason.trim().length >= 3, 'Precizează motivul retragerii.');
-  return q;
-}
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const app = createApplication();
   const port = Number(process.env.PORT ?? 3001);

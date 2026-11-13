@@ -5,6 +5,40 @@ const root = process.env.E2E_BASE_URL ?? 'http://127.0.0.1:3100';
 async function waitForConnection(page: Page) {
   await expect(page.getByText('Se conectează la server…')).toHaveCount(0);
 }
+
+test('fără conturi: preferințe locale persistente și rute vechi indisponibile', async ({
+  page,
+}) => {
+  await page.goto(root + '/setari');
+  await waitForConnection(page);
+  await expect(
+    page.locator('a[href^="/cont/"], a[href="/profil"], a[href^="/admin/"]'),
+  ).toHaveCount(0);
+  await page.getByLabel('Pseudonim implicit').fill('TestInvitat');
+  await page.getByLabel('Sunet la începutul întrebării').check();
+  await page.getByRole('radio', { name: 'Activată', exact: true }).check();
+  await page.getByRole('button', { name: 'Salvează modificările' }).click();
+  await page.reload();
+  await waitForConnection(page);
+  await expect(page.getByLabel('Pseudonim implicit')).toHaveValue('TestInvitat');
+  await expect(page.getByLabel('Sunet la începutul întrebării')).toBeChecked();
+  await expect(page.getByRole('radio', { name: 'Activată', exact: true })).toBeChecked();
+  await page.goto(root + '/creeaza');
+  await waitForConnection(page);
+  await expect(page.getByLabel('Pseudonim', { exact: true })).toHaveValue('TestInvitat');
+  for (const route of [
+    '/cont/conectare',
+    '/cont/creare',
+    '/cont/recuperare',
+    '/profil',
+    '/admin/intrebari',
+  ]) {
+    await page.goto(root + route);
+    await waitForConnection(page);
+    await expect(page.locator('input[type="password"]')).toHaveCount(0);
+    await expect(page.locator('main')).toContainText('404');
+  }
+});
 test('12 răspunsuri greșite afișează -600 în joc, rezultat și după reîncărcare', async ({
   page,
 }) => {
@@ -223,75 +257,6 @@ for (const capacity of [1, 2, 4])
       for (const context of contexts) await context.close();
     }
   });
-test('cont: creare, cod recuperare, deconectare, conectare, resetare și ștergere', async ({
-  page,
-}) => {
-  const login = `user-${Date.now()}`;
-  const password = 'Parola initiala lunga 123';
-  await page.goto(`${root}/cont/creare`);
-  await waitForConnection(page);
-  await page.getByLabel('Identificator', { exact: true }).fill(login);
-  await page.getByLabel('Pseudonim implicit', { exact: true }).fill('Maria');
-  await page.getByLabel('Parolă', { exact: true }).fill(password);
-  await page.getByLabel('Confirmă parola', { exact: true }).fill(password);
-  await page.getByRole('button', { name: 'Creează cont', exact: true }).click();
-  const code = await page.locator('.recovery-code').textContent();
-  expect(code!.length).toBeGreaterThan(20);
-  await page.getByLabel('Am păstrat codul').check();
-  await page.getByRole('button', { name: 'Continuă' }).click();
-  await expect(page.getByRole('heading', { name: 'Maria', exact: true })).toBeVisible();
-  await page.goto(`${root}/setari`);
-  await page.getByRole('button', { name: 'Deconectare', exact: true }).click();
-  await page.goto(`${root}/cont/conectare`);
-  await waitForConnection(page);
-  await page.getByLabel('Identificator').fill(login);
-  await page.getByLabel('Parolă', { exact: true }).fill(password);
-  await page.getByRole('button', { name: 'Conectează-te', exact: true }).click();
-  await expect(page).toHaveURL(/\/profil/);
-  await page.goto(`${root}/setari`);
-  await page.getByRole('button', { name: 'Deconectare', exact: true }).click();
-  await page.goto(`${root}/cont/recuperare`);
-  await waitForConnection(page);
-  await page.getByLabel('Identificator').fill(login);
-  await page.getByLabel('Cod de recuperare').fill(code!);
-  await page.getByLabel('Parolă nouă', { exact: true }).fill('Parola noua lunga 456');
-  await page.getByLabel('Confirmă parola nouă').fill('Parola noua lunga 456');
-  await page.getByRole('button', { name: 'Resetează parola' }).click();
-  await expect(page.locator('.recovery-code')).not.toHaveText(code!);
-  await page.getByLabel('Am păstrat codul').check();
-  await page.getByRole('button', { name: 'Continuă' }).click();
-  await page.getByLabel('Identificator').fill(login);
-  await page.getByLabel('Parolă', { exact: true }).fill('Parola noua lunga 456');
-  await page.getByRole('button', { name: 'Conectează-te', exact: true }).click();
-  await expect(page).toHaveURL(/\/profil/);
-  await page.goto(`${root}/setari`);
-  await page.getByRole('button', { name: 'Șterge contul', exact: true }).click();
-  await page.getByRole('dialog').getByLabel('Parola curentă').fill('Parola noua lunga 456');
-  await page.getByRole('dialog').getByRole('button', { name: 'Confirmă', exact: true }).click();
-  await expect(page).toHaveURL(root + '/');
-});
-test('editor: acces, filtrare, editare, salvare și persistență', async ({ page }) => {
-  await page.goto(`${root}/admin/intrebari`);
-  await expect(page.getByRole('heading', { name: 'Acces interzis' })).toBeVisible();
-  await page.goto(`${root}/cont/conectare`);
-  await waitForConnection(page);
-  await page.getByLabel('Identificator').fill('editor-e2e');
-  await page.getByLabel('Parolă', { exact: true }).fill('TestEditorPassword_2026');
-  await page.getByRole('button', { name: 'Conectează-te', exact: true }).click();
-  await expect(page).toHaveURL(/\/profil/);
-  await page.goto(`${root}/admin/intrebari`);
-  await expect(page.locator('.editor-list-row')).toHaveCount(424);
-  await page.getByLabel('Stare', { exact: true }).selectOption('Publicat');
-  await expect(page.getByRole('heading', { name: 'Niciun rezultat' })).toBeVisible();
-  await page.getByRole('button', { name: 'Resetează filtrele' }).click();
-  await page.getByRole('link', { name: 'Q008', exact: true }).click();
-  await expect(page.getByLabel('Enunț', { exact: true })).toContainText('Iona');
-  await page.getByLabel('Note editoriale').fill('Notă verificată în browser');
-  await page.getByRole('button', { name: 'Salvează schița', exact: true }).click();
-  await expect(page.getByText('Modificările au fost salvate.')).toBeVisible();
-  await page.reload();
-  await expect(page.getByLabel('Note editoriale')).toHaveValue('Notă verificată în browser');
-});
 test('responsive, meniu, rute și lipsa erorilor JavaScript', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
@@ -305,7 +270,6 @@ test('responsive, meniu, rute și lipsa erorilor JavaScript', async ({ page }) =
       '/despre-si-surse',
       '/confidentialitate',
       '/setari',
-      '/cont/creare',
       '/nu-exista',
     ]) {
       await page.goto(root + route);

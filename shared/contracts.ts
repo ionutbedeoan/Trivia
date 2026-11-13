@@ -62,24 +62,13 @@ export interface Snapshot {
   reason?: string;
   rematch: string[];
 }
-export interface User {
-  id: string;
-  identifier: string;
-  name: string;
-  role: 'player' | 'editor';
-}
+
 export interface SessionInfo {
   csrf: string;
-  user: User | null;
   roomId: string | null;
   invitationOrigin: string;
 }
-export interface ProfileStats {
-  completed: number;
-  wins: number;
-  accuracy: number;
-  best: number;
-}
+
 export interface EditorialQuestion extends PublicQuestion {
   factGroup: string;
   status: 'Schiță' | 'În verificare' | 'Aprobat' | 'Publicat' | 'Retras';
