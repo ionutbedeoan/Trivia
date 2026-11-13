@@ -234,11 +234,11 @@ main:focus {
   background: var(--primary);
   color: white;
 }
-.button.primary:hover {
+.button.primary:hover:not(:disabled) {
   background: var(--hover);
   color: white;
 }
-.button.primary:active {
+.button.primary:active:not(:disabled) {
   background: var(--pressed);
 }
 .button.secondary {
@@ -246,14 +246,14 @@ main:focus {
   background: #ffffffa6;
   color: var(--primary);
 }
-.button.secondary:hover {
+.button.secondary:hover:not(:disabled) {
   background: var(--selection);
 }
 .button.quiet {
   color: var(--primary);
   background: transparent;
 }
-.button.quiet:hover {
+.button.quiet:hover:not(:disabled) {
   background: var(--selection);
 }
 .button.danger {
@@ -261,7 +261,7 @@ main:focus {
   border-color: var(--error);
   background: var(--surface);
 }
-.button.danger:hover {
+.button.danger:hover:not(:disabled) {
   background: var(--error-bg);
 }
 .button:disabled {

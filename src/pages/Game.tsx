@@ -309,7 +309,7 @@ function QuestionPanel({ snapshot: s }: { snapshot: Snapshot }) {
                 disabled={busy || self.confirmed || !connected}
                 onClick={() => void run('read')}
               >
-                {self.confirmed ? 'Ai confirmat lectura' : 'Am citit'}
+                {self.confirmed ? 'Asteapta pana confirma si ceilalti' : 'Am citit'}
               </Button>
               {s.players.length > 1 && (
                 <p className="small" role="status">

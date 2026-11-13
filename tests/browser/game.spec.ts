@@ -231,8 +231,19 @@ for (const capacity of [1, 2, 4])
           await expect(pages[1].getByRole('dialog')).toHaveCount(0, { timeout: 15000 });
           await pages[1].screenshot({ path: 'artifacts/explanation-mobile.png', fullPage: true });
         }
-        for (const page of pages)
+        for (const [i, page] of pages.entries()) {
           await page.getByRole('button', { name: 'Am citit', exact: true }).click();
+          if (i < pages.length - 1) {
+            const waitingButton = page.getByRole('button', {
+              name: 'Asteapta pana confirma si ceilalti',
+              exact: true,
+            });
+            await expect(waitingButton).toBeDisabled();
+            await waitingButton.hover();
+            await expect(waitingButton).toHaveCSS('background-color', 'rgb(230, 234, 242)');
+            await expect(waitingButton).toHaveCSS('color', 'rgb(89, 102, 125)');
+          }
+        }
       }
       for (const page of pages) {
         await expect(page).toHaveURL(/\/rezultat\//);
