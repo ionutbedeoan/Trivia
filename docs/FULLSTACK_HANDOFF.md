@@ -1,5 +1,13 @@
 # Handoff aplicație funcțională
 
+## Actualizare: scoruri negative și 424 de întrebări
+
+Această actualizare înlocuiește limita minimă de scor zero din secțiunile istorice. Răspuns corect: +100; greșit: −50, inclusiv sub zero; absent: 0, fără modificarea totalului existent. Douăsprezece greșeli produc −600. Feedbackul, scorul live, clasamentul, rezultatul arhivat și cel mai bun scor din profil păstrează valorile negative. O revanșă începe din nou de la zero; rezultatele istorice nu sunt recalculate.
+
+Lotul suplimentar `server/content/expansion-200-2.txt` generează Q225–Q424: 100 Mediu și 100 Dificil din 20 de grupuri biblice noi, cu toate cele opt categorii la ambele dificultăți. Totalul băncii este 424: 8 Ușor, 208 Mediu, 208 Dificil. Întrebările și explicațiile sunt originale, cu referințe pentru verificare; starea rămâne „În verificare”, disponibilă în jocul privat conform regulii existente. Nu se atribuie aprobare editorială automată.
+
+`content:build` validează și generează cele două loturi. `Storage.seedExpansion` le importă în aceeași tranzacție cu `INSERT OR IGNORE`, păstrând editările locale și rezultatele existente. Exportul complet se găsește în `TOATE_INTREBARILE.md`. Nu sunt necesare dependențe sau migrații noi.
+
 ## Actualizare: camere pe dispozitive diferite în LAN
 
 Vite pornește implicit pe `0.0.0.0:5174`, cu port strict, iar preview pe `0.0.0.0:4173`. Serverul de producție pornește pe `0.0.0.0:3001`, configurabil prin `HOST` și `PORT`. Fiecare proces păstrează propriile camere; toate dispozitivele trebuie să folosească aceeași instanță. Au fost identificate procese distincte pe adrese loopback și LAN, inclusiv pe același port 5174. Pentru o partidă locală, deschide adresa IP Wi-Fi pe ambele dispozitive și creează camera din acea adresă.

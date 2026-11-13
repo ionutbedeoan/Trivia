@@ -1,9 +1,43 @@
 import { test, expect } from '@playwright/test';
 import type { Page, BrowserContext } from '@playwright/test';
+import { Storage } from '../../server/storage';
 const root = process.env.E2E_BASE_URL ?? 'http://127.0.0.1:3100';
 async function waitForConnection(page: Page) {
   await expect(page.getByText('Se conectează la server…')).toHaveCount(0);
 }
+test('12 răspunsuri greșite afișează -600 în joc, rezultat și după reîncărcare', async ({
+  page,
+}) => {
+  const storage = new Storage(':memory:');
+  const bank = storage.questions();
+  storage.db.close();
+  await page.goto(root + '/creeaza?singur=1');
+  await waitForConnection(page);
+  await page.getByLabel('Pseudonim', { exact: true }).fill('Scor Negativ');
+  await page.getByRole('button', { name: 'Creează camera', exact: true }).click();
+  await page.getByLabel('Sunt pregătit', { exact: true }).check();
+  await page.getByRole('button', { name: 'Începe partida' }).click();
+  await expect(page.getByText('Scor minim 0', { exact: false })).toHaveCount(0);
+  await page.getByRole('button', { name: 'Sunt gata', exact: true }).click();
+  for (let index = 0; index < 12; index++) {
+    await expect(page.locator('.game-meta')).toContainText(`Întrebarea ${index + 1}/12`);
+    const text = await page.locator('.question-card h1').textContent();
+    const question = bank.find((q) => q.text === text);
+    expect(question).toBeTruthy();
+    const options = await page.locator('.answer strong').allTextContents();
+    const wrong = options.findIndex((option) => option !== question!.options[question!.correct]);
+    expect(wrong).toBeGreaterThanOrEqual(0);
+    await page.getByRole('radio').nth(wrong).check();
+    await page.getByRole('button', { name: 'Trimite răspunsul', exact: true }).click();
+    await expect(page.locator('.result-badge')).toContainText('Greșit -50');
+    await expect(page.locator('.score-sidebar')).toContainText(String(-50 * (index + 1)));
+    await page.getByRole('button', { name: 'Am citit', exact: true }).click();
+  }
+  await expect(page.getByRole('heading', { name: 'Scorul tău -600', exact: true })).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole('heading', { name: 'Scorul tău -600', exact: true })).toBeVisible();
+  await expect(page.locator('.recap details')).toHaveCount(12);
+});
 test('invitație de pe calculator: telefon prin IP LAN, intrare și pregătire pe HTTP', async ({
   browser,
 }) => {

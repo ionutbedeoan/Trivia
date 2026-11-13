@@ -1,5 +1,15 @@
 # Verificare — 13 noiembrie 2026
 
+## Actualizare: scor negativ și al doilea lot de 200 de întrebări
+
+Scorul scade cu 50 la fiecare răspuns greșit, inclusiv sub zero. Au trecut **24 de teste automate**, TypeScript, buildul de producție și Prettier. Testul nou parcurge 12 răspunsuri greșite pentru −600, verifică feedbackul și repetarea aceleiași operații fără dublarea penalizării, arhivarea rezultatului, cel mai bun scor negativ din profil, câștigătorul la −550 față de −600 și resetarea revanșei. Expirarea păstrează totalul negativ și adaugă zero.
+
+Au trecut **toate cele 8 teste Chrome**, inclusiv noul scenariu cu −600 în joc, rezultat și după reîncărcare, invitația prin LAN, partide complete cu 1/2/4 participanți, conturi, editor și verificări responsive. Testele au folosit serverul separat cu baza în memorie și `E2E_BASE_URL=http://127.0.0.1:3100`.
+
+`content:build` validează două loturi de câte 200 de întrebări; al doilea generează Q225–Q424 din 20 de pasaje suplimentare. Baza locală a fost sincronizată și verificată în citire: **424 de ID-uri distincte, 8 Ușor, 208 Mediu, 208 Dificil; exact 200 de intrări noi Q225–Q424**. Testele verifică variantele distincte, referințele, explicațiile, distribuția de 100 Mediu/100 Dificil pe lot, cele opt categorii și importul repetat fără suprascrierea unei întrebări editate. Primul lot generat nu s-a modificat.
+
+Exportul complet `TOATE_INTREBARILE.md` a fost regenerat din baza locală. Întrebările noi sunt originale și au referințe pentru revizuire; rămân „În verificare”, utilizabile în jocul privat conform comportamentului existent. Validarea automată a structurii și consultarea pasajelor nu înlocuiesc aprobarea editorială umană. Rezultatele istorice nu sunt recalculate după schimbarea punctajului.
+
 ## Reparație: acces la camere din rețeaua locală
 
 Problema a fost reprodusă pe instanțele active: camera creată prin `127.0.0.1:5173` nu era găsită prin IP-ul Wi-Fi pe portul 5174. La verificarea ulterioară, camera creată prin `192.168.1.9:5174` putea fi accesată prin `192.168.56.1:5174`, dar nu prin `127.0.0.1:5174`: adresele loopback și LAN ajungeau la procese diferite. Camerele de diagnostic au fost părăsite după verificare.
